@@ -12,7 +12,7 @@ All co-authors are those whom expressed interest on the discussion thread.  Curr
 * Kaitlin Thaney - 
 * Naupaka Zimmerman - School of Plant Sciences, University of Arizona - @naupakaz - [naupaka.net](http://naupaka.net)
 * Will Cornwell - 
-* Sarah Mount - 
-* Sarah Simpkin - 
+* Sarah Mount - School of Mathematics and Computer Science, University of Wolverhampton - @snim2 - [snim2.org](http://snim2.org)
+* Sarah Simpkin -
 
 
