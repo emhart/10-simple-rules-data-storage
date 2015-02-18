@@ -7,7 +7,7 @@ All co-authors are those whom expressed interest on the discussion thread.  Curr
 
 * Pauline Barmby - 
 * Timothee Poisot -
-* Jeff Hollister - 
+* Jeff Hollister - Atlantic Ecology Division, US Environmental Protection Agency - [jwhollister.com](http://jwhollister.com)
 * Edmund Hart - Dept of Biology, University of Vermont - @emhrt_ - [emhart.info](http://emhart.info) 
 * Kaitlin Thaney - 
 * Naupaka Zimmerman - School of Plant Sciences, University of Arizona - @naupakaz - [naupaka.net](http://naupaka.net)
