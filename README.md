@@ -10,7 +10,7 @@ All co-authors are those whom expressed interest on the discussion thread.  Curr
 * Jeff Hollister - 
 * Edmund Hart - Dept of Biology, University of Vermont - @emhrt_ - [emhart.info](http://emhart.info) 
 * Kaitlin Thaney - 
-* Naupaka Zimmerman - 
+* Naupaka Zimmerman - School of Plant Sciences, University of Arizona - @naupakaz - [naupaka.net](http://naupaka.net)
 * Will Cornwell - 
 * Sarah Mount - 
 * Sarah Simpkin - 
