@@ -5,7 +5,7 @@ This paper is a distributed collaborative effort spawned from a message from [So
 
 All co-authors are those whom expressed interest on the discussion thread.  Currently the list (in no particular order) with affiliation, twitter handle and website
 
-* Pauline Barmby - 
+* Pauline Barmby - @PBarmby [http://www.physics.uwo.ca/~pbarmby](http://www.physics.uwo.ca/~pbarmby)
 * Timothee Poisot -
 * Jeff Hollister - Atlantic Ecology Division, US Environmental Protection Agency - @jhollist - [jwhollister.com](http://jwhollister.com)
 * Edmund Hart - Dept of Biology, University of Vermont - @emhrt_ - [emhart.info](http://emhart.info) 
