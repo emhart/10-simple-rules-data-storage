@@ -19,6 +19,7 @@ website
 * Will Cornwell - School of Biological, Earth, and Environmental Sciences, University of New South Wales - [@will_cornwell](https://twitter.com/will_cornwell) - [willcornwell.org](http://willcornwell.org)
 * Sarah Mount - School of Mathematics and Computer Science, University of Wolverhampton - `@snim2` - [snim2.org](http://snim2.org)
 * Sarah Simpkin -
+* François Michonneau - iDigBio, University of Florida - Twitter: `@fmic_` - [francoismichonneau.net](http://francoismichonneau.net)
 
 
 [swcl]: http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org
