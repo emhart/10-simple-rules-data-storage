@@ -21,6 +21,6 @@ website
 * Sarah Simpkin -
 * François Michonneau - iDigBio, University of Florida - Twitter: `@fmic_` - [francoismichonneau.net](http://francoismichonneau.net)
 * Kara Woo - National Center for Ecological Analysis and Synthesis- `@kara_woo` - [karawoo.com](http://karawoo.com)
-
+* David LeBauer - National Center for Supercomputing Applications, University of Illinois - `@dlebauer` - (sites.google.com/site/dlebauer/)[https://sites.google.com/site/dlebauer/]
 
 [swcl]: http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org
