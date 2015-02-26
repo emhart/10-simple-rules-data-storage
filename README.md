@@ -23,5 +23,6 @@ website
 * Kara Woo - National Center for Ecological Analysis and Synthesis- `@kara_woo` - [karawoo.com](http://karawoo.com)
 * David LeBauer - National Center for Supercomputing Applications, University of Illinois - `@dlebauer` - [sites.google.com/site/dlebauer/](https://sites.google.com/site/dlebauer/)
 * Stephen Turner - University of Virginia. Twitter: [@genetics_blog](https://twitter.com/genetics_blog). Web: [stephenturner.us](http://stephenturner.us/).
+* Daniel Falster - Department of Biological Sciences, Macquarie University NSW 2109, Australia - `@adaptive_plant` - [danielfalster.com](http://danielfalster.com/)
 
 [swcl]: http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org
