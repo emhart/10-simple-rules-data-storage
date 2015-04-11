@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ ! -f manuscript/manuscript.pdf ] ; then
+    # PDF has been deleted.
+    cat <<\EOF
+Error: You seem to have deleted manuscript.pdf!
+Please run 'make' before committing your changes to manuscript.md and manuscript.pdf.
+EOF
+    exit 1
+
+fi
+
+if test manuscript/manuscript.md -nt manuscript/manuscript.pdf; then
+    # Markdown is newer than PDF
+    cat <<\EOF
+Error: Attempt to commit Markdown without a matching PDF.
+Please run 'make' before committing your changes to manuscript.md and manuscript.pdf.
+EOF
+    exit 1
+fi
+    exit 0
