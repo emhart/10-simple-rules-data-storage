@@ -10,4 +10,4 @@ manuscript.pdf: manuscript.tex
 	dvipdf manuscript
 
 clean:
-	-@rm -f *.aux *.dvi *.log *.out *.pdf *.tex
+	-@rm -f *.aux *.dvi *.log *.out *.tex
