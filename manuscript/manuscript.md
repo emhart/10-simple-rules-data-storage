@@ -15,6 +15,10 @@ author:
  - family: Hollister
    given: Jeffrey
    affiliation: 3
+ - family: LeBauer
+   given: David
+   affiliation: 4
+   
 organization:
  - id: 1
    name: Univeristy of Vermont
@@ -25,6 +29,12 @@ organization:
  - id: 3
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
+ - id: 4
+   name: University of Illinois at Urbana-Champaign
+   address: Institute for Genomic Biology
+ - id: 5
+   name: National Center for Supercomputing Applications
+
 ---
 
 # Abstract {-}
