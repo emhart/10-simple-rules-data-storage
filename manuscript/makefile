@@ -7,6 +7,7 @@ manuscript.tex: manuscript.md
 
 manuscript.pdf: manuscript.tex
 	latex manuscript
+	latex manuscript
 	dvipdf manuscript
 
 clean:
