@@ -18,9 +18,12 @@ author:
  - family: LeBauer
    given: David
    affiliation: 4
+ - family: Zimmerman
+   given: Naupaka
+   affiliation: 5
  - family: Michonneau
    given: François
-   affiliation: 5
+   affiliation: 6
 
 organization:
  - id: 1
@@ -36,6 +39,9 @@ organization:
    name: University of Illinois at Urbana-Champaign
    address: National Center for Supercomputing Applications and Institute for Genomic Biology
  - id: 5
+   name: University of Arizona
+   address: School of Plant Sciences
+- id: 6
    name: University of Florida
    address: iDigBio, Florida Museum of Natural History, Gainesville, FL 32611-7800
 
@@ -58,7 +64,9 @@ Researchers should know their use case and store data appropriately. Is this dat
 also see number 9, which will be aimed at big data
 -->
 
-# Rule 3: Rule {-}
+# Rule 3: Rule {Keep raw data raw}
+
+Since analytical and data processing procedures may improve or otherwise change over time, having access to the 'raw' or unprocessed data helps to facilitate future re-analysis and analytical reproducibility. Data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in its original state given a common point of reference for derivative analyses. There's clearly some discussion about what constitutes "raw" (ohms off a temperature sensor?). However the focus here is really on the spirit of the rule. Data should be as "pure" as possible when it's stored. If derivations occur, they should include storage of relevant code and subsequent data sets. NEON handles this with a schema for various "levels" of data products that pertain to the amount of processing that happens, [here's a brief overview](http://www.neoninc.org/science-design/data-processing). We defined raw data as things like voltage, or unprocessed lidar returns. The issue of course is that this is a tremendous amount of data that NEON still hasn't quite figured out how to share and document (e.g. if you ask for L0 they'll ship you an HDD). The way around it is to write detailed "Algorithm Theoretical Basis Documents" (ATBD's) detailing the different processing "levels". This is mostly borrowed from the NASA EOSDIS program.
 
 # Rule 4: Rule {Store data in open formats}
 
