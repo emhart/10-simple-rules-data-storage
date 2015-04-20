@@ -55,7 +55,14 @@ also see number 9, which will be aimed at big data
 
 # Rule 3: Rule {-}
 
-# Rule 4: Rule {-}
+# Rule 4: Rule {Store data in open formats}
+
+To maximize accessibility and long-term value, data should be stored in file formats whose specificiations are freely-available. The exact file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware to access. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include 
+* CSV for tabular data
+* HDF5 for (??)
+* ?? for images
+* (help me out here folks, it's been a long week)
+and examples of closed formats include XLSX, DICOM, (again need more examples). At a minimum, data being stored for archival purposes should be stored in open formats, even if day-to-day processing uses closed formats.
 
 # Rule 5: Rule {-}
 
