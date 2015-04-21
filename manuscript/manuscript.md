@@ -21,7 +21,10 @@ author:
  - family: Zimmerman
    given: Naupaka
    affiliation: 5
-   
+ - family: Woo
+   given: Kara H.
+   affiliation: 6
+
 organization:
  - id: 1
    name: Univeristy of Vermont
@@ -38,6 +41,9 @@ organization:
  - id: 5
    name: University of Arizona
    address: School of Plant Sciences
+ - id: 6
+   name: Washington State University
+   address: Center for Environmental Research, Education, and Outreach
 
 ---
 
@@ -77,7 +83,29 @@ and examples of closed formats include XLSX, DICOM, (again need more examples). 
 
 # Rule 7: Rule {-}
 
-# Rule 8: Rule {-}
+# Rule 8: Rule {What is your back-up scheme?}
+
+Researchers should consider the safety of their data and ensure that it is
+backed up at all stages of the research process. Data stored on local computers
+or institutional servers during the collection and analysis phase should be
+backed up to other locations and formats to protect against data loss. No backup
+system is failsafe (see the stories of the
+[Dedoose crash](https://www.insidehighered.com/news/2014/05/16/dedoose-crash-shows-dangers-handing-data-cloud-services)
+and the
+[near deletion of Toy Story 2](http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/)),
+so more than one backup system should be used. Kristin Briney advocates the
+[Rule of 3](http://dataabinitio.com/?p=320) for backing up data: always keep
+three copies of your data, two onsite copies (such as on a computer, an external
+hard drive, or tape) and one offsite copy (e.g. in cloud storage). Keeping
+backups in multiple locations protects against data loss due to theft, natural
+disasters, etc. Researchers should test their backups regularly to ensure that
+they are functioning properly.
+
+Consider the backup plans of data repositories before publishing your data. Many
+repositories mirror the data they host on multiple machines. If possible, find
+out about the long-term storage plans of the repository. Are there plans in
+place to keep data available if the organization that manages the repository
+dissolves?
 
 # Rule 9: Rule {Data size matters /  requires special considerations}
 
