@@ -19,6 +19,10 @@ website
 * Will Cornwell - School of Biological, Earth, and Environmental Sciences, University of New South Wales - [@will_cornwell](https://twitter.com/will_cornwell) - [willcornwell.org](http://willcornwell.org)
 * Sarah Mount - School of Mathematics and Computer Science, University of Wolverhampton - `@snim2` - [snim2.org](http://snim2.org)
 * Sarah Simpkin -
-
+* François Michonneau - iDigBio, University of Florida - Twitter: `@fmic_` - [francoismichonneau.net](http://francoismichonneau.net)
+* Kara Woo - Washington State University - `@kara_woo` - [karawoo.com](http://karawoo.com)
+* David LeBauer - National Center for Supercomputing Applications, University of Illinois - `@dlebauer` - [sites.google.com/site/dlebauer/](https://sites.google.com/site/dlebauer/)
+* Stephen Turner - University of Virginia. Twitter: [@genetics_blog](https://twitter.com/genetics_blog). Web: [stephenturner.us](http://stephenturner.us/).
+* Daniel Falster - Department of Biological Sciences, Macquarie University NSW 2109, Australia - `@adaptive_plant` - [danielfalster.com](http://danielfalster.com/)
 
 [swcl]: http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org
