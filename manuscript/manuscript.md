@@ -65,8 +65,22 @@ Some example text with a citation [@goodman2014ten]
 Most of the troubles encountered during the analysis, management, and release of
 data can be avoided by having a clear roadmap of what to expect *before* the
 data acquisition starts. How will the raw data be presented? In what format
-should they be for analysis? Is there a community standard on the format for
-release? This can range from simple cases (sequencing data in the fasta format, that can be used as is throughout the analysis), to experimental designs involving several instruments, each outputing to 
+should they be for analysis? Does the study involves simulations, and what is
+the model output? Is there a community standard on the format for release? This
+can range from simple cases (sequencing data in the fasta format, that can be
+used as is throughout the analysis), to experimental designs involving several
+instruments, each with its own output format. Knowing the state in which the
+data needs to be at each step can help (i) create converters from these data,
+(ii) orient technological choices about how and where these data should be
+stored, and (ii) rationalizes the analysis pipeline, and make it more amenable
+to re-use.
+
+Another side of preparedness is the ability to estimate the volume needed to
+store these data at each step. The strategy to apply is not the same when the
+total amount of data is in the order of a few Mb, than when it reaches the Gb or
+Tb sizes. Although (and we do not condone this practice) lighter datasets can be
+managed without much of a data management plan, larger ones require careful
+planning and preparation.
 
 # Rule 2: Rule {Know your use case}
 
