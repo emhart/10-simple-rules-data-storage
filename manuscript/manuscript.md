@@ -111,9 +111,10 @@ For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 7: Rule {-}
 
-# Rule 8: Rule {What is your back-up scheme?}
+# Rule 8: Rule {Have a systematic backup scheme}
 
-Researchers should consider the safety of their data and ensure that it is
+Every storage medium can fail, and every failure can result in loss of data.
+Researchers should therefore ensure that data is
 backed up at all stages of the research process. Data stored on local computers
 or institutional servers during the collection and analysis phase should be
 backed up to other locations and formats to protect against data loss. No backup
@@ -122,12 +123,21 @@ system is failsafe (see the stories of the
 and the
 [near deletion of Toy Story 2](http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/)),
 so more than one backup system should be used. Kristin Briney advocates the
-[Rule of 3](http://dataabinitio.com/?p=320) for backing up data: always keep
-three copies of your data, two onsite copies (such as on a computer, an external
+[Rule of 3](http://dataabinitio.com/?p=320) for backing up data:
+two onsite copies (such as on a computer, an external
 hard drive, or tape) and one offsite copy (e.g. in cloud storage). Keeping
 backups in multiple locations protects against data loss due to theft, natural
-disasters, etc. Researchers should test their backups regularly to ensure that
-they are functioning properly.
+disasters, etc.
+
+Researchers should also test their backups regularly to ensure that
+they are functioning properly.  Reasons they might not include:
+
+*   faulty backup software
+*   incorrect configuration (e.g., not backing up sub-directories)
+*   encryption (e.g., someone has encrypted the backups but lost the password)
+*   media errors
+
+and many others.
 
 Consider the backup plans of data repositories before publishing your data. Many
 repositories mirror the data they host on multiple machines. If possible, find
