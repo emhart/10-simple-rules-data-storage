@@ -80,15 +80,25 @@ store these data at each step. The strategy to apply is not the same when the
 total amount of data is in the order of a few Mb, than when it reaches the Gb or
 Tb sizes. Although (and we do not condone this practice) lighter datasets can be
 managed without much of a data management plan, larger ones require careful
-planning and preparation.
+planning and preparation (see Rule 9).
 
 # Rule 2: Rule {Know your use case}
 
-Researchers should know their use case and store data appropriately. Is this data collected and just being archived? Will it change regularly? How will those changes be logged (e.g. provenance if any)? Will this be shared via an API? Linked to a paper? What are the institutional restrictions? Can you use a commercial service like Dropbox or use a personally maintained system? Knowing the reason why you're sharing your data will constrain your choices here.
-
-<!--
-also see number 9, which will be aimed at big data
--->
+Researchers should know their use case and store data appropriately. This
+involves answering the following questions. Should the raw data be archived (see
+rule 3)? Should the data used for analysis be prepared once, or re-generated
+from the raw data (and what difference does it means for storage and computing
+requirements)? Should the final data be released, and in what format? How do you
+track the changes made to the data, and where are they logged? Do you anticipate
+to make manual corrections, and why? Are there restrictions on the data, and how
+can you make them (*e.g.* for survey results) anonymous? Do you need validation
+from within your institution to release the data? Does your funding agency
+requires data deposition, and are there some specific platforms? Does the
+journal in which you plan to publish requires data deposition? None of these
+questions have universal answers, nor are they the only questions one should ask
+before starting data acquisition. But similarly to Rule 1, knowing what *you*
+will do with the data, when, and how, will bring you close to a very detailed
+roadmap on how to handle these data fron their acquisition to their publication.
 
 # Rule 3: Rule {Keep raw data raw}
 
