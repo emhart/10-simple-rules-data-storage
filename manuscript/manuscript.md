@@ -24,6 +24,9 @@ author:
  - family: Woo
    given: Kara H.
    affiliation: 6
+ - family: Mount
+   given: Sarah
+   affiliation: 7
 
 organization:
  - id: 1
@@ -44,6 +47,9 @@ organization:
  - id: 6
    name: Washington State University
    address: Center for Environmental Research, Education, and Outreach
+ - id: 7
+   name: University of Wolverhampton
+   address: School of Mathematics and Computer Science
 
 ---
 
@@ -70,14 +76,36 @@ Since analytical and data processing procedures may improve or otherwise change 
 
 # Rule 4: Rule {Store data in open formats}
 
-To maximize accessibility and long-term value, data should be stored in file formats whose specificiations are freely-available. The exact file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware to access. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include 
+To maximize accessibility and long-term value, data should be stored in file formats whose specificiations are freely-available. The exact file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware to access. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include
 * CSV for tabular data
 * HDF5 for (??)
 * ?? for images
 * (help me out here folks, it's been a long week)
 and examples of closed formats include XLSX, DICOM, (again need more examples). At a minimum, data being stored for archival purposes should be stored in open formats, even if day-to-day processing uses closed formats.
 
-# Rule 5: Rule {-}
+# Rule 5: Rule {Data should be uniquely identifiable}
+
+To aid reproducibility, the data used in a scientific publication should be uniquely identifiable.
+Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
+An increasing number of online services, such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org) or [DataOne](http://www.dataone.org) are able to provide these.
+
+Datasets may evolve over time.
+In order to distinguish between different versions of the same data, each dataset should have a distinct name, which includes a version identifier.
+
+A simple way to do this is to use date stamps as part of the dataset name.
+To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
+In this format, the ambiguous example above would have the canonical form `2015-02-01`.
+
+*Semantic versioning*, as described in [@semver2014], is a richer approach to solving the same problem.
+An example of this can be seen in the CellPack datasets [@johnson2014cellpack].
+
+A semantic version number takes the form: `Major.Minor.Patch`, e.g. `0.2.7`.
+The **major version** numbers should incremented (or *bumped*) when a dataset scheme has been updated, or some other change is made that is not compatible with previous versions of the data with the same major version number.
+This might mean that an experiment using version `1.0.0` of the dataset could not be run on version `2.0.0` without making some changes to the data analysis.
+The **minor version** should be bumped when a change has been made which is compatible with older versions of the data with the same Major version.
+This means that any analysis that can be performed on version `1.0.0` of the data should be repeatable with version `1.1.0` of the data.
+The **patch version** number should be bumped when typos or bugs have been fixed.
+For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 6: Rule {-}
 
@@ -109,7 +137,7 @@ dissolves?
 
 # Rule 9: Rule {Data size matters /  requires special considerations}
 
-* [#39](https://github.com/emhart/10-simple-rules-data-storage/issues/39) and related GH issues  [#16](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#19](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#25](https://github.com/emhart/10-simple-rules-data-storage/issues/25) 
+* [#39](https://github.com/emhart/10-simple-rules-data-storage/issues/39) and related GH issues  [#16](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#19](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#25](https://github.com/emhart/10-simple-rules-data-storage/issues/25)
 
 <!---
 refs #16, #19, #25
@@ -123,7 +151,7 @@ needs to be different than rule 2
 	* larger than data storage server
 * Storage method depends on the size of data; storage costs, transfer time, and computing costs can become substantial.
 	* data generated by simulation and derived data should consider cost of storage vs. the cost of re-generating output.
-	* For analyses of large data sets, the speed of reading and writing data can limt the speed of computation. <!-- many statistical analyses, summaries, relative to simulation models that generate lots of output from relatively few parameters--> 
+	* For analyses of large data sets, the speed of reading and writing data can limt the speed of computation. <!-- many statistical analyses, summaries, relative to simulation models that generate lots of output from relatively few parameters-->
 * Larger data sets that are actively used in analysis should be stored on a disk that is attached to a computer rather than being moved around between analysis and storage.
 	* inactive data can be put in longer-term storage; this is less expensive, but can be slow to retrieve. Archiving of 'stale' files can be automated (and is at HPC centers).
 * Data that is larger than memory can handle,
@@ -138,7 +166,7 @@ needs to be different than rule 2
 * For very large data
 	* it is not practical to store data
 	* there are trade offs among cost, information content, and accessibility.
-	
+
 # Rule 10: Rule {-}
 
 
