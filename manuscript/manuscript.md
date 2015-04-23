@@ -89,7 +89,7 @@ To aid reproducibility, the data used in a scientific publication should be uniq
 Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
 An increasing number of online services, such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org) or [DataOne](http://www.dataone.org) are able to provide these.
 
-Datasets may evolve over time and in order to distinguish between different versions of the same data *Semantic versioning* should be used.
+Datasets may evolve over time and in order to distinguish between different versions of the same data *Semantic versioning*, as described in [@semver2014], should be used.
 An example of this can be seen in the CellPack datasets [@johnson2014cellpack].
 
 A semantic version number takes the form: `Major.Minor.Patch`, e.g. `0.2.7`.
