@@ -89,7 +89,14 @@ To aid reproducibility, the data used in a scientific publication should be uniq
 Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
 An increasing number of online services, such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org) or [DataOne](http://www.dataone.org) are able to provide these.
 
-Datasets may evolve over time and in order to distinguish between different versions of the same data *Semantic versioning*, as described in [@semver2014], should be used.
+Datasets may evolve over time.
+In order to distinguish between different versions of the same data, each dataset should have a distinct name, which includes a version identifier.
+
+A simple way to do this is to use date stamps as part of the dataset name.
+To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
+In this format, the ambiguous example above would have the canonical form `2015-02-01`.
+
+*Semantic versioning*, as described in [@semver2014], is a richer approach to solving the same problem.
 An example of this can be seen in the CellPack datasets [@johnson2014cellpack].
 
 A semantic version number takes the form: `Major.Minor.Patch`, e.g. `0.2.7`.
@@ -99,12 +106,6 @@ The **minor version** should be bumped when a change has been made which is comp
 This means that any analysis that can be performed on version `1.0.0` of the data should be repeatable with version `1.1.0` of the data.
 The **patch version** number should be bumped when typos or bugs have been fixed.
 For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
-
-A common, but less semantically dense, alternative to semantic versioning is the use of date stamps as file or directory names to describe when the data was produced.
-To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
-In this format, the ambiguous example above would have the canonical form `2015-02-01`.
-
-
 
 # Rule 6: Rule {-}
 
