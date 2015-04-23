@@ -101,9 +101,6 @@ The **patch version** number should be bumped when typos or bugs have been fixed
 For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 A common, but less semantically dense, alternative to semantic versioning is the use of date stamps as file or directory names to describe when the data was produced.
-This is problematic, as formats for date stamps vary regionally, in ways that can render the date stamp ambiguous.
-For example, the date `01-02-2015` can mean 02 Jan 2015 (US format) or 01 Feb 2015 (UK format), without metadata to say how the date stamp is formatted the reader cannot tell which date this is.
-
 To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
 In this format, the ambiguous example above would have the canonical form `2015-02-01`.
 
