@@ -27,6 +27,9 @@ author:
  - family: Mount
    given: Sarah
    affiliation: 7
+- family: Poisot
+  given: Timothée
+  affiliation: 8
 
 organization:
  - id: 1
@@ -50,6 +53,9 @@ organization:
  - id: 7
    name: University of Wolverhampton
    address: School of Mathematics and Computer Science
+ - id: 8
+   name: Université de Montréal
+   address: Département de Sciences Biologiques
 
 ---
 
@@ -60,15 +66,45 @@ organization:
 # Introduction {-}
 Some example text with a citation [@goodman2014ten]
 
-# Rule 1: Rule {-}
+# Rule 1: Rule {Know what to expect}
+
+Most of the troubles encountered during the analysis, management, and release of
+data can be avoided by having a clear roadmap of what to expect *before* the
+data acquisition starts. How will the raw data be presented? In what format
+should they be for analysis? Does the study involves simulations, and what is
+the model output? Is there a community standard on the format for release? This
+can range from simple cases (sequencing data in the fasta format, that can be
+used as is throughout the analysis), to experimental designs involving several
+instruments, each with its own output format. Knowing the state in which the
+data needs to be at each step can help (i) create converters from these data,
+(ii) orient technological choices about how and where these data should be
+stored, and (ii) rationalizes the analysis pipeline, and make it more amenable
+to re-use.
+
+Another side of preparedness is the ability to estimate the volume needed to
+store these data at each step. The strategy to apply is not the same when the
+total amount of data is in the order of a few Mb, than when it reaches the Gb or
+Tb sizes. Although (and we do not condone this practice) lighter datasets can be
+managed without much of a data management plan, larger ones require careful
+planning and preparation (see Rule 9).
 
 # Rule 2: Rule {Know your use case}
 
-Researchers should know their use case and store data appropriately. Is this data collected and just being archived? Will it change regularly? How will those changes be logged (e.g. provenance if any)? Will this be shared via an API? Linked to a paper? What are the institutional restrictions? Can you use a commercial service like Dropbox or use a personally maintained system? Knowing the reason why you're sharing your data will constrain your choices here.
-
-<!--
-also see number 9, which will be aimed at big data
--->
+Researchers should know their use case and store data appropriately. This
+involves answering the following questions. Should the raw data be archived (see
+rule 3)? Should the data used for analysis be prepared once, or re-generated
+from the raw data (and what difference does it means for storage and computing
+requirements)? Should the final data be released, and in what format? How do you
+track the changes made to the data, and where are they logged? Do you anticipate
+to make manual corrections, and why? Are there restrictions on the data, and how
+can you make them (*e.g.* for survey results) anonymous? Do you need validation
+from within your institution to release the data? Does your funding agency
+requires data deposition, and are there some specific platforms? Does the
+journal in which you plan to publish requires data deposition? None of these
+questions have universal answers, nor are they the only questions one should ask
+before starting data acquisition. But similarly to Rule 1, knowing what *you*
+will do with the data, when, and how, will bring you close to a very detailed
+roadmap on how to handle these data fron their acquisition to their publication.
 
 # Rule 3: Rule {Keep raw data raw}
 
