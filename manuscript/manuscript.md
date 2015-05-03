@@ -21,6 +21,7 @@ author:
  - family: Zimmerman
    given: Naupaka
    affiliation: 5
+<<<<<<< HEAD
  - family: Woo
    given: Kara H.
    affiliation: 6
@@ -30,6 +31,11 @@ author:
 - family: Poisot
   given: Timothée
   affiliation: 8
+=======
+ - family: Michonneau
+   given: François
+   affiliation: 6
+>>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
 
 organization:
  - id: 1
@@ -47,6 +53,7 @@ organization:
  - id: 5
    name: University of Arizona
    address: School of Plant Sciences
+<<<<<<< HEAD
  - id: 6
    name: Washington State University
    address: Center for Environmental Research, Education, and Outreach
@@ -56,6 +63,11 @@ organization:
  - id: 8
    name: Université de Montréal
    address: Département de Sciences Biologiques
+=======
+- id: 6
+   name: University of Florida
+   address: iDigBio, Florida Museum of Natural History, Gainesville, FL 32611-7800
+>>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
 
 ---
 
@@ -212,15 +224,61 @@ needs to be different than rule 2
 * For very large data
 	* it is not practical to store data
 	* there are trade offs among cost, information content, and accessibility.
+<<<<<<< HEAD
 
 # Rule 10: Rule {-}
 
+=======
+>>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
 
+# Rule 10: Rule {Data should be stored in a machine readable format}
+
+Not only data should be stored in an open format to ensure that data will be
+easily and widely accessible (see Rule #4), they should also be stored in a
+format that allows computers to make sense of it.
+
+As datasets become increasingly larger, it is crucial that they can be parsed
+efficiently. This is best achieved by using standard data formats that have
+clear specifications (e.g., CSV, XML, JSON, HDF5). Such data formats can be
+handled by a variety of programming languages as efficient and well-tested
+libraries for parsing them are typically available. These standard data formats
+also ensure interoperability, facilitate re-use, and reduce the chances of data
+loss or mistakes being introduced during conversion between formats.
+
+Because a computer will be able to import your data directly (i.e., without the
+need for manual manipulation of your data), the script used to import and modify
+the data can be made available and the origin of the data used in the analysis
+will be evident. In turn, it will make the analysis more robust as there will be
+no opportunity to introduce mistakes in the data, and it will make the analysis
+reproducible.
+
+To take full advantage of the data, it is important that it is structured such
+that the data can be manipulated and analyzed easily, in other words that the
+data is tidy (Wickham2014tidy). With tidy data, each variable is a column, each
+observation is a row, and each type of observational unit is a table. When data
+is organized like this, it reduces the duplication of information and it is
+easier to subset or summarize the dataset to include the variables or
+observations of interest.
+
+<!-- include figure that shows example of untidy and equivalent tidy data? -->
+
+To facilitate interoperability, it is best to use variable that can be mapped to
+existing data standards. For instance, for biodiversity data, the
+[Darwin Core Standard](http://www.tdwg.org/standards/450/) provides a set of
+terms that describe observations, specimens, samples, and related information
+for a taxa. Because each term is clearly defined and documented, each dataset
+can use the terms consistently facilitating data sharing across applications and
+disciplines.
+
+With machine readable data, it is also easier to build an Application
+Programming Interface (API) to query the dataset to retrieve a subset of
+interest.
 
 # Acknowledgements
 
 National Center for Supercomputing Applications.
 Software Carpentry Foundation.
+iDigBio/NSF.
 
 # Figure Legends {-}
 
