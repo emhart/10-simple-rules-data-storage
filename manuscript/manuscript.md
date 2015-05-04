@@ -135,7 +135,7 @@ In order to distinguish between different versions of the same data, each datase
 
 A simple way to do this is to use date stamps as part of the dataset name.
 To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
-In this format, the ambiguous example above would have the canonical form `2015-02-01`.
+For example, the date `01-02-2015` could be in January (US format) or February (UK format), but in ISO 8601 format it has the canonical form `2015-02-01`.
 
 *Semantic versioning*, as described in [@semver2014], is a richer approach to solving the same problem.
 An example of this can be seen in the CellPack datasets [@johnson2014cellpack].
