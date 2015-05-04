@@ -21,21 +21,18 @@ author:
  - family: Zimmerman
    given: Naupaka
    affiliation: 5
-<<<<<<< HEAD
  - family: Woo
    given: Kara H.
    affiliation: 6
  - family: Mount
    given: Sarah
    affiliation: 7
-- family: Poisot
-  given: Timothée
-  affiliation: 8
-=======
+ - family: Poisot
+   given: Timothée
+   affiliation: 8
  - family: Michonneau
    given: François
-   affiliation: 6
->>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
+   affiliation: 9
 
 organization:
  - id: 1
@@ -53,7 +50,6 @@ organization:
  - id: 5
    name: University of Arizona
    address: School of Plant Sciences
-<<<<<<< HEAD
  - id: 6
    name: Washington State University
    address: Center for Environmental Research, Education, and Outreach
@@ -63,12 +59,9 @@ organization:
  - id: 8
    name: Université de Montréal
    address: Département de Sciences Biologiques
-=======
-- id: 6
+ - id: 9
    name: University of Florida
    address: iDigBio, Florida Museum of Natural History, Gainesville, FL 32611-7800
->>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
-
 ---
 
 # Abstract {-}
@@ -224,12 +217,6 @@ needs to be different than rule 2
 * For very large data
 	* it is not practical to store data
 	* there are trade offs among cost, information content, and accessibility.
-<<<<<<< HEAD
-
-# Rule 10: Rule {-}
-
-=======
->>>>>>> 97d818bf00ab143ef74c766dcf97de21a9c7fe6b
 
 # Rule 10: Rule {Data should be stored in a machine readable format}
 
