@@ -69,9 +69,17 @@ organization:
 \linenumbers
 
 # Introduction {-}
-Some example text with a citation [@goodman2014ten]
 
-# Rule 1: Rule {Know what to expect}
+- Data is the lifeblood of science.
+- Yet the how, when and where of storing the data is not often given much thought.
+- This can have some unforseen and sometimes unfortunate consequences
+    - examples of where poor data management/storage caused big problems?
+- Avoiding these potential problems is possible if scientist and their research collaborators practice some simple rules.
+
+- A discussion about this topic took place on the SWC mailing list
+- In this mansucript we have distilled the essence of that discussion into 10 simple rules, if followed, will help facilitate quick, robust analysis, allow others to re-use your data for new insights, and serve as a record of the work that lives beyond a single publication.  
+
+# Rule 1: Know what to expect {-}
 
 Most of the troubles encountered during the analysis, management, and release of
 data can be avoided by having a clear roadmap of what to expect *before* the
@@ -93,7 +101,7 @@ Tb sizes. Although (and we do not condone this practice) lighter datasets can be
 managed without much of a data management plan, larger ones require careful
 planning and preparation (see Rule 9).
 
-# Rule 2: Rule {Know your use case}
+# Rule 2: Know your use case {-}
 
 Researchers should know their use case and store data appropriately. This
 involves answering the following questions. Should the raw data be archived (see
@@ -111,15 +119,15 @@ before starting data acquisition. But similarly to Rule 1, knowing what *you*
 will do with the data, when, and how, will bring you close to a very detailed
 roadmap on how to handle these data fron their acquisition to their publication.
 
-# Rule 3: Rule {Keep raw data raw}
+# Rule 3: Keep raw data raw {-}
 
 Since analytical and data processing procedures may improve or otherwise change over time, having access to the 'raw' or unprocessed data helps to facilitate future re-analysis and analytical reproducibility. Data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in its original state given a common point of reference for derivative analyses. There's clearly some discussion about what constitutes "raw" (ohms off a temperature sensor?). However the focus here is really on the spirit of the rule. Data should be as "pure" as possible when it's stored. If derivations occur, they should include storage of relevant code and subsequent data sets. NEON handles this with a schema for various "levels" of data products that pertain to the amount of processing that happens, [here's a brief overview](http://www.neoninc.org/science-design/data-processing). We defined raw data as things like voltage, or unprocessed lidar returns. The issue of course is that this is a tremendous amount of data that NEON still hasn't quite figured out how to share and document (e.g. if you ask for L0 they'll ship you an HDD). The way around it is to write detailed "Algorithm Theoretical Basis Documents" (ATBD's) detailing the different processing "levels". This is mostly borrowed from the NASA EOSDIS program.
 
-# Rule 4: Rule {Store data in open formats}
+# Rule 4: Store data in open formats {-}
 
 To maximize accessibility and long-term value, data should be stored in file formats whose specifications are freely-available. The appropriate file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware, or a license, to be accessed. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include comma-separated values (CSV) for tabular data, hierarchical data format (HDF) for scientific data, portable network graphics (PNG) for images and extensible markup language (XML) for documents. Examples of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD), and Windows Media Audio (WMA) (need refs?). At a minimum, data being stored for archival purposes should be stored in open formats, even if day-to-day processing uses closed formats, for example due to software requirements.
 
-# Rule 5: Rule {Data should be uniquely identifiable}
+# Rule 5: Data should be uniquely identifiable {-}
 
 To aid reproducibility, the data used in a scientific publication should be uniquely identifiable.
 Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
@@ -143,11 +151,11 @@ This means that any analysis that can be performed on version `1.0.0` of the dat
 The **patch version** number should be bumped when typos or bugs have been fixed.
 For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
-# Rule 6: Rule {-}
+# Rule 6: Link relevant metadata and license files {-}
 
 # Rule 7: Rule {-}
 
-# Rule 8: Rule {Have a systematic backup scheme}
+# Rule 8: Have a systematic backup scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of data.
 Researchers should therefore ensure that data is
@@ -181,7 +189,9 @@ out about the long-term storage plans of the repository. Are there plans in
 place to keep data available if the organization that manages the repository
 dissolves?
 
-# Rule 9: Rule {Data size matters /  requires special considerations}
+# Rule 9: Data size matters / requires special considerations {-}
+
+<!-- I think I'd prefer to see a re-wording of this rule title.  Could be interpretted as a bit crass --!>
 
 * [#39](https://github.com/emhart/10-simple-rules-data-storage/issues/39) and related GH issues  [#16](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#19](https://github.com/emhart/10-simple-rules-data-storage/issues/16), [#25](https://github.com/emhart/10-simple-rules-data-storage/issues/25)
 
@@ -213,7 +223,7 @@ needs to be different than rule 2
 	* it is not practical to store data
 	* there are trade offs among cost, information content, and accessibility.
 
-# Rule 10: Rule {Data should be stored in a machine readable format}
+# Rule 10: Data should be stored in a machine readable format {-}
 
 Not only data should be stored in an open format to ensure that data will be
 easily and widely accessible (see Rule #4), they should also be stored in a
