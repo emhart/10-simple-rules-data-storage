@@ -8,7 +8,7 @@ author:
  - family: Hart
    given: Edmund
    affiliation: 1
-   email: emh@emhart.info
+   email: edmund.m.hart@gmail.com
  - family: Barmby
    given: Pauline
    affiliation: 2
@@ -72,12 +72,18 @@ organization:
 
 - Data is the lifeblood of science.
 - Yet the how, when and where of storing the data is not often given much thought.
-- This can have some unforseen and sometimes unfortunate consequences
+- This can have some unforeseen and sometimes unfortunate consequences
     - examples of where poor data management/storage caused big problems?
+- Best practices for storing data are different than best practices for sharing/publishing data.
+    - Often publishing data best practices are more standard, (e.g. [@White2013])
+    - Best practices can sometimes be discipline specific
+
 - Avoiding these potential problems is possible if scientist and their research collaborators practice some simple rules.
 
 - A discussion about this topic took place on the SWC mailing list
 - In this mansucript we have distilled the essence of that discussion into 10 simple rules, if followed, will help facilitate quick, robust analysis, allow others to re-use your data for new insights, and serve as a record of the work that lives beyond a single publication.  
+<!--  I'm not sure we can say that we actually distilled the essence of that discussion.  I think it's worth bringing up,
+However if you read the original discussion I think this actually went much further than that discussion.  The initial thread really just turned into a starting point for this manuscript.-->
 
 # Rule 1: Know what to expect {-}
 
@@ -152,6 +158,12 @@ The **patch version** number should be bumped when typos or bugs have been fixed
 For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 6: Link relevant metadata and license files {-}
+
+* Importance of metadata (citations of MD best practices)
+* Data formats with embedded metadata (HDF5)
+* Linkage in a database
+* How to best link flat files to metadata
+* how to mention or include license file
 
 # Rule 7: Rule {-}
 
