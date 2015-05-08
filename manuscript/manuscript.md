@@ -157,13 +157,10 @@ This means that any analysis that can be performed on version `1.0.0` of the dat
 The **patch version** number should be bumped when typos or bugs have been fixed.
 For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
-# Rule 6: Link relevant metadata and license files {-}
+# Rule 6: Link relevant metadata {-}
 
-* Importance of metadata (citations of MD best practices)
-* Data formats with embedded metadata (HDF5)
-* Linkage in a database
-* How to best link flat files to metadata
-* how to mention or include license file
+You should make it almost impossible to separate your data from your metadata. The importance of metadata for context, reusability and discovery has been written about at length in many guides for data best practices [@Michener2012, @Strasser2012 , @White2013]. It goes without saying these guidelines should be followed.  Metadata should be as comprehensive as possible, use the relevant standards of your discipline, and be in a machine readable format (XML, JSON)  That metadata should always accompany your data set wherever it is stored.  How best to do this depends on the format of your archive. Formats such as NetCDF or HDF5 allow for embedded metadata so the data and metadata are always together. If you are using a database, metadata tables should be clearly labeled and linked to the relevant data.  Ideally a schema will be provided that also shows the linkages between data tables and metadata tables.  Another scenario is a set of flat text files. In this case a semantically versioned compressed archive should include metadata file(s). Whatever your archiving format, the goal should make the link between metadata and data as clear as possible. The best approach is dependent on your archiving plan, but even if your archive on just for yourself, metadata will provide future you with important context.
+
 
 # Rule 7: Rule {-}
 
