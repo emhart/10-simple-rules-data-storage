@@ -70,6 +70,14 @@ organization:
 
 # Introduction {-}
 
+Data is the central currency of science.  However the nature of scientific data has changed dramatically with the rapid pace of technology, leading to an increasing heterogeneity. Improvements in high throughput DNA sequencing and sustained institutional support for large sensor networks [@Reid2014, @Hampton2013] have lead to the creation of massive quanities of data. At the same time collaboration between researchers is becoming increasingly common [@Adams2012] with increased coordination between researchers collecting data [@Fraser2013]. These changes mean that data is more heterogenous than ever before in both size and complexity. It ranges from petabytes of information stored in hadoop clusters to Excel spreadsheets and lab notebooks on shelves.  
+
+
+While much has been written about both the virtues of data sharing [@Wolkovich2012, @Roche2014] and best practices to do so [@White2013, @Goodman2014] how to store data is a much less discussed topic. Proper storage of data is a prerequisite for any sharing, and indeed lack of proper storage may also contribute to the phenomenon of data decay, as time passes data is less and less accessible (publicly shared or not) [ @Pepe2014, @Vines2014]. Best practices for data storage often begin and end with "use a community standard repository" and this is by all means a great practice. However data storage policies are highly variable between repositories [@Marcial2010] and data best storage practices will facilitate transition from local storage to repository. Furthermore your data may not fit with an existing repository, or only derived data products (vs raw data) are suitable, or an existing repository may have lax standards. What follows are 10 simple rules for data storage. These ideas grew out of a long discussion between Software Carpentry instructors, scientists from diverse backgrounds who have encountered a variety of data storage challenges.
+
+<!--   Original intro thoughts
+Much advice has been written on both the nature of sharing data
+
 - Data is the lifeblood of science.
 - Yet the how, when and where of storing the data is not often given much thought.
 - This can have some unforeseen and sometimes unfortunate consequences
@@ -82,8 +90,7 @@ organization:
 
 - A discussion about this topic took place on the SWC mailing list
 - In this mansucript we have distilled the essence of that discussion into 10 simple rules, if followed, will help facilitate quick, robust analysis, allow others to re-use your data for new insights, and serve as a record of the work that lives beyond a single publication.  
-<!--  I'm not sure we can say that we actually distilled the essence of that discussion.  I think it's worth bringing up,
-However if you read the original discussion I think this actually went much further than that discussion.  The initial thread really just turned into a starting point for this manuscript.-->
+-->
 
 # Rule 1: Know what to expect {-}
 
@@ -129,7 +136,7 @@ roadmap on how to handle these data fron their acquisition to their publication.
 
 Since analytical and data processing procedures may improve or otherwise change over time, having access to the 'raw' or unprocessed data helps to facilitate future re-analysis and analytical reproducibility. As processing algorithms and computational power increase, new analyses will be enabled that were not possible at the time of the original work. If only derived data are stored, it can be difficult to impossible for other researchers to confirm analytical results, to assess the validity of statistical models, or to compare findings directly across studies.
 
-Therefore, data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in their original state gives a common point of reference for derivative analyses. Despite the intuitive value of this approach, it is not always clear what constitutes sufficiently "raw" data (e.g., ohms off a temperature sensor or images off an Illumina sequencing flowcell are generally not archived after the initial processing). However, we focus here on the spirit of the rule. Data should be as "pure" as possible when they are stored. If derivations occur, they should be documented by also archiving relevant code and subsequent data sets. 
+Therefore, data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in their original state gives a common point of reference for derivative analyses. Despite the intuitive value of this approach, it is not always clear what constitutes sufficiently "raw" data (e.g., ohms off a temperature sensor or images off an Illumina sequencing flowcell are generally not archived after the initial processing). However, we focus here on the spirit of the rule. Data should be as "pure" as possible when they are stored. If derivations occur, they should be documented by also archiving relevant code and subsequent data sets.
 
 The US National Ecological Observatory Network (NEON) handles this issue with a schema for various "levels" of data products that pertain to the amount of processing that has been performed on each ([see here for a brief overview](http://www.neoninc.org/science-design/data-processing)). In this case, raw data can include such products as voltage measurements or unprocessed LIDAR returns. These represent a tremendous amount of data; sharing this level of data often requires mailing the files on a physical drive. NEON has handled this by writing detailed "Algorithm Theoretical Basis Documents" (ATBD's) documenting the different processing "levels"; this approach is based around a similar one developed the NASA EOSDIS program and makes clear exactly what has been done to each dataset to derive it from it raw form. These levels, which start at 0 for raw data, and increase with the amount of derivation and processing, are also analgous to the levels the National Oceanic and Atomospheric Administration (NOAA) [uses for satellite data sets](http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels).
 
