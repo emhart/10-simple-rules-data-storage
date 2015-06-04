@@ -64,16 +64,17 @@ organization:
    address: iDigBio, Florida Museum of Natural History, Gainesville, FL 32611-7800
 ---
 
-# Abstract {-}
-
 \linenumbers
 
 # Introduction {-}
 
-Data is the central currency of science but the nature of scientific data has changed dramatically with the rapid pace of technology. This rapid change has lead to an increasing heterogeneity of data in format, size, complexity and use case (e.g. the importance of data sharing).  Improvements in high throughput DNA sequencing and sustained institutional support for large sensor networks [@Reid2014, @Hampton2013] have lead to the creation of massive quanities of data. At the same time collaboration between researchers is becoming increasingly common [@Adams2012] with increased coordination between researchers collecting data [@Fraser2013]. These changes mean that data is more heterogenous than ever before in both size and complexity. It ranges from petabytes of information stored in remote databases to Excel spreadsheets and lab notebooks on shelves.  
+<!-- JWH Comments: May want to add a few more examples on top of DNA sequencing and sensor networks.  I am thinking LHC and astronomy, but outside my field so don't know good one.  Some references for those too could also be added. I removed the second mention of heterogeneity, seemed redundant. -->
+
+Data is the central currency of science but the nature of scientific data has changed dramatically with the rapid pace of technology. This rapid change has lead to an increasing heterogeneity of data in discipline, format, size, complexity and use case (e.g. the importance of data sharing).  For example, improvements in high throughput DNA sequencing and sustained institutional support for large sensor networks [@Reid2014, @Hampton2013] have lead to the creation of massive quanities of data. At the same time collaboration between researchers is becoming increasingly common [@Adams2012] with increased coordination between researchers collecting data [@Fraser2013]. These changes mean that data commonly ranges from petabytes of information stored in remote databases to Excel spreadsheets and lab notebooks on shelves.  
 
 
-While much has been written about both the virtues of data sharing [@Wolkovich2012, @Roche2014] and best practices to do so [@White2013, @Goodman2014] how to store data is a much less discussed topic. Proper storage of data is a prerequisite for any sharing, and indeed lack of proper storage may also contribute to the phenomenon of data decay, as time passes data is less and less accessible (publicly shared or not) [ @Pepe2014, @Vines2014]. Best practices for data storage often begin and end with "use a community standard repository" and this is by all means a great practice. However data storage policies are highly variable between repositories [@Marcial2010] and data best storage practices will facilitate transition from local storage to repository. Furthermore your data may not fit with an existing repository, or only derived data products (vs raw data) are suitable, or an existing repository may have lax standards. What follows are 10 simple rules for data storage. These ideas grew out of a long discussion between Software Carpentry instructors [@Wilson2014], scientists from diverse backgrounds who have encountered a variety of data storage challenges.
+While much has been written about both the virtues of data sharing [@Wolkovich2012, @Roche2014] and best practices to do so [@White2013, @Goodman2014] how to store data is a much less discussed topic. Proper storage of data is a prerequisite for any sharing, and indeed lack of proper storage may also contribute to the phenomenon of data decay or "data entropy", as time passes data is less and less accessible (publicly shared or not) [@Pepe2014, @Vines2014, @Michener2012, @Michener1997]. Best practices for data storage often begin and end with "use a community standard repository" and this is by all means a great practice. However data storage policies are highly variable between repositories [@Marcial2010] and data best storage practices will facilitate transition from local storage to repository. Furthermore your data may not fit with an existing repository, or only derived data products (vs raw data) are suitable, or an existing repository may have lax standards. What follows are 10 simple rules for data storage. These ideas grew out of a long discussion between Software Carpentry instructors [@Wilson2014].  Software carpentry instructors are  scientists from diverse backgrounds who have encountered a variety of data storage challenges and are active in teaching other scientists computing and data best practices. Thus, this our collective experience provides a unique perspective to comment on a variety of data storage challenges.
+
 
 <!--   Original intro thoughts
 Much advice has been written on both the nature of sharing data
@@ -96,24 +97,19 @@ Much advice has been written on both the nature of sharing data
 
 Most of the troubles encountered during the analysis, management, and release of
 data can be avoided by having a clear roadmap of what to expect *before* the
-data acquisition starts. How will the raw data be presented? In what format
-should they be for analysis? Does the study involves simulations, and what is
-the model output? Is there a community standard on the format for release? This
-can range from simple cases (sequencing data in the fasta format, that can be
-used as is throughout the analysis), to experimental designs involving several
-instruments, each with its own output format. Knowing the state in which the
-data needs to be at each step can help (i) create converters from these data,
-(ii) orient technological choices about how and where these data should be
-stored, and (ii) rationalizes the analysis pipeline, and make it more amenable
-to re-use.
+data acquisition starts. For instance:
+ - How will the raw data be presented? 
+ - In what format should they be for analysis? 
+ - Does the study involve simulations, and what is the model output? 
+ - Is there a community standard on the format for release? This can range from simple cases (sequencing data in the fasta format, that can be used as is throughout the analysis), to experimental designs involving several instruments, each with its own output format. 
+ 
+Knowing the state in which the data needs to be at each step can help (i) create converters from these data, (ii) orient technological choices about how and where these data should be
+stored, and (ii) rationalizes the analysis pipeline, and make it more amenable to re-use.
 
 Another side of preparedness is the ability to estimate the volume needed to
-store these data at each step. The strategy to apply is not the same when the
-total amount of data is in the order of a few Mb, than when it reaches the Gb or
-Tb sizes. Although (and we do not condone this practice) lighter datasets can be
-managed without much of a data management plan, larger ones require careful
-planning and preparation (see Rule 9).
-
+store these data at each step. The required strategy will differ for datasets of varying size.  Lighter datasets (e.g.  datasets that are only a few megabytes) can be
+managed locally with simpler data management plan, whereas larger dataets (e.g. gigabytes to terrabytes and even petabyts) will  require careful planning and preparation (see Rule 9).
+.
 # Rule 2: Know your use case {-}
 
 Researchers should know their use case and store data appropriately. This
