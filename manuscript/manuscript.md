@@ -97,29 +97,29 @@ Much advice has been written on both the nature of sharing data
 
 Most of the troubles encountered during the analysis, management, and release of data can be avoided by having a clear roadmap of what to expect *before* the data acquisition starts. For instance:
 
- - How will the raw data be presented? 
- - In what format should they be for analysis? 
- - Does the study involve simulations, and what is the model output? 
- - Is there a community standard on the format for release? 
- 
+ - How will the raw data be presented?
+ - In what format should they be for analysis?
+ - Does the study involve simulations, and what is the model output?
+ - Is there a community standard on the format for release?
+
 The answers to these questions can range from simple cases (sequencing data in the fasta format, that can be used as is throughout the analysis), to experimental designs involving several instruments, each with its own output format. Knowing the state in which the data needs to be at each step can help (i) create converters from these data, (ii) orient technological choices about how and where these data should be stored, and (ii) rationalizes the analysis pipeline, and make it more amenable to re-use.
 
 Another side of preparedness is the ability to estimate the volume needed to store these data at each step. The required strategy will differ for datasets of varying size.  Lighter datasets (e.g.  datasets that are only a few megabytes) can be managed locally with simpler data management plan, whereas larger dataets (e.g. gigabytes to terrabytes and even petabyts) will require careful planning and preparation (see Rule 9).
 
 # Rule 2: Know your use case {-}
 
-Researchers should know their use case and store data appropriately. This involves answering the following questions: 
+Researchers should know their use case and store data appropriately. This involves answering the following questions:
 
- - Should the raw data be archived (see rule 3)? 
- - Should the data used for analysis be prepared once, or re-generated from the raw data (and what difference does it mean for storage and computing requirements)? 
- - Should the final data be released, and in what format? 
- - How do you track the changes made to the data, and where are they logged? 
- - Do you anticipate making manual corrections, and why? 
- - Are there restrictions or privacy concerns associated with the data (e.g. for survey results)? 
- - Do you need validation from within your institution to release the data? 
- - Does your funding agency requires data deposition, and are there some specific platforms? 
- - Does the journal in which you plan to publish requires data deposition? 
- 
+ - Should the raw data be archived (see rule 3)?
+ - Should the data used for analysis be prepared once, or re-generated from the raw data (and what difference does it mean for storage and computing requirements)?
+ - Should the final data be released, and in what format?
+ - How do you track the changes made to the data, and where are they logged?
+ - Do you anticipate making manual corrections, and why?
+ - Are there restrictions or privacy concerns associated with the data (e.g. for survey results)?
+ - Do you need validation from within your institution to release the data?
+ - Does your funding agency requires data deposition, and are there some specific platforms?
+ - Does the journal in which you plan to publish requires data deposition?
+
 None of these questions have universal answers, nor are they the only questions one should ask before starting data acquisition. But similarly to Rule 1, knowing the what, when, and how of *your* use of the data will bring you close to a reliable roadmap on how to handle these data fron their acquisition to their publication.
 
 # Rule 3: Keep raw data raw {-}
@@ -163,7 +163,9 @@ For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 You should make it almost impossible to separate your data from your metadata. The importance of metadata for context, reusability and discovery has been written about at length in many guides for data best practices [@Michener2012, @Strasser2012 , @White2013]. It goes without saying these guidelines should be followed.  Metadata should be as comprehensive as possible, use the relevant standards of your discipline, and be in a machine readable format (XML, JSON)  That metadata should always accompany your data set wherever it is stored.  How best to do this depends on the format of your archive. Formats such as NetCDF or HDF5 allow for embedded metadata so the data and metadata are always together. If you are using a database, metadata tables should be clearly labeled and linked to the relevant data.  Ideally a schema will be provided that also shows the linkages between data tables and metadata tables.  Another scenario is a set of flat text files. In this case a semantically versioned compressed archive should include metadata file(s). Whatever your archiving format, the goal should make the link between metadata and data as clear as possible. The best approach is dependent on your archiving plan, but even if your archive on just for yourself, metadata will provide future you with important context.
 
 
-# Rule 7: Rule {-}
+# Rule 7: Adopt the proper privacy protocols {-}
+
+In data sets where privacy is important, be sure to have a plan in place to data confidentiality. You should consider the different data stakeholders in developing privacy protocols for your data storage.  These stakeholders might include funding agencies, human subjects or entities, collaborators and your own needs. Both the NSF and NIH have data sharing policies in their grant guidelines requiring that personally identifiable information not be shared and human subjects must be anonymized. If your data is small with minimal personal information, use a hashing scheme to anonymize personal information. You should also make sure to not store the hashing scheme with the data to prevent inadvertant sharing.  Furthermore don't use a commonplace hashing technique. Famously New York City officials shared what they thought was anonymized data on cab drivers and over 173 million cab rides. However it was quickly recognized that the city anonymized the data with a simple MD5 hashing scheme and all 20 GB of data was de-anonymized in a matter of hours [@Goodin].  Sometimes however the data itself allows identifiability.  This is the case with human genomic data, where the data itself can be used to identify a subject [@Homer2008]. Therefore the type of data you have needs to be carefully considered as well. Methods for dealing with these complex issues at the intersection of data storage and privacy are rapidly evolving. Ideas such storing changes against a reference genome, which helps with privacy and data volume [@Kahn2011, @wandelt2014trends], or bringing computation to data storage facilities instead of vice versa are still being developed [@Gaye2014]. Having a plan for privacy before you store your data is important because it can determine in part how best (or how you must) store data.
 
 # Rule 8: Have a systematic backup scheme {-}
 
