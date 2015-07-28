@@ -70,7 +70,7 @@ organization:
 
 <!-- JWH Comments: May want to add a few more examples on top of DNA sequencing and sensor networks.  I am thinking LHC and astronomy, but outside my field so don't know good one.  Some references for those too could also be added. I removed the second mention of heterogeneity, seemed redundant. -->
 
-Data is the central currency of science but the nature of scientific data has changed dramatically with the rapid pace of technology. This rapid change has led to an increasing heterogeneity of data in discipline, format, size, complexity and use case (e.g. the importance of data sharing).  For example, improvements in high throughput DNA sequencing, sustained institutional support for large sensor networks [@Reid2014, @Hampton2013], and sky surveys with large-format digital cameras [@Eisenstein2011] have led to the creation of massive quantities of data. At the same time collaboration between researchers is becoming increasingly common [@Adams2012] with increased coordination between researchers collecting data [@Fraser2013]. These changes mean that data can range from petabytes of information stored in professionally-maintained databases to Excel spreadsheets on a single computer to lab notebooks on shelves.  
+Data is the central currency of science but the nature of scientific data has changed dramatically with the rapid pace of technology. This rapid change has led to an increasing heterogeneity of data in discipline, format, size, complexity and use case (e.g. the importance of data sharing).  For example, improvements in high throughput DNA sequencing, sustained institutional support for large sensor networks [@Reid2014, @Hampton2013], and sky surveys with large-format digital cameras [@Eisenstein2011] have led to the creation of massive quantities of data. At the same time collaboration between researchers is becoming increasingly common [@Adams2012] with increased coordination between researchers collecting data [@Fraser2013]. These changes mean that data can range from petabytes of information stored in professionally-maintained databases to Excel spreadsheets on a single computer to lab notebooks on shelves.
 
 
 While much has been written about both the virtues of data sharing [@Wolkovich2012, @Roche2014] and best practices to do so [@White2013, @Goodman2014], how to store data is a much less discussed topic. Proper storage of data is a prerequisite for any sharing, and indeed lack of proper storage may also contribute to the phenomenon of data decay or "data entropy": as time passes data is less and less accessible (publicly shared or not) [@Pepe2014, @Vines2014, @Michener2012, @Michener1997]. Best practices for data storage often begin and end with "use a community standard repository" and this is by all means a great practice. However, data storage policies are highly variable between repositories [@Marcial2010] and data best storage practices will facilitate transition from local storage to repository. Furthermore your data may not fit with an existing repository, or only derived data products (versus raw data) are suitable, or an existing repository may have lax standards. What follows are 10 simple rules for data storage. These ideas grew out of a long discussion between Software Carpentry instructors [@Wilson2014].  Software Carpentry instructors are  scientists from diverse backgrounds who have encountered a variety of data storage challenges and are active in teaching other scientists computing and data best practices. Thus, our collective experience provides a unique perspective to comment on a variety of data storage challenges.
@@ -90,20 +90,26 @@ Much advice has been written on both the nature of sharing data
 - Avoiding these potential problems is possible if scientist and their research collaborators practice some simple rules.
 
 - A discussion about this topic took place on the SWC mailing list
-- In this mansucript we have distilled the essence of that discussion into 10 simple rules, if followed, will help facilitate quick, robust analysis, allow others to re-use your data for new insights, and serve as a record of the work that lives beyond a single publication.  
+- In this mansucript we have distilled the essence of that discussion into 10 simple rules, if followed, will help facilitate quick, robust analysis, allow others to re-use your data for new insights, and serve as a record of the work that lives beyond a single publication.
 -->
 
 # Rule 1: Know what to expect {-}
 
-Most of the troubles encountered during the analysis, management, and release of data can be avoided by having a clear roadmap of what to expect *before* the data acquisition starts. For instance:
+Most of the troubles encountered during the analysis, management, and release of data can be avoided by having a clear roadmap of what to expect *before* data acquisition starts. For instance:
 
  - How will the raw data be received?
- - In what format should they be presented for analysis?
+ - What is the format expected by the software used for analysis?
  - Does the study involve simulations, and what is the model output?
  - Is there a community standard on the format for release?
 <!-- PB comment: item 3 in the above list doesn't seem to fit with the others. We also don't talk about simulations anywhere else. -->
 
-The answers to these questions can range from simple cases (e.g., sequencing data in the fasta format, that can be used as is throughout the analysis), to experimental designs involving several instruments, each with its own output format. Knowing the state in which the data needs to be at each step can help (i) create converters from the data, (ii) orient technological choices about how and where the data should be stored, and (iii) rationalize the analysis pipeline, making it more amenable to re-use.
+The answers to these questions can range from simple cases (e.g., sequencing
+data stored in FASTA format, that can be used as is throughout the analysis), to
+experimental designs involving several instruments, each with its own output
+format. Knowing the state in which the data needs to be at each step can help
+(i) identify software to convert across data formats, (ii) orient technological
+choices about how and where the data should be stored, and (iii) rationalize the
+analysis pipeline, making it more amenable to re-use.
 
 Another side of preparedness is the ability to estimate the volume needed to store the data at each step. The required strategy will differ for datasets of varying size.  Lighter datasets (e.g.  datasets that are only a few megabytes) can be managed locally with a simpler data management plan, whereas larger datasets (e.g. gigabytes to terabytes and even petabytes) will require careful planning and preparation (see Rule 9).
 
@@ -111,8 +117,10 @@ Another side of preparedness is the ability to estimate the volume needed to sto
 
 Researchers should know their use case and store data appropriately. This involves answering the following questions:
 
- - Should the raw data be archived (see rule 3)?
- - Should the data used for analysis be prepared once, or re-generated from the raw data (and what difference does it make for storage and computing requirements)?
+ - Should the raw data be archived (see Rule 3)?
+ - Should the data used for analysis be prepared once, or re-generated from the
+   raw data (and what difference does it make for storage, computing
+   requirements, and reproducibility)?
  - Should the final data be released, and in what format?
  - How do you track the changes made to the data, and where are they logged?
  - Do you anticipate making manual corrections, and why?
@@ -126,9 +134,16 @@ None of these questions have universal answers, nor are they the only questions 
 
 # Rule 3: Keep raw data raw {-}
 
-Since analytical and data processing procedures may improve or otherwise change over time, having access to the 'raw' or unprocessed data helps to facilitate future re-analysis and analytical reproducibility. As processing algorithms and computational power increase, new analyses will be enabled that were not possible at the time of the original work. If only derived data are stored, it can be difficult-to-impossible for other researchers to confirm analytical results, to assess the validity of statistical models, or to compare findings directly across studies.
+Since analytical and data processing procedures may improve or otherwise change
+over time, having access to the 'raw' or unprocessed data can help facilitating
+future re-analysis and analytical reproducibility. As processing algorithms and
+computational power increase, new analyses will be enabled that were not
+possible at the time of the original work. If only derived data are stored, it
+can be difficult-to-impossible for other researchers to confirm analytical
+results, to assess the validity of statistical models, or to directly compare
+findings across studies.
 
-Therefore, data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in their original state gives a common point of reference for derivative analyses. Despite the intuitive value of this approach, it is not always clear what constitutes sufficiently "raw" data (e.g., ohms off a temperature sensor or images off an Illumina sequencing flowcell are generally not archived after the initial processing). However, we focus here on the spirit of the rule. Data should be as "pure" as possible when they are stored. If derivations occur, they should be documented by also archiving relevant code and subsequent data sets.
+Therefore, data should always be kept in raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in their original state gives a common point of reference for derivative analyses. Despite the intuitive value of this approach, it is not always clear what constitutes sufficiently "raw" data (e.g., ohms off a temperature sensor, or images off an Illumina sequencing flowcell are generally not archived after the initial processing). However, we focus here on the spirit of the rule. Data should be as "pure" as possible when they are stored. If derivations occur, they should be documented by also archiving relevant code and intermediate data sets.
 
 The US National Ecological Observatory Network (NEON) handles this issue with a schema for various "levels" of data products that pertain to the amount of processing that has been performed on each ([see here for a brief overview](http://www.neoninc.org/science-design/data-processing)). In this case, raw data can include such products as voltage measurements or unprocessed LIDAR returns. These represent a tremendous amount of data; sharing this level of data often requires mailing a hard drive. NEON has handled this by writing detailed "Algorithm Theoretical Basis Documents" (ATBD's) documenting the different processing "levels"; this approach is based around a similar one developed for the NASA EOSDIS program and makes clear exactly what has been done to each dataset to derive it from it raw form. These levels, which start at 0 for raw data, and increase with the amount of derivation and processing, are also analogous to the levels the National Oceanic and Atomospheric Administration (NOAA) [uses for satellite data sets](http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels).
 
@@ -142,11 +157,15 @@ To aid reproducibility, the data used in a scientific publication should be uniq
 Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
 An increasing number of online services, such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org) or [DataOne](http://www.dataone.org) are able to provide these.
 
-Datasets may evolve over time.
-In order to distinguish between different versions of the same data, each dataset should have a distinct name, which includes a version identifier.
-A simple way to do this is to use date stamps as part of the dataset name.
-To avoid regional ambiguities, it is wise to use the ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from largest time unit to smallest).
-For example, the date `01-02-2015` could be in January (US format) or February (UK format), but in ISO 8601 format it has the canonical form `2015-02-01`.
+Datasets may evolve over time.  In order to distinguish between different
+versions of the same data, each dataset should have a distinct name, which
+includes a version identifier.  A simple way to do this is to use date stamps as
+part of the dataset name.  To avoid regional ambiguities, it is wise to use the
+ISO 8601 standard, which mandates the date format `YYYY-MM-DD` (i.e. from
+largest time unit to smallest).  For example, the date "February 1st, 2015"
+could be written as `01-02-2015` by someone located in the UK. However, someone
+in the US could interpret it as being "January 2nd, 2015". In ISO 8601 format it
+has the unambiguous canonical form `2015-02-01`.
 
 *Semantic versioning*, as described in [@semver2014], is a richer approach to solving the same problem.
 An example of this can be seen in the CellPack datasets [@johnson2014cellpack].
@@ -160,7 +179,27 @@ For example version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 6: Link relevant metadata {-}
 
-You should make it almost impossible to separate your data from your metadata. The importance of metadata for context, reusability and discovery has been written about at length in many guides for data best practices [@Michener2012, @Strasser2012 , @White2013]. It goes without saying that these guidelines should be followed.  Metadata should be as comprehensive as possible, use the relevant standards of your discipline, and be in a machine-readable format (XML, JSON). Metadata should always accompany your data set wherever it is stored.  How best to do this depends on the format of your archive. Formats such as NetCDF or HDF5 allow for embedded metadata so the data and metadata are always together. If you are using a database, metadata tables should be clearly labeled and linked to the relevant data.  Ideally a schema will be provided that also shows the linkages between data tables and metadata tables.  Another scenario is a set of flat text files. In this case a semantically versioned compressed archive should include metadata file(s). Whatever your archiving format, the goal should be to make the link between metadata and data as clear as possible. The best approach is dependent on your archiving plan, but even if your archive is just for yourself, metadata will provide future you with important context.
+You should make it almost impossible to separate your data from your
+metadata. The importance of metadata for context, reusability, and discovery,
+has been written about at length in many guides for data best practices
+[@Michener2012, @Strasser2012 , @White2013]. It goes without saying that these
+guidelines should be followed. <!-- FM remove this last sentence? -->
+
+Metadata should be as comprehensive as possible, use the relevant standards of
+your discipline, and be machine-readable (e.g., XML, JSON). Metadata should
+always accompany your data set wherever it is stored.  How best to do this
+depends on the format of your archive. Formats such as NetCDF or HDF5 allow for
+embedded metadata so the data and metadata are always together. If you are using
+a database, metadata tables should be clearly labeled and linked to the relevant
+data.  Ideally a schema will be provided that also shows the linkages between
+data tables and metadata tables.  Another scenario is a set of flat text
+files. In this case a semantically versioned compressed archive should include
+metadata file(s).
+
+Whatever your archiving format, the goal should be to make the link between
+metadata and data as clear as possible. The best approach is dependent on your
+archiving plan, but even if your archive is just for yourself, metadata will
+provide future you with important context.
 <!-- PB comment: do we need references for NetCDF or HDF5? -->
 
 # Rule 7: Adopt the proper privacy protocols {-}
@@ -172,28 +211,26 @@ In data sets where privacy is important, be sure to have a plan in place to prot
 Every storage medium can fail, and every failure can result in loss of data.
 Researchers should therefore ensure that data is
 backed up at all stages of the research process. Data stored on local computers
-or institutional servers during the collection and analysis phase should be
+or institutional servers during the collection and analysis phases should be
 backed up to other locations and formats to protect against data loss. No backup
 system is failsafe (see the stories of the
 [Dedoose crash](https://www.insidehighered.com/news/2014/05/16/dedoose-crash-shows-dangers-handing-data-cloud-services)
 and the
 [near deletion of Toy Story 2](http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/)),
 so more than one backup system should be used. Kristin Briney advocates the
-[Rule of 3](http://dataabinitio.com/?p=320) for backing up data:
+"[Rule of 3](http://dataabinitio.com/?p=320)" for backing up data:
 two onsite copies (such as on a computer, an external
-hard drive, or tape) and one offsite copy (e.g. in cloud storage). Keeping
+hard drive, or a tape) and one offsite copy (e.g. in cloud storage). Keeping
 backups in multiple locations protects against data loss due to theft, natural
 disasters, etc.
 
-Researchers should also test their backups regularly to ensure that
-they are functioning properly.  Reasons for backup failure include:
+Researchers should also test their backups regularly to ensure that they are
+functioning properly.  Common reasons for backup failure include:
 
 *   faulty backup software
 *   incorrect configuration (e.g., not backing up sub-directories)
 *   encryption (e.g., someone has encrypted the backups but lost the password)
 *   media errors
-
-and many others.
 
 Consider the backup plans of data repositories before publishing your data. Many
 repositories mirror the data they host on multiple machines. If possible, find
@@ -209,32 +246,34 @@ refs #16, #19, #25
 needs to be different than rule 2
 -->
 
-While the cost of storage per gigabtye continues to decrease, the volume of data to be stored still 
-has an impact on storage methods and locations: for large datasets, storage costs, transfer time, 
-and computing costs can become substantial and there are trade offs among cost, information content, and accessibility. 
- In general, larger data sets that are actively used in analysis 
-should be stored on a disk that is attached to a computer rather than being moved around between analysis and storage.
---- this can become inefficient, and make storage slower than necessary.
-Inactive data can be put in longer-term storage; this is less expensive, but can be slow to retrieve. 
-Archiving of 'stale' files can be automated (and is at HPC centers).
+While the cost of storage continues to decrease, the volume of data to be stored
+continue to have an impact on storage methods and locations: for large datasets,
+storage costs, transfer time, and computing costs can become substantial and
+trade offs exist among cost, information content, and accessibility.  In
+general, larger data sets that are actively used in analysis should be stored on
+a disk that is attached to a computer rather than being moved over the internet
+between analysis and storage.  --- this can become inefficient, and make storage
+slower than necessary.  Inactive data can be put in longer-term storage; this is
+less expensive, but can be slow to retrieve.  Archiving of 'stale' files can be
+automated (and is at HPC centers).
 
-For large datasets under active analysis, a few size classes can be identified: larger than  a typical 
-desktop computer's memory (few GB), larger than its hard drive space (few TB), or  larger than a data 
-storage server (?? NEED NUMBER). Data that is larger than desktop memory can be handled by 
+For large datasets under active analysis, a few size classes can be identified: larger than  a typical
+desktop computer's memory (few GB), larger than its hard drive space (few TB), or  larger than a data
+storage server (?? NEED NUMBER). Data that is larger than desktop memory can be handled by
 'big memory' nodes, or computing can also be done 'in the database': subset and compute on a server rather
-than on a desktop. The dplyr R package does lazy eval (PLEASE UNPACK THIS PHRASE); SQL can 
+than on a desktop. The dplyr R package does lazy eval (PLEASE UNPACK THIS PHRASE); SQL can
 perform a wide range of data summaries, by groups, etc. Transferring datasets should be done with
 some care, e.g. 'flattening' a relational database can increase the size of data by orders of magnitude,
-so transferring the normalized version is preferable. Analysis of data generated by simulation and derived data 
-should consider cost of storage vs. the cost of re-generating output: for analyses of large data sets, 
-the speed of reading and writing data can limit the speed of computation. 
+so transferring the normalized version is preferable. Analysis of data generated by simulation and derived data
+should consider cost of storage vs. the cost of re-generating output: for analyses of large data sets,
+the speed of reading and writing data can limit the speed of computation.
 
 Data that cannot be easily stored on a local machine may be stored on a server and retrieved;
 however, new tools that make it easier to find and download data combined with scripts to automate the process
-can lead to excessive and careless use of resources. We recommend the use of tools that store local 
-'cached' copies of archived data, and only update if there are changes, as an alternative to writing scripts that 
+can lead to excessive and careless use of resources. We recommend the use of tools that store local
+'cached' copies of archived data, and only update if there are changes, as an alternative to writing scripts that
 always download (for example, knitr has a cache argument that saves time in re-computing and in re-downloading).
-Data larger than a single hard drive disk, up to multiple servers, requires a meta-data server to allow fast 
+Data larger than a single hard drive disk, up to multiple servers, requires a meta-data server to allow fast
 access to data distributed across many disks (EXAMPLE?). Such a system requires dedicated computing support
 (TRUE?). Very large datasets [EXAMPLE] may be impractical to store, in which case analysis
 `on-the-fly' may be the only option.
@@ -242,8 +281,8 @@ access to data distributed across many disks (EXAMPLE?). Such a system requires 
 
 # Rule 10: Data should be stored in a machine readable-format {-}
 
-Not only data should be stored in an open format to ensure that data will be
-easily and widely accessible (see Rule #4), they should also be stored in a
+Not only data should be stored in an open format to ensure that it will be
+easily and widely accessible (see Rule 4), data should also be stored in a
 format that computers can make sense of.
 
 As datasets become increasingly larger, it is crucial that they can be parsed
@@ -255,29 +294,28 @@ also ensure interoperability, facilitate re-use, and reduce the chances of data
 loss or mistakes being introduced during conversion between formats.
 
 Because a computer will be able to import your data directly (i.e., without the
-need for manual manipulation of your data), the script used to import and modify
-the data can be made available and the origin of  data used in an analysis
-will be evident. In turn, this makes the analysis more robust as there will be
-no opportunity to introduce mistakes in the data, and it also makes the analysis
-reproducible.
+need for manual manipulation), the script used to import and modify the data can
+be made available, and the origin of data used in an analysis will be
+evident. In turn, the analysis will be both more robust as there will be no
+opportunity to introduce mistakes, and more reproducible as no manual
+manipulation was needed.
 
-To take full advantage of data, it is important that it is structured such
-that the data can be manipulated and analyzed easily, in other words that the
-data is *tidy* [@Wickham2014tidy]. With tidy data, each variable is a column, each
-observation is a row, and each type of observational unit is a table. When data
-is organized in this way,  the duplication of information is reduced and it is
-easier to subset or summarize the dataset to include the variables or
-observations of interest.
+To take full advantage of the data, it should be structured to be manipulated
+and analyzed easily, in other words the data should be *tidy*
+[@Wickham2014tidy]. With tidy data, each variable is a column, each observation
+is a row, and each type of observational unit is a table. When data is organized
+this way, duplication of information is reduced and it is easier to subset
+or summarize the dataset to include the variables or observations of interest.
 
 <!-- include figure that shows example of untidy and equivalent tidy data? -->
 
-To facilitate interoperability, it is best to use variable names that can be mapped to
-existing data standards. For instance, for biodiversity data, the
+To facilitate interoperability, it is best to use variable names that can be
+mapped to existing data standards. For instance, for biodiversity data, the
 [Darwin Core Standard](http://www.tdwg.org/standards/450/) provides a set of
 terms that describe observations, specimens, samples, and related information
 for a taxa. Because each term is clearly defined and documented, each dataset
-can use the terms consistently, facilitating data sharing across applications and
-disciplines.
+can use the terms consistently, facilitating data sharing across institutions,
+applications, and disciplines.
 
 With machine-readable data, it is also easier to build an Application
 Programming Interface (API) to query the dataset to retrieve a subset of
