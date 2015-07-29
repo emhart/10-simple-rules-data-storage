@@ -130,17 +130,19 @@ Since analytical and data processing procedures may improve or otherwise change 
 
 Therefore, data should always be kept in a raw format whenever possible, within the constraints of technical limitations. In addition to being the most appropriate way to ensure transparency in analysis, having the data stored and archived in their original state gives a common point of reference for derivative analyses. Despite the intuitive value of this approach, it is not always clear what constitutes sufficiently "raw" data (e.g., ohms off a temperature sensor or images off an Illumina sequencing flowcell are generally not archived after the initial processing). However, we focus here on the spirit of the rule. Data should be as "pure" as possible when they are stored. If derivations occur, they should be documented by also archiving relevant code and subsequent data sets.
 
-The US National Ecological Observatory Network (NEON) handles this issue with a schema for various "levels" of data products that pertain to the amount of processing that has been performed on each ([see here for a brief overview](http://www.neoninc.org/science-design/data-processing)). In this case, raw data can include such products as voltage measurements or unprocessed LIDAR returns. These represent a tremendous amount of data; sharing this level of data often requires mailing a hard drive. NEON has handled this by writing detailed "Algorithm Theoretical Basis Documents" (ATBD's) documenting the different processing "levels"; this approach is based around a similar one developed for the NASA EOSDIS program and makes clear exactly what has been done to each dataset to derive it from it raw form. These levels, which start at 0 for raw data, and increase with the amount of derivation and processing, are also analogous to the levels the National Oceanic and Atomospheric Administration (NOAA) [uses for satellite data sets](http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels).
+The US National Ecological Observatory Network (NEON) handles this issue with a schema for various "levels" of data products that pertain to the amount of processing that has been performed on each ([see here for a brief overview](http://www.neoninc.org/science-design/data-processing)). In this case, raw data can include such products as voltage measurements or unprocessed LIDAR returns. These represent a tremendous amount of data; sharing this level of data often requires mailing a hard drive. NEON has handled this by writing detailed "Algorithm Theoretical Basis Documents" (ATBD's) documenting the different processing "levels"; this approach is based around a similar one developed for the NASA EOSDIS program and makes clear exactly what has been done to each dataset to derive it from it raw form. These levels, which start at 0 for raw data, and increase with the amount of derivation and processing, are also analogous to the levels the National Aeronautics and Space Administration (NASA) and National Oceanic and Atomospheric Administration (NOAA) [uses for satellite data sets](http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels).
 
 # Rule 4: Store data in open formats {-}
 
-To maximize accessibility and long-term value, data should be stored in file formats whose specifications are freely-available. The appropriate file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware, or a license, to be accessed. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include comma-separated values (CSV) for tabular data, hierarchical data format (HDF) for scientific data, portable network graphics (PNG) for images and extensible markup language (XML) for documents. Examples of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD), and Windows Media Audio (WMA) (need refs?). At a minimum, data being stored for archival purposes should be stored in open formats, even if day-to-day processing uses closed formats, for example due to software requirements.
+To maximize accessibility and long-term value, data should be stored in file formats whose specifications are freely-available. The appropriate file type will depend on the type of data being stored (e.g. numeric measurements, text, images, video) but the key idea is that data should not require proprietary software or hardware, or a license, to be accessed. Proprietary formats can change, maintaining organizations can go out of business, and changes in license fees could make access to data in  proprietary formats simply unaffordable. Examples of open data formats include comma-separated values (CSV) for tabular data, hierarchical data format (HDF) and NetCDF for scientific data, portable network graphics (PNG) for images and extensible markup language (XML) for documents. Examples of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD), and Windows Media Audio (WMA) and Microsoft Execel (need refs?). At a minimum, data being stored for archival purposes should be stored in open formats, even if day-to-day processing uses closed formats, for example due to software requirements.
+Most closed-sourced software enables users to export data to an open format.
 
 # Rule 5: Data should be uniquely identifiable {-}
 
 To aid reproducibility, the data used in a scientific publication should be uniquely identifiable.
 Ideally, datasets should have a unique identifier such as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a Persistant URL (PURL).
 An increasing number of online services, such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org) or [DataOne](http://www.dataone.org) are able to provide these.
+<!--include also institutional repositories, e.g. california digital library, equivalents at other institutions?, plus repositories owned by national labs?-->
 
 Datasets may evolve over time.
 In order to distinguish between different versions of the same data, each dataset should have a distinct name, which includes a version identifier.
@@ -201,43 +203,16 @@ out about the long-term storage plans of the repository. Are there plans in
 place to keep data available if the organization that manages the repository
 dissolves?
 
-# Rule 9: Data volume requires special consideration {-}
+# Rule 9: The location and method of data storage depends on how much you have.
 
+The storage method you should choose depends on the size and nature of your data; the cost of storage, the time it takes to transfer the data, how the data will be used and any privacy concerns. Data is increasingly generated by environmental sensors, satellites, automated analytical tools, simulation models and genomic sequencers in the range of many terabytes. Even larger data generating machines like the Large Hadron Collider (LHC) and the Large Scale Synoptic Survey Telescope (LSST) generate many TBs per day, rapidly accumulating to PB scale over the course of any particular study. While the cost of storage continues to decrease, the volume of data to be stored still has an impact on storage methods and locations: for large datasets, storage costs, transfer time, and computing costs can become substantial and there are trade offs among cost, information content, and accessibility. Therefore you should carefully consider the trade-offs between different methods of data storage.
 
-<!---
-refs #16, #19, #25
-needs to be different than rule 2
--->
+When data takes too long to transfer or is costly to store, it can become more efficient to use a computer that can directly access and use the data where it is. Inactive data can be put in longer-term storage; this is less expensive, but can be slow to retrieve. Some storage systems automatically move data that are infrequently accessed to a longer term storage.  Archiving of 'stale' files can be automated (and is at HPC centers). Alternatively, some computing can be done 'in the database' via  database query languages (e.g. SQL, MapReduce) to performs basic arithmetic and statistical operations. Modern database technologies such as HDFS and Spark allow these computations to be done on data of almost any size. Furthermore they provide a way to integrate custom code to calculate discipline specific statistics.  Computing "in the database" using these technologies is preferrable to working with large volumes of data in analytical languages like R and Python that can require all the data be read into RAM.  This is especially limiting if you are working on a typical personal computer.
 
-While the cost of storage per gigabtye continues to decrease, the volume of data to be stored still 
-has an impact on storage methods and locations: for large datasets, storage costs, transfer time, 
-and computing costs can become substantial and there are trade offs among cost, information content, and accessibility. 
- In general, larger data sets that are actively used in analysis 
-should be stored on a disk that is attached to a computer rather than being moved around between analysis and storage.
---- this can become inefficient, and make storage slower than necessary.
-Inactive data can be put in longer-term storage; this is less expensive, but can be slow to retrieve. 
-Archiving of 'stale' files can be automated (and is at HPC centers).
+If you regularly only need access to a small subset of your data or need to share it with many collaborators, a web based API might be a good solution.  Using this method, many users can send requests via HTTP to a web service which can subset the data, perform in database computation, and return smaller volumes of data as specific slices. Tools based on web services make it easier to find and download data combined with reproducible scripts however they can lead to excessive and careless abuse of resources. Time required to re-download and recompute results can be reduced by 'caching'. Caching stores copies of downloads and generated files that are recognized when the same script is run multiple times. This is done by web browsers as well as some scripting and workflow tools (e.g. R  knitr and PEcAn).
 
-For large datasets under active analysis, a few size classes can be identified: larger than  a typical 
-desktop computer's memory (few GB), larger than its hard drive space (few TB), or  larger than a data 
-storage server (?? NEED NUMBER). Data that is larger than desktop memory can be handled by 
-'big memory' nodes, or computing can also be done 'in the database': subset and compute on a server rather
-than on a desktop. The dplyr R package does lazy eval (PLEASE UNPACK THIS PHRASE); SQL can 
-perform a wide range of data summaries, by groups, etc. Transferring datasets should be done with
-some care, e.g. 'flattening' a relational database can increase the size of data by orders of magnitude,
-so transferring the normalized version is preferable. Analysis of data generated by simulation and derived data 
-should consider cost of storage vs. the cost of re-generating output: for analyses of large data sets, 
-the speed of reading and writing data can limit the speed of computation. 
-
-Data that cannot be easily stored on a local machine may be stored on a server and retrieved;
-however, new tools that make it easier to find and download data combined with scripts to automate the process
-can lead to excessive and careless use of resources. We recommend the use of tools that store local 
-'cached' copies of archived data, and only update if there are changes, as an alternative to writing scripts that 
-always download (for example, knitr has a cache argument that saves time in re-computing and in re-downloading).
-Data larger than a single hard drive disk, up to multiple servers, requires a meta-data server to allow fast 
-access to data distributed across many disks (EXAMPLE?). Such a system requires dedicated computing support
-(TRUE?). Very large datasets [EXAMPLE] may be impractical to store, in which case analysis
-`on-the-fly' may be the only option.
+<!--- "When data is larger than RAM, it can be handled by a 'big memory' node - these are currently 1-4 TB.
+This allows the user to read in and use a large dataset without special tools."  I think this needs some explanation I can't provide.--->
 
 
 # Rule 10: Data should be stored in a machine readable-format {-}
@@ -248,23 +223,21 @@ format that computers can make sense of.
 
 As datasets become increasingly larger, it is crucial that they can be parsed
 efficiently. This is best achieved by using standard data formats that have
-clear specifications (e.g., CSV, XML, JSON, HDF5). Such data formats can be
+clear specifications (e.g., CSV, XML, JSON, HDF5). <!--why is this unique to big data? binary formats and databases seem better for big data. -->Such data formats can be
 handled by a variety of programming languages, as efficient and well-tested
 libraries for parsing them are typically available. These standard data formats
 also ensure interoperability, facilitate re-use, and reduce the chances of data
 loss or mistakes being introduced during conversion between formats.
 
-Because a computer will be able to import your data directly (i.e., without the
-need for manual manipulation of your data), the script used to import and modify
-the data can be made available and the origin of  data used in an analysis
-will be evident. In turn, this makes the analysis more robust as there will be
-no opportunity to introduce mistakes in the data, and it also makes the analysis
-reproducible.
+When data can be easily imported into familiar software, whether it be a scripting language a spreadsheet, or any other computer program that can import these common files, data is easier to re-use.
+Computer source code- the human readable software code that uses data, provide meta-data as well, making the analysis more transparent such that all assumptions are implicitly stated in a human readable script.
+This also enables the extraction process, reproduced, and modified.
+This principle is exemplified by the scripts used to import allometric measurements into the BAAAD database.
 
 To take full advantage of data, it is important that it is structured such
 that the data can be manipulated and analyzed easily, in other words that the
-data is *tidy* [@Wickham2014tidy]. With tidy data, each variable is a column, each
-observation is a row, and each type of observational unit is a table. When data
+data is *tidy* [@Wickham2014tidy], technically this is known as the 'third normal form'<!-- (was it third? see @hadley's comments on this rule in github issue.--> With tidy data, each variable is a column, each
+observation is a row, and each type of observational unit is a table. <!-- this is not true for large, multidimensional data in which dimensions (date, time) are stored in a different way from other variables --> When data
 is organized in this way,  the duplication of information is reduced and it is
 easier to subset or summarize the dataset to include the variables or
 observations of interest.
@@ -282,6 +255,13 @@ disciplines.
 With machine-readable data, it is also easier to build an Application
 Programming Interface (API) to query the dataset to retrieve a subset of
 interest.
+
+# 11: Ask a librarian!
+
+Academic librarians are increasingly assisting researchers in the annotation, storage, and identification of data.
+
+
+# Conclusions
 
 # Acknowledgements
 
