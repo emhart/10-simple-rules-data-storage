@@ -305,7 +305,7 @@ Metadata should be as comprehensive as possible, uses the relevant standards of
 your discipline, and be machine-readable (e.g., XML, JSON). Metadata should
 always accompany a dataset, wherever it is stored. How best to do this depends
 on the format of the data. Formats such as NetCDF or HDF5 allow for embedded
-metadata[@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled together. In a relational
+metadata [@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled together. In a relational
 database, metadata tables should be clearly labeled and linked to the relevant
 data. Ideally a schema will be provided that also shows the linkages between
 data tables and metadata tables. Another scenario is a set of flat text
