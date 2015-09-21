@@ -460,8 +460,7 @@ and disciplines.
 
 With machine-readable data, it is also easier to build an Application
 Programming Interface (API) to query the dataset to retrieve a subset
-of interest. <!-- NZ comment: An important point, and perhaps worth
-spending a few more sentences on? -->
+of interest as outlined in Rule 9.
 
 # Conclusions {-}
 
