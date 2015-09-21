@@ -219,29 +219,6 @@ spirit of this rule is that data should be as "pure" as possible when they are
 stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
-The US National Ecological Observatory Network (NEON) handles this issue with a
-schema for various "levels" of data products that pertain to the amount of
-processing performed on each ([see here for a brief overview][neon]). In this
-case, raw data can include such products as voltage measurements or unprocessed
-LIDAR returns. These represent a tremendous amount of data; sharing them often
-requires physically sending a hard drive through the postal service. NEON has
-handled this by writing detailed "Algorithm Theoretical Basis Documents"
-(ATBD's) documenting the different processing "levels". This approach follows
-one developed for the NASA EOSDIS program, and explicits the step between raw
-and user-facing data. These levels, which start at 0 for raw data, and increase
-with the amount of derivation and processing, are also analogous to the levels
-used by the National Aeronautics and Space Administration (NASA) and National
-Oceanic and Atomospheric Administration (NOAA) [uses for satellite datasets][noaa].
-
-[neon]: http://www.neoninc.org/science-design/data-processing
-[noaa]: http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels
-
-<!-- NZ comment: do we need to be aware of being US-centric here? -->
-<!-- Perhaps readers elsewhere will not recognize all of these US -->
-<!-- federal agencies or would appreciate references from other -->
-<!-- countries? -->
-<!-- JWH comment: Agree with NZ here.  I would supply examples, but being -->
-<!-- Both from US and a Fed, don't know of any... -->
 
 # Rule 4: Store data in open formats {-}
 
