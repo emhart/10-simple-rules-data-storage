@@ -29,10 +29,10 @@ author:
    affiliation: 7
  - family: Michonneau
    given: François
-   affiliation: 8
+   affiliation: 8,9
  - family: Hollister
    given: Jeffrey
-   affiliation: 9
+   affiliation: 10
 organization:
  - id: 1
    name: Univeristy of Vermont
@@ -57,10 +57,14 @@ organization:
    address: Département de Sciences Biologiques
  - id: 8
    name: University of Florida
-   address: iDigBio, Florida Museum of Natural History, Gainesville, FL 32611-7800
+   address: iDigBio, Florida Museum of Natural History
  - id: 9
+   name: University of Florida
+   address: Whitney Laboratory for Marine Biosciences
+ - id: 10
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
+
 ---
 
 \linenumbers
