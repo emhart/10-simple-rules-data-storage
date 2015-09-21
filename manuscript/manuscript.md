@@ -442,14 +442,11 @@ reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
 way that make manipulation and analysis easy. One such structure for data has
-been named *tidy* data [@Wickham2014tidy].  Technically known as the 'third 
-normal form',<!-- (was it third? see @hadley's comments on this rule in github 
-issue.--> each variable is a column, each observation is a row, and each type of 
-observational unit is a table. <!-- this is not true for large, multidimensional 
-data in which dimensions (date, time) are stored in a different way from other
-variables --> When data is organized in this way, the duplication of information 
-is reduced and it is easier to subset or summarize the dataset to include the 
-variables or observations of interest.
+been named *tidy* data [@Wickham2014tidy]: each variable is a column, each
+observation is a row, and each type of observational unit is a table. When data
+is organized in this way, the duplication of information is reduced and it is
+easier to subset or summarize the dataset to include the variables or
+observations of interest.
 
 <!-- include figure that shows example of untidy and equivalent tidy data? -->
 
