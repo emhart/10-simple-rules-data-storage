@@ -254,11 +254,11 @@ for tabular data, hierarchical data format (HDF) and NetCDF for hierarchically
 structured scientific data, portable network graphics (PNG) for images, and
 extensible markup language (XML) for documents. Examples of closed formats
 include DWG (for AutoCAD drawings), Photoshop document (PSD, for bitmap images),
-Windows Media Audio (WMA), and Microsoft Excel. Even if day-to-day processing
-uses closed formats (e.g., due to software requirements), data being stored for
-archival purposes should be stored in open formats. This is generally not
-prohibitive; most closed-sourced software enables users to export data to an
-open format.
+Windows Media Audio (WMA, for audio recording files), and Microsoft Excel (for
+spreadsheets). Even if day-to-day processing uses closed formats (e.g., due to
+software requirements), data being stored for archival purposes should be stored
+in open formats. This is generally not prohibitive; most closed-sourced software
+enables users to export data to an open format.
 
 # Rule 5: Data should be uniquely identifiable {-}
 
