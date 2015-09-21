@@ -150,7 +150,7 @@ acquisition starts. For instance:
  - Is there a community standard format?
 
 The answers to these questions can range from simple cases (e.g., sequencing
-data stored in the FASTA format, which can be used as is throughout the
+data stored in the FASTA format, which can be used "as is" throughout the
 analysis), to experimental designs involving multiple instruments, each with its
 own output format and conventions. Knowing the state in which the data needs to
 be at each step can help (i) identify software tools to use in converting across
