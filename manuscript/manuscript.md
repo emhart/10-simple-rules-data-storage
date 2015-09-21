@@ -410,15 +410,15 @@ integration, these are currently around 1-4 TB. This allows the user to read in
 and use a large dataset without special tools.
 
 If you regularly only need access to a small subset of your data or need to
-share it with many collaborators, a web based API might be a good solution.
-Using this method, many users can send requests via HTTP to a web service which
-can subset the data, perform in-database computation, and return smaller volumes
-of data as specific slices. Tools based on web services make it easier to find
-and download data, and facilitate analysis via reproducible scripts, however
-they can lead to excessive and careless abuse of resources. The time required to
-re-download and recompute results can be reduced by 'caching'. Caching stores
-copies of downloads and generated files that are recognized when the same script
-is run multiple times.
+share it with many collaborators, a web based API (Application Programming
+Interface) might be a good solution.  Using this method, many users can send
+requests to a web service which can subset the data, perform in-database
+computation, and return smaller volumes of data as specific slices. Tools based
+on web services make it easier to find and download data, and facilitate
+analysis via reproducible scripts, however they can lead to excessive and
+careless abuse of resources. The time required to re-download and recompute
+results can be reduced by 'caching'. Caching stores copies of downloads and
+generated files that are recognized when the same script is run multiple times.
 
 # Rule 10: Data should be stored in a machine readable-format {-}
 
