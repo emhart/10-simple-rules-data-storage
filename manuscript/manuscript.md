@@ -112,8 +112,8 @@ products (versus raw data) are suitable for deposition, or in the case where an
 existing repository may have lax standards.
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
-that grew out of a long discussion among instructors for the Software Carpentry
-initiative [@Wilson2014]. Software Carpentry instructors are scientists from
+that grew out of a long discussion among instructors for the Software and Data Carpentry
+initiative [@Wilson2014]. Software and Data Carpentry instructors are scientists from
 diverse backgrounds who have encountered a variety of data storage challenges
 and are active in teaching other scientists best practices for scientific
 computing and data management. Thus, this paper represents a distillation of
