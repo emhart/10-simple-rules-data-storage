@@ -435,15 +435,10 @@ mistakes being introduced during conversion between formats.
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
 these common files, data become easier to re-use. Computer source code, the
-human readable software code that uses data, provide metadata as well. This 
-makes the analysis more transparent, such that all assumptions are implicitly 
-stated. This also enables extraction of the analyses performed, their 
-reproduction, and their modification. This principle is exemplified by the 
-scripts used to import allometric measurements into the BAAAD database.
-
-<!-- NZ comment: Citation (and perhaps more explanation) needed -->
-<!-- JWH comment: Agreed.  this needs to be fleshed out and referenced.  -->
-<!--              Alternatively, I think the example could be dropped.  -->
+human readable software code that uses data, provide metadata as well. This
+makes the analysis more transparent, such that all assumptions are implicitly
+stated. This also enables extraction of the analyses performed, their
+reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
 way that make manipulation and analysis easy. One such structure for data has
