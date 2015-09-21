@@ -174,8 +174,8 @@ data collection, one can answer the following questions:
  - Should the data used for analysis be prepared once, or re-generated
    from the raw data each time (and what difference would this choice
    make for storage, computing requirements, and reproducibility)?
- - Will manual corrections be necessary (as opposed to programmatic
-   approaches)?
+ - Can manual corrections be avoided in favor of programmatic
+   approaches?
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
