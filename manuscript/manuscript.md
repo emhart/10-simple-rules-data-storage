@@ -388,11 +388,12 @@ will be used and any privacy concerns. Data is increasingly generated in the
 range of many terabytes by environmental sensors, satellites, automated
 analytical tools, simulation models, and genomic sequencers. Even larger data
 generating machines like the Large Hadron Collider (LHC) and the Large Scale
-Synoptic Survey Telescope (LSST) generate many TBs per day, rapidly accumulating
-to PB scale over the course of any particular study. While the cost of storage
-continues to decrease, the volume of data to be stored impacts the choice of
-storage methods and locations: for large datasets it is necessary to balance the
-cost of storage with the time of access and costs of re-generating the data.
+Synoptic Survey Telescope (LSST) generate many terabytes (TB) per day, rapidly
+accumulating to petabyte (PB) scale over the course of any particular
+study. While the cost of storage continues to decrease, the volume of data to be
+stored impacts the choice of storage methods and locations: for large datasets
+it is necessary to balance the cost of storage with the time of access and costs
+of re-generating the data.
 
 When data takes too long to transfer or is costly to store, it can become more
 efficient to use a computer that can directly access and use the data in place.
