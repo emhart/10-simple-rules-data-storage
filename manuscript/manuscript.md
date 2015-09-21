@@ -105,15 +105,15 @@ data life cycle will facilitate transition from local storage to repository.
 Good storage practices are important even (or especially) in cases where data
 may not fit with an existing repository, in the cases where only derived data
 products (versus raw data) are suitable for deposition, or in the case where an
-existing repository may have lax standards. 
+existing repository may have lax standards.
 
-Therefore, this manuscript describes 10 simple rules for digital data storage 
+Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software Carpentry
-initiative [@Wilson2014]. Software Carpentry instructors are scientists from 
-diverse backgrounds who have encountered a variety of data storage challenges 
-and are active in teaching other scientists best practices for scientific 
-computing and data management. Thus, this paper represents a distillation of 
-collective experience, and hopefully will be useful to scientists facing a 
+initiative [@Wilson2014]. Software Carpentry instructors are scientists from
+diverse backgrounds who have encountered a variety of data storage challenges
+and are active in teaching other scientists best practices for scientific
+computing and data management. Thus, this paper represents a distillation of
+collective experience, and hopefully will be useful to scientists facing a
 variety of data storage challenges.
 
 
@@ -180,7 +180,7 @@ data collection, one can answer the following questions:
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
  - Are there restrictions or privacy concerns associated with the data
-   (e.g. for survey results with personally identifiable information (PII), 
+   (e.g. for survey results with personally identifiable information (PII),
    threatened species, or confidential business information?
  - Will institutional validation be required prior to releasing the
    data?
@@ -278,8 +278,8 @@ For example, the date "February 1st, 2015", while written as `01-02-2015` in the
 UK and `02-01-2015` in the US, is the unambiguous `2015-02-01` under this
 standard.
 
-Semantic versioning is a richer approach to solving the same problem 
-[@semver2014]. The CellPack datasets are an example of this 
+Semantic versioning is a richer approach to solving the same problem
+[@semver2014]. The CellPack datasets are an example of this
 [@johnson2014cellpack]. A semantic version number takes the form:
 `Major.Minor.Patch`, e.g. `0.2.7`. The *major version* numbers should be
 incremented (or bumped) when a dataset scheme has been updated, or some other
@@ -319,7 +319,7 @@ personal use, metadata will provide crucial context for future reuse.
 
 <!-- PB comment: do we need references for NetCDF or HDF5? -->
 <!-- NZ comment: I think so. Not everyone may be familiar with them -->
-<!-- JWH comment: Added two refs.  I don't use these much so not too 
+<!-- JWH comment: Added two refs.  I don't use these much so not too
 <!-- familiar.  If better ref, please update! -->
 
 # Rule 7: Adopt the proper privacy protocols {-}
@@ -359,7 +359,7 @@ protect against data loss. No backup system is failsafe (see the stories of the
 than one backup system should be used. Kristin Briney advocates the "[Rule of
 3](http://dataabinitio.com/?p=320)" for backing up data: two onsite copies (such
 as on a computer, an external hard drive, or a tape) and one offsite copy (e.g.
-in cloud storage). For example, keeping backups in multiple locations protects 
+in cloud storage). For example, keeping backups in multiple locations protects
 against data loss due to theft or natural disasters.
 
 [dedoose]: https://www.insidehighered.com/news/2014/05/16/dedoose-crash-shows-dangers-handing-data-cloud-services
@@ -450,11 +450,11 @@ observations of interest.
 
 <!-- include figure that shows example of untidy and equivalent tidy data? -->
 
-Interoperability is facilitated when variable names are mapped to existing data 
-standards. For instance, for biodiversity data, the [Darwin Core 
-Standard](http://www.tdwg.org/standards/450/) provides a set of terms that 
-describe observations, specimens, samples, and related information for a taxa. 
-Because each term is clearly defined and documented, each dataset can use the 
+Interoperability is facilitated when variable names are mapped to existing data
+standards. For instance, for biodiversity data, the [Darwin Core
+Standard](http://www.tdwg.org/standards/450/) provides a set of terms that
+describe observations, specimens, samples, and related information for a taxa.
+Because each term is clearly defined and documented, each dataset can use the
 terms consistently, facilitating data sharing across institutions, applications,
 and disciplines.
 
