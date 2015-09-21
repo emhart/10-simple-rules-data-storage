@@ -160,10 +160,10 @@ making it more amenable to re-use.
 
 Also key is the ability to estimate the storage volume needed to store the data,
 both during and after the analysis. The required strategy will differ for
-datasets of varying size. 'Lighter' datasets (e.g. datasets that are only a few
-megabytes in size) can be managed locally with a simple data management plan,
-whereas larger datasets (e.g. gigabytes to terabytes and even petabytes) will in
-almost all cases require careful planning and preparation (Rule 9).
+datasets of varying size. Smaller datasets (e.g. a few megabytes in size) can be
+managed locally with a simple data management plan, whereas larger datasets
+(e.g. gigabytes to petabytes) will in almost all cases require careful planning
+and preparation (Rule 9).
 
 # Rule 2: Know your use case {-}
 
