@@ -400,7 +400,7 @@ Inactive data can be put in longer-term storage; this is less expensive, but can
 take longer to retrieve. Some storage systems automatically migrate 'stale'
 files to longer term storage. Alternatively, some computing can be done 'in the
 database' or 'on disk' via database query languages (e.g. SQL, MapReduce) that
-perform basic arithmetic or via the use of procedural languages (e.g. R, Python,
+perform basic arithmetic, or via the use of procedural languages (e.g. R, Python,
 C) embedded in the database server. Modern database technologies such as HDFS
 and Spark allow these computations to be done on data of almost any size. When
 data is larger than RAM, it can be handled by a 'big memory' node, which most
