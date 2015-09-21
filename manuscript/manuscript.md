@@ -213,7 +213,7 @@ clear (e.g., ohms off a temperature sensor or images off an Illumina sequencing
 flowcell are generally not archived after the initial processing). Yet the
 spirit of this rule is that data should be as "pure" as possible when they are
 stored. If derivations occur, they should be documented by also archiving
-relevant code and intermediate data sets.
+relevant code and intermediate datasets.
 
 The US National Ecological Observatory Network (NEON) handles this issue with a
 schema for various "levels" of data products that pertain to the amount of
@@ -227,8 +227,7 @@ one developed for the NASA EOSDIS program, and explicits the step between raw
 and user-facing data. These levels, which start at 0 for raw data, and increase
 with the amount of derivation and processing, are also analogous to the levels
 used by the National Aeronautics and Space Administration (NASA) and National
-Oceanic and Atomospheric Administration (NOAA) [uses for satellite data
-sets][noaa].
+Oceanic and Atomospheric Administration (NOAA) [uses for satellite datasets][noaa].
 
 [neon]: http://www.neoninc.org/science-design/data-processing
 [noaa]: http://www.ngdc.noaa.gov/wiki/index.php?title=NOAA_Processing_Levels
@@ -304,7 +303,7 @@ written about at length in many guides for data best practices [@Michener2012;
 
 Metadata should be as comprehensive as possible, uses the relevant standards of
 your discipline, and be machine-readable (e.g., XML, JSON). Metadata should
-always accompany a data set, wherever it is stored. How best to do this depends
+always accompany a dataset, wherever it is stored. How best to do this depends
 on the format of the data. Formats such as NetCDF or HDF5 allow for embedded
 metadata[@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled together. In a relational
 database, metadata tables should be clearly labeled and linked to the relevant
@@ -315,7 +314,7 @@ created that includes metadata.
 
 Whatever format is used for archiving, the goal should be to make the link
 between metadata and data as clear as possible. The best approach is dependent
-on the archiving plan used, but even if the data set is archived solely for
+on the archiving plan used, but even if the dataset is archived solely for
 personal use, metadata will provide crucial context for future reuse.
 
 <!-- PB comment: do we need references for NetCDF or HDF5? -->
@@ -325,7 +324,7 @@ personal use, metadata will provide crucial context for future reuse.
 
 # Rule 7: Adopt the proper privacy protocols {-}
 
-In data sets where privacy is important, be sure to have a plan in place to
+In datasets where privacy is important, be sure to have a plan in place to
 protect data confidentiality. You should consider the different data
 stakeholders when developing privacy protocols for your data storage. These
 stakeholders include funding agencies, human subjects or entities,
