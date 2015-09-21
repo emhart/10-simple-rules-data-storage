@@ -246,18 +246,19 @@ To maximize accessibility and long-term value, it is preferable to store data in
 formats whose specifications are freely available. The appropriate file type
 will depend on the data being stored (e.g. numeric measurements, text, images,
 video), but the key idea is that accessing data should not require proprietary
-software, hardware, or a license. Proprietary formats change, maintaining
-organizations go out of business, and changes in license fees make access to
-data in proprietary formats unaffordable to end-users. Examples of open data
-formats include comma-separated values (CSV) for tabular data, hierarchical data
-format (HDF) and NetCDF for hierarchically structured scientific data, portable
-network graphics (PNG) for images, and extensible markup language (XML) for
-documents. Examples of closed formats include DWG (for AutoCAD drawings),
-Photoshop document (PSD, for bitmap images), Windows Media Audio (WMA), and
-Microsoft Excel. Even if day-to-day processing uses closed formats (e.g., due to
-software requirements), data being stored for archival purposes should be
-stored in open formats. This is generally not prohibitive; most closed-sourced
-software enables users to export data to an open format.
+software, hardware, or purchasing a commercial license. Proprietary formats
+change, maintaining organizations go out of business, and changes in license
+fees make access to data in proprietary formats unaffordable to
+end-users. Examples of open data formats include comma-separated values (CSV)
+for tabular data, hierarchical data format (HDF) and NetCDF for hierarchically
+structured scientific data, portable network graphics (PNG) for images, and
+extensible markup language (XML) for documents. Examples of closed formats
+include DWG (for AutoCAD drawings), Photoshop document (PSD, for bitmap images),
+Windows Media Audio (WMA), and Microsoft Excel. Even if day-to-day processing
+uses closed formats (e.g., due to software requirements), data being stored for
+archival purposes should be stored in open formats. This is generally not
+prohibitive; most closed-sourced software enables users to export data to an
+open format.
 
 # Rule 5: Data should be uniquely identifiable {-}
 
