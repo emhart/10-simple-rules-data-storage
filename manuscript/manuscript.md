@@ -466,8 +466,6 @@ With machine-readable data, it is also easier to build an Application
 Programming Interface (API) to query the dataset to retrieve a subset
 of interest as outlined in Rule 9.
 
-# Conclusions {-}
-
 # Acknowledgements {-}
 
 National Center for Supercomputing Applications.
