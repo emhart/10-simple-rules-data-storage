@@ -74,19 +74,22 @@ too could also be added. I removed the second mention of
 heterogeneity, seemed redundant. -->
 
 Data is the central currency of science, but the nature of scientific data has
-changed dramatically with the rapid pace of technological change. This change 
-led to an increasing heterogeneity of data formats, dataset sizes, data 
-complexity, data use cases, and data sharing. For example, improvements in high 
-throughput DNA sequencing, sustained institutional support for large sensor 
-networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital 
-cameras [@Eisenstein2011] created massive quantities of data. At the same time, 
-increasingly common collaboration between researchers [@Adams2012] necessitates 
-increased coordination among data collectors [@Fraser2013]. As a consequence, 
-"data" can now mean anything from petabytes of information stored in 
-professionally-maintained databases, through spreadsheets on a single computer, 
-to hand-written tables in lab notebooks on shelves. All remain important, but 
-methods of data curation must continue be updated in order to encompass the 
-changes brought about by new forms and practices of data collection and storage.
+changed dramatically with the rapid pace of technological change. This change
+led to an increasing heterogeneity of data formats, dataset sizes, data
+complexity, data use cases, and data sharing. For example, improvements in high
+throughput DNA sequencing, sustained institutional support for large sensor
+networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
+cameras [@Eisenstein2011] created massive quantities of data. At the same time,
+increasingly common collaboration between researchers [@Adams2012] and data
+aggregation in portals (e.g. for biodiversity data, [GBIF](http://gbif.org/) or
+[iDigBio](https://www.idigbio.org/portal/)) necessitates increased coordination
+among data collectors and institutions [@Fraser2013; @Robertson2014]. As a
+consequence, "data" can now mean anything from petabytes of information stored
+in professionally-maintained databases, through spreadsheets on a single
+computer, to hand-written tables in lab notebooks on shelves. All remain
+important, but methods of data curation must continue be updated in order to
+encompass the changes brought about by new forms and practices of data
+collection and storage.
 
 While much has been written about both the virtues of data sharing
 [@Wolkovich2012; @Roche2014] and best practices to do so [@White2013;
