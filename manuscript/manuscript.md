@@ -184,8 +184,8 @@ data collection, one can answer the following questions:
    threatened species, or confidential business information?
  - Will institutional validation be required prior to releasing the
    data?
- - Does the funding agency mandate data deposition, and
-   if so, where?
+ - Does the funding agency mandate data deposition in a publicly available archive, and
+   if so, where and under what license?
  - Does the target journal mandate data deposition?
 
 None of these questions have universal answers, nor are they the only questions
