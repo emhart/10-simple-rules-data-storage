@@ -429,24 +429,6 @@ observation is a row, and each type of observational unit is a table
 of information is reduced and it is easier to subset or summarize the dataset to
 include the variables or observations of interest.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\columnwidth]{resources/tidy_data.eps}
-
-\caption{Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A
-is untidy because it mixes observational units (species, location of
-observations, measurements about individuals), the units are mixed and listed
-with the observations, more than one variable is listed in the coordinates for
-the observations (both latitude and longitude), several formats are used in the
-same column. Dataset B is an example of a tidy version of dataset A. Here,
-having species in a separate table is not necessarily needed but would allow
-researchers to add data, or change the name more easily than if the full species
-name was included in the measurement table. The tidy format also reduces the
-amount of information that is duplicated in each row.}
-
-\label{fig:tidy-data}
-\end{figure}
-
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the [Darwin Core
 Standard](http://www.tdwg.org/standards/450/) provides a set of terms that
@@ -548,15 +530,24 @@ Software Carpentry Foundation.
 iDigBio/NSF.
 May need some EPA language.  Working on it..
 
+
 # Figure Legends {-}
 
-Figures here:  Will need to figure out numbering...
 
-# Tables {-}
+\textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A is untidy because it mixes observational units (species, location of observations, measurements about individuals), the units are mixed and listed with the observations, more than one variable is listed in the coordinates for the observations (both latitude and longitude), several formats are used in the same column. Dataset B is an example of a tidy version of dataset A. Here, having species in a separate table is not necessarily needed but would allow researchers to add data, or change the name more easily than if the full species name was included in the measurement table. The tidy format also reduces the amount of information that is duplicated in each row.
 
-Tables here:  Will need to figure out numbering...
+# Figures {-}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\columnwidth]{resources/tidy_data.eps}
+
+\label{fig:tidy-data}
+\end{figure}
+<!-- # Tables {-}
+
+Tables here:  Will need to figure out numbering... -->
 \nolinenumbers
-
+\newpage
 # References {-}
 \bibdata{resources/manuscript.bib}
