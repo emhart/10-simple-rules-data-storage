@@ -78,9 +78,9 @@ too could also be added. I removed the second mention of
 heterogeneity, seemed redundant. -->
 
 Data is the central currency of science, but the nature of scientific data has
-changed dramatically with the rapid pace of technological change. This change
+changed dramatically with the rapid pace of technology. This change
 led to an increasing heterogeneity of data formats, dataset sizes, data
-complexity, data use cases, and data sharing. For example, improvements in high
+complexity, data use cases, and data sharing practices. Improvements in high
 throughput DNA sequencing, sustained institutional support for large sensor
 networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
 cameras [@Eisenstein2011] created massive quantities of data. At the same time,
@@ -102,14 +102,14 @@ Proper storage is a prerequisite to sharing, and indeed inadequate storage
 contributes to the phenomenon of data decay or "data entropy": data, whether
 publicy shared or not, becomes less accessible through time [@Pepe2014;
 @Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
-begin and end with, "use a community standard repository."  This is, by all
-means, a great practice; however, data storage policies are highly variable
-between repositories [@Marcial2010], and best practices across all stages of the
-data life cycle will facilitate transition from local storage to repository.
-Good storage practices are important even (or especially) in cases where data
-may not fit with an existing repository, in the cases where only derived data
-products (versus raw data) are suitable for deposition, or in the case where an
-existing repository may have lax standards.
+begin and end with, "use a community standard repository."  This is a great
+practice; however, data storage policies are highly variable between repositories
+[@Marcial2010], and best practices across all stages of the data life cycle will
+facilitate transition from local storage to repository. Good storage practices
+are important even (or especially) in cases where data may not fit with an
+existing repository, in the cases where only derived data products (versus raw
+data) are suitable for deposition, or in the case where an existing repository
+may have lax standards.
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
@@ -193,7 +193,7 @@ data collection, one can answer the following questions:
  - Does the target journal mandate data deposition?
 
 None of these questions have universal answers, nor are they the only questions
-one should ask before starting data acquisition. But, as for Rule 1, knowing the
+one should ask before starting data acquisition. But knowing the
 what, when, and how of *your* use of the data will bring you close to a reliable
 roadmap on how to handle data from acquisition through publication to archive.
 
@@ -230,23 +230,25 @@ software, hardware, or purchasing a commercial license. Proprietary formats
 change, maintaining organizations go out of business, and changes in license
 fees make access to data in proprietary formats unaffordable to
 end-users. Examples of open data formats include comma-separated values (CSV)
-for tabular data, hierarchical data format (HDF) and NetCDF for hierarchically
-structured scientific data, portable network graphics (PNG) for images, and
-extensible markup language (XML) for documents. Examples of closed formats
-include DWG (for AutoCAD drawings), Photoshop document (PSD, for bitmap images),
-Windows Media Audio (WMA, for audio recording files), and Microsoft Excel (for
-spreadsheets). Even if day-to-day processing uses closed formats (e.g., due to
-software requirements), data being stored for archival purposes should be stored
-in open formats. This is generally not prohibitive; most closed-sourced software
-enables users to export data to an open format.
+for tabular data, hierarchical data format (HDF) [@koziol1998hdf5] and NetCDF
+[@rew1990netcdf] for hierarchically structured scientific data, portable network
+graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC) format)
+for spatial data ,and extensible  markup language (XML) for documents.  Examples
+of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD,
+for bitmap images), Windows Media Audio (WMA, for audio recording
+files), shapefiles for spatial data,and Microsoft Excel (for tabular data). Even
+if day-to-day processing uses closed formats (e.g., due to software requirements),
+data being stored for archival purposes should be stored in open formats. This
+is generally not prohibitive; most closed-sourced software enables users to
+export data to an open format.
 
 # Rule 5: Data should be uniquely identifiable {-}
 
-To aid reproducibility, the data used in a scientific publication should be
-uniquely identifiable.  Ideally, datasets should have a unique identifier such
-as a Document Object Identifier (DOI), Archival Resource Key (ARK), or a
-Persistant URL (PURL).  An increasing number of online services, such as
-[Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
+The data used in a scientific publication should be
+uniquely identifiable to aid reproducibility.  Ideally, datasets should have a
+unique identifier such as a Document Object Identifier (DOI), Archival Resource
+Key (ARK), or a Persistant URL (PURL).  An increasing number of online services,
+such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
 [DataOne](http://www.dataone.org) are able to provide these. Institutional
 initiatives also exist, and are known to your librarians.
 
@@ -282,26 +284,21 @@ The importance of metadata for context, reusability, and discovery has been
 written about at length in many guides for data best practices [@Michener2012;
 @Strasser2012; @White2013].
 
-Metadata should be as comprehensive as possible, uses the relevant standards of
+Metadata should be as comprehensive as possible, use the relevant standards of
 your discipline, and be machine-readable (e.g., XML, JSON). Metadata should
 always accompany a dataset, wherever it is stored. How best to do this depends
 on the format of the data. Formats such as NetCDF or HDF5 allow for embedded
-metadata [@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled together. In a relational
-database, metadata tables should be clearly labeled and linked to the relevant
-data. Ideally a schema will be provided that also shows the linkages between
-data tables and metadata tables. Another scenario is a set of flat text
-files--in this case a semantically versionned, compressed archive should be
+metadata [@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled
+together. In a relational database, metadata tables should be clearly labeled and
+linked to the data. Ideally a schema will be provided that also shows the linkages
+between data tables and metadata tables. Another scenario is a set of flat text
+files--in this case a semantically versioned, compressed archive should be
 created that includes metadata.
 
 Whatever format is used for archiving, the goal should be to make the link
 between metadata and data as clear as possible. The best approach is dependent
 on the archiving plan used, but even if the dataset is archived solely for
 personal use, metadata will provide crucial context for future reuse.
-
-<!-- PB comment: do we need references for NetCDF or HDF5? -->
-<!-- NZ comment: I think so. Not everyone may be familiar with them -->
-<!-- JWH comment: Added two refs.  I don't use these much so not too
-<!-- familiar.  If better ref, please update! -->
 
 # Rule 7: Adopt the proper privacy protocols {-}
 
@@ -313,20 +310,22 @@ collaborators, and yourself. Both the NSF and NIH have data sharing policies in
 their grant guidelines to prevent sharing personally identifiable information,
 and to anonymize data on human subjects.
 
-In small datasets, a hashing scheme is enough to anonymize minimal personal
-information. Make sure to not store the hashing scheme with the data to prevent
-inadvertent sharing and don't use a commonplace hashing technique. Famously, New
-York City officials shared what they thought was anonymized data on cab drivers
-and over 173 million cab rides. However, it was quickly recognized that the city
-anonymized the data with a simple MD5 hashing scheme and all 20 GB of data was
-de-anonymized in a matter of hours [@Goodin]. In more problematic cases, the
-data itself allows identifiability: this is the case with human genomic data
-that map directly onto a subject's identity [@Homer2008]. Methods for dealing
-with these complex issues at the intersection of data storage and privacy are
-rapidly evolving, and include storing changes against a reference genome to help
-with privacy and data volume [@Kahn2011; @wandelt2014trends], or bringing
-computation to data storage facilities instead of vice versa [@Gaye2014]. Having
-a plan for privacy before data acquisition is important, because it can
+In small datasets, a hashing scheme (anonymizing PII by converting it into
+a numeric key of a fixed length with a standard alogrithm ) is enough to
+anonymize minimal personal information. Make sure to not store the hashing scheme
+with the data to prevent inadvertent sharing and don't use a commonplace hashing
+technique. Famously, New York City officials shared what they thought was
+anonymized data on cab drivers and over 173 million cab rides. However, it was
+quickly recognized that the cityanonymized the data with a simple MD5 hashing
+scheme and all 20 GB of data was de-anonymized in a matter of hours [@Goodin].
+
+In more problematic cases, the data itself allows identifiability: this is the
+case with human genomic data that map directly onto a subject's identity [@Homer2008].
+Methods for dealing with these complex issues at the intersection of data storage
+and privacy are rapidly evolving, and include storing changes against a reference
+genome to help with privacy and data volume [@Kahn2011; @wandelt2014trends], or
+bringing computation to data storage facilities instead of vice versa [@Gaye2014].
+Havinga plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
 # Rule 8: Have a systematic backup scheme {-}
@@ -467,17 +466,23 @@ of interest as outlined in Rule 9.
 * **HDF5** (Hierarchical Data Format) is an open-source binary file format designed
   to store large amount of data (and their associated metadata) by providing a
   hierarchical structure that could be compared to how a hard drive is organized
-  with directories and files.
+  with directories and files. It is maintained by the non-profit HDF Group, a
+  spin off of the National Center for Supercomputing Applications (NCSA)
 
 * **NetCDF** (Network Common Data Form) is an open-source binary file format
   designed to store large datasets in array-oriented scientific data as
-  typically used in geosciences.
+  typically used in geosciences. It is maintained by Unidata, a non-profit
+  member of the University Corporation for Atmospheric Research (UCAR) which is
+  funded by the National Science Foundation.
 
 ## Programming and algorithms {-}
 
 * Web **APIs** (Application Programming Interface) provide ways to query
   programmatically databases through the internet. They notably allow users to
   retrieve and work with a small slice of a large dataset.
+
+* **HDFS** (Hadoop Distributed File System) is a Java based file system where
+  data is stored in small chunks across multiple redundant nodes.
 
 * **MapReduce** is a style of programming designed to work with large datasets in
   parallel computing environments. Such programs are composed of a Map procedure
@@ -490,6 +495,9 @@ of interest as outlined in Rule 9.
   value. Cryptographic hash functions are easy to compute from the message, but
   it should be impossible to recover the message from the output, and any
   modifications to the message should also modify the output.
+
+* Apache **Spark** is an open source computing platform for querying large data
+  sets in memory, in contrast to on disk based methods like MapReduce
 
 * **SQL** (Structure Query Language) is a programming language used to interact with
   relational database management systems.
@@ -528,7 +536,7 @@ of interest as outlined in Rule 9.
 National Center for Supercomputing Applications.
 Software Carpentry Foundation.
 iDigBio/NSF.
-May need some EPA language.  Working on it..
+May need some EPA language. 
 
 \newpage
 
