@@ -530,6 +530,7 @@ Software Carpentry Foundation.
 iDigBio/NSF.
 May need some EPA language.  Working on it..
 
+\newpage
 
 # Figure Legends {-}
 
@@ -537,6 +538,8 @@ May need some EPA language.  Working on it..
 \textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A is untidy because it mixes observational units (species, location of observations, measurements about individuals), the units are mixed and listed with the observations, more than one variable is listed in the coordinates for the observations (both latitude and longitude), several formats are used in the same column. Dataset B is an example of a tidy version of dataset A. Here, having species in a separate table is not necessarily needed but would allow researchers to add data, or change the name more easily than if the full species name was included in the measurement table. The tidy format also reduces the amount of information that is duplicated in each row.
 
 # Figures {-}
+
+\textbf{Figure 1}
 
 \begin{figure}[h!]
 \centering
@@ -549,5 +552,6 @@ May need some EPA language.  Working on it..
 Tables here:  Will need to figure out numbering... -->
 \nolinenumbers
 \newpage
+
 # References {-}
 \bibdata{resources/manuscript.bib}
