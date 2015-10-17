@@ -436,13 +436,16 @@ include the variables or observations of interest.
 \caption{Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A
 is untidy because it mixes observational units (species, location of
 observations, measurements about individuals), the units are mixed and listed
-with the observations, more than one variable is listed in the coordinates for
-the observations (both latitude and longitude), several formats are used in the
-same column. Dataset B is an example of a tidy version of dataset A. Here,
-having species in a separate table is not necessarily needed but would allow
-researchers to add data, or change the name more easily than if the full species
-name was included in the measurement table. The tidy format also reduces the
-amount of information that is duplicated in each row.}
+with the observations, more than one variable is listed (both latitude and
+longitude for the coordinates, and genus and species for the species names), and
+several formats are used in the same column. Dataset B is an example of a tidy
+version of dataset A that reduces the amount of information that is duplicated
+in each row. Here, having species in a separate table allow to identify them
+uniquely using the Taxonomic Serial Number (TSN) from the Integrated Taxonomic
+Information System (ITIS) and to add information about the classification of
+these species. It also allows researchers to edit the taxonomic information
+independently from the table that holds the measurements about the
+individuals. The tidy format also r}
 
 \label{fig:tidy-data}
 \end{figure}
