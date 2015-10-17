@@ -456,7 +456,7 @@ of interest as outlined in Rule 9.
   amino-acids in plain text making it easy to manipulate programmatically.
 
 * **HDF5** (Hierarchical Data Format) is an open-source binary file format designed
-  to store large amount of data (and their associated metadata) by providing a
+  to store large amounts of data (and their associated metadata) by providing a
   hierarchical structure that could be compared to how a hard drive is organized
   with directories and files. It is maintained by the non-profit HDF Group, a
   spin off of the National Center for Supercomputing Applications (NCSA).
@@ -520,7 +520,7 @@ of interest as outlined in Rule 9.
   implementations of PURL.
 
 * **URL** (Uniform Resource Locator) gives the location of an object on the World Wide Web; 
-the most familiar type of URL is a web address.
+the most familiar type of URL is a website address.
 
 
 # Acknowledgements {-}
@@ -538,7 +538,7 @@ views of the Agency. Mention of trade names or commercial products does not
 constitute endorsement or recommendation for use. NBZ was funded by the Gordon and
 Betty Moore Foundation through Grant GBMF 2550.03 to the Life Sciences Research
 Foundation. TP was funded by an NSERC Discovery Grant, and a Start-Up grant from
-the Université de Montréal. PB was funded by a NSERC Discovery Grant and the Academic
+the Université de Montréal. PB was funded by an NSERC Discovery Grant and the Academic
 Development Fund of the University of Western Ontario.
 \newpage
 
