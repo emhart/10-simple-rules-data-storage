@@ -325,7 +325,7 @@ Methods for dealing with these complex issues at the intersection of data storag
 and privacy are rapidly evolving, and include storing changes against a reference
 genome to help with privacy and data volume [@Kahn2011; @wandelt2014trends], or
 bringing computation to data storage facilities instead of vice versa [@Gaye2014].
-Havinga plan for privacy before data acquisition is important, because it can
+Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
 # Rule 8: Have a systematic backup scheme {-}
@@ -467,7 +467,7 @@ of interest as outlined in Rule 9.
   to store large amount of data (and their associated metadata) by providing a
   hierarchical structure that could be compared to how a hard drive is organized
   with directories and files. It is maintained by the non-profit HDF Group, a
-  spin off of the National Center for Supercomputing Applications (NCSA)
+  spin off of the National Center for Supercomputing Applications (NCSA).
 
 * **NetCDF** (Network Common Data Form) is an open-source binary file format
   designed to store large datasets in array-oriented scientific data as
@@ -497,7 +497,7 @@ of interest as outlined in Rule 9.
   modifications to the message should also modify the output.
 
 * Apache **Spark** is an open source computing platform for querying large data
-  sets in memory, in contrast to on disk based methods like MapReduce
+  sets in memory, in contrast to on disk based methods like MapReduce.
 
 * **SQL** (Structure Query Language) is a programming language used to interact with
   relational database management systems.
@@ -533,10 +533,20 @@ of interest as outlined in Rule 9.
 
 # Acknowledgements {-}
 
-National Center for Supercomputing Applications.
-Software Carpentry Foundation.
-iDigBio/NSF.
-May need some EPA language. 
+We would like to thank G. Wilson and the Software Carpentry instructor community
+for providing the initial inspiration for this paper and the discussion held at
+https://github.com/swcarpentry/site/issues/797. FM was funded by iDigBio (Integrated
+Digitized Biocollections), and therefore this material is based upon work supported
+by the National Science Foundation’s  Advancing Digitization of Biodiversity
+Collections Program (Cooperative Agreement EF-1115210). Contributions from JWH,
+an employee of the U.S. Environmental Protection Agency (EPA) have not been
+subjected to the Agency's peer and administrative review. Therefore, the conclusions
+and opinions drawn are solely those of the author(s) and are not necessarily the
+views of the Agency. Mention of trade names or commercial products does not
+constitute endorsement or recommendation for use. NBZ was funded by the Gordon and
+Betty Moore Foundation through Grant GBMF 2550.03 to the Life Sciences Research
+Foundation. TP was funded by a NSERC Discovery grant, and a Start-Up grant from
+the Université de Montréal.
 
 \newpage
 
