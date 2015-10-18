@@ -17,7 +17,7 @@ website
 * Kaitlin Thaney -
 * Naupaka Zimmerman - School of Plant Sciences, University of Arizona - `@naupakaz` - [naupaka.net](http://naupaka.net)
 * Will Cornwell - School of Biological, Earth, and Environmental Sciences, University of New South Wales - [@will_cornwell](https://twitter.com/will_cornwell) - [willcornwell.org](http://willcornwell.org)
-* Sarah Mount - School of Mathematics and Computer Science, University of Wolverhampton - `@snim2` - [snim2.org](http://snim2.org)
+* Sarah Mount - Department of Informatics, King's College London - `@snim2` - [snim2.org](http://snim2.org)
 * Sarah Simpkin -
 * François Michonneau - iDigBio, University of Florida - Twitter: `@fmic_` - [francoismichonneau.net](http://francoismichonneau.net)
 * Kara Woo - Washington State University - `@kara_woo` - [karawoo.com](http://karawoo.com)
