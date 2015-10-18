@@ -312,7 +312,7 @@ and to anonymize data on human subjects.
 In small datasets, a hashing scheme (anonymizing PII by converting it into
 a numeric key of a fixed length with a standard algorithm) is enough to
 anonymize minimal personal information. Make sure to not store the hashing scheme
-with the data to prevent inadvertent sharing and don't use a commonplace hashing
+with the data to prevent inadvertent sharing and to not use a commonplace hashing
 technique. Famously, New York City officials shared what they thought was
 anonymized data on cab drivers and over 173 million cab rides. However, it was
 quickly recognized that the city anonymized the data with a simple MD5 hashing
@@ -480,12 +480,14 @@ of interest as outlined in Rule 9.
   where the dataset is sliced into several pieces, and a **reduce** procedure where
   summary operations are applied to each of the slices.
 
-* **MD5** is a Message Digest algorithm used in cryptographic hash functions often
-  used to verify data integrity. A cryptographic hash function converts a
-  "message" (e.g., passwords, file content) into an encrypted
+* **SHA-2** is a family of Secure Hashing Algorithms used in cryptographic
+  analysis, often to verify the integrity of a file. A cryptographic hash
+  function converts a "message" (e.g., passwords, file content) into an encrypted
   value. Cryptographic hash functions are easy to compute from the message, but
   it should be impossible to recover the message from the output, and any
-  modifications to the message should also modify the output.
+  modifications to the message should also modify the output. The SHA algorithms
+  are often used in preference to similar tools such as MD5 (mentioned in Rule 7),
+  which are no longer secure.
 
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
