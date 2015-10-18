@@ -171,7 +171,7 @@ and preparation (Rule 9).
 
 # Rule 2: Know your use case {-}
 
-Well identified use cases make data storage easier. Ideally prior to beginning
+Well-identified use cases make data storage easier. Ideally prior to beginning
 data collection, one can answer the following questions:
 
  - Should the raw data be archived (Rule 3)?
@@ -185,7 +185,7 @@ data collection, one can answer the following questions:
  - Will the final data be released, and if so, in what format?
  - Are there restrictions or privacy concerns associated with the data
    (e.g. for survey results with personally identifiable information (PII),
-   threatened species, or confidential business information?
+   threatened species, or confidential business information)?
  - Will institutional validation be required prior to releasing the
    data?
  - Does the funding agency mandate data deposition in a publicly available archive, and
@@ -202,7 +202,7 @@ roadmap on how to handle data from acquisition through publication to archive.
 Since analytical and data processing procedures improve or otherwise change over
 time, having access to the 'raw' (unprocessed) data can facilitate future
 re-analysis and analytical reproducibility. As processing algorithms improve and
-computational power increase, new analyses will be enabled that were not
+computational power increases, new analyses will be enabled that were not
 possible at the time of the original work. If only derived data are stored, it
 can be difficult to impossible for other researchers to confirm analytical
 results, to assess the validity of statistical models, or to directly compare
@@ -233,20 +233,20 @@ end-users. Examples of open data formats include comma-separated values (CSV)
 for tabular data, hierarchical data format (HDF) [@koziol1998hdf5] and NetCDF
 [@rew1990netcdf] for hierarchically structured scientific data, portable network
 graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC) format)
-for spatial data ,and extensible  markup language (XML) for documents.  Examples
+for spatial data, and extensible markup language (XML) for documents.  Examples
 of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD,
 for bitmap images), Windows Media Audio (WMA, for audio recording
-files), shapefiles for spatial data,and Microsoft Excel (for tabular data). Even
+files), shapefiles for spatial data, and Microsoft Excel (for tabular data). Even
 if day-to-day processing uses closed formats (e.g., due to software requirements),
 data being stored for archival purposes should be stored in open formats. This
-is generally not prohibitive; most closed-sourced software enables users to
+is generally not prohibitive; most closed-source software enables users to
 export data to an open format.
 
 # Rule 5: Data should be uniquely identifiable {-}
 
 The data used in a scientific publication should be
 uniquely identifiable to aid reproducibility.  Ideally, datasets should have a
-unique identifier such as a Document Object Identifier (DOI), Archival Resource
+unique identifier such as a Digital Object Identifier (DOI), Archival Resource
 Key (ARK), or a Persistant URL (PURL).  An increasing number of online services,
 such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
 [DataOne](http://www.dataone.org) are able to provide these. Institutional
@@ -311,13 +311,13 @@ their grant guidelines to prevent sharing personally identifiable information,
 and to anonymize data on human subjects.
 
 In small datasets, a hashing scheme (anonymizing PII by converting it into
-a numeric key of a fixed length with a standard alogrithm ) is enough to
+a numeric key of a fixed length with a standard alogrithm) is enough to
 anonymize minimal personal information. Make sure to not store the hashing scheme
 with the data to prevent inadvertent sharing and don't use a commonplace hashing
 technique. Famously, New York City officials shared what they thought was
 anonymized data on cab drivers and over 173 million cab rides. However, it was
-quickly recognized that the cityanonymized the data with a simple MD5 hashing
-scheme and all 20 GB of data was de-anonymized in a matter of hours [@Goodin].
+quickly recognized that the city anonymized the data with a simple MD5 hashing
+scheme and all 20 GB of data were de-anonymized in a matter of hours [@Goodin].
 
 In more problematic cases, the data itself allows identifiability: this is the
 case with human genomic data that map directly onto a subject's identity [@Homer2008].
@@ -360,7 +360,7 @@ possible, find out about the long-term storage plans of the repository. Are
 there plans in place to keep data available if the organization that manages the
 repository dissolves?
 
-# Rule 9: The location and method of data storage depends on how much you have. {-}
+# Rule 9: The location and method of data storage depends on how much you have {-}
 
 The storage method you should choose depends on the size and nature of your
 data, the cost of storage, the time it takes to transfer the data, how the data
@@ -390,7 +390,7 @@ integration, these are currently around 1-4 TB. This allows the user to read in
 and use a large dataset without special tools.
 
 If you regularly only need access to a small subset of your data or need to
-share it with many collaborators, a web based API (Application Programming
+share it with many collaborators, a web-based API (Application Programming
 Interface) might be a good solution.  Using this method, many users can send
 requests to a web service which can subset the data, perform in-database
 computation, and return smaller volumes of data as specific slices. Tools based
@@ -400,7 +400,7 @@ careless abuse of resources. The time required to re-download and recompute
 results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
 
-# Rule 10: Data should be stored in a machine readable-format {-}
+# Rule 10: Data should be stored in a machine-readable format {-}
 
 Not only data should be stored in an open format (Rule 4), but it should also be
 stored in a format that computers can easily use.  This is especially crucial as
@@ -415,7 +415,7 @@ mistakes being introduced during conversion between formats.
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
 these common files, data become easier to re-use. Computer source code, the
-human readable software code that uses data, provide metadata as well. This
+human readable software code that uses data, provides metadata as well. This
 makes the analysis more transparent, such that all assumptions are implicitly
 stated. This also enables extraction of the analyses performed, their
 reproduction, and their modification.
@@ -456,7 +456,7 @@ of interest as outlined in Rule 9.
   amino-acids in plain text making it easy to manipulate programmatically.
 
 * **HDF5** (Hierarchical Data Format) is an open-source binary file format designed
-  to store large amount of data (and their associated metadata) by providing a
+  to store large amounts of data (and their associated metadata) by providing a
   hierarchical structure that could be compared to how a hard drive is organized
   with directories and files. It is maintained by the non-profit HDF Group, a
   spin off of the National Center for Supercomputing Applications (NCSA).
@@ -519,8 +519,8 @@ of interest as outlined in Rule 9.
   location of an electronic object on the internet. DOI and ARK are examples of
   implementations of PURL.
 
-* **URL** (Uniform Resource Locator), the most familiar type of URLs are web
-  addresses.
+* **URL** (Uniform Resource Locator) gives the location of an object on the World Wide Web; 
+the most familiar type of URL is a website address.
 
 
 # Acknowledgements {-}
@@ -537,15 +537,15 @@ and opinions drawn are solely those of the author(s) and are not necessarily the
 views of the Agency. Mention of trade names or commercial products does not
 constitute endorsement or recommendation for use. NBZ was funded by the Gordon and
 Betty Moore Foundation through Grant GBMF 2550.03 to the Life Sciences Research
-Foundation. TP was funded by a NSERC Discovery grant, and a Start-Up grant from
-the Université de Montréal.
-
+Foundation. TP was funded by an NSERC Discovery Grant, and a Start-Up grant from
+the Université de Montréal. PB was funded by an NSERC Discovery Grant and the Academic
+Development Fund of the University of Western Ontario.
 \newpage
 
 # Figure Legends {-}
 
 
-\textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A is untidy because it mixes observational units (species, location of observations, measurements about individuals), the units are mixed and listed with the observations, more than one variable is listed in the coordinates for the observations (both latitude and longitude), several formats are used in the same column. Dataset B is an example of a tidy version of dataset A. Here, having species in a separate table is not necessarily needed but would allow researchers to add data, or change the name more easily than if the full species name was included in the measurement table. The tidy format also reduces the amount of information that is duplicated in each row.
+\textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent (B). Dataset A is untidy because it mixes observational units (species, location of observations, measurements about individuals), the units are mixed and listed with the observations, more than one variable is listed in the coordinates for the observations (both latitude and longitude), and several formats are used in the same column. Dataset B is an example of a tidy version of dataset A. Here, having species in a separate table is not necessarily needed but would allow researchers to add data, or change the name more easily than if the full species name were included in the measurement table. The tidy format also reduces the amount of information that is duplicated in each row.
 
 # Figures {-}
 
