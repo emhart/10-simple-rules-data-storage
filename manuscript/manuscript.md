@@ -79,36 +79,35 @@ heterogeneity, seemed redundant. -->
 
 Data is the central currency of science, but the nature of scientific data has
 changed dramatically with the rapid pace of technology. This change
-led to an increasing heterogeneity of data formats, dataset sizes, data
+has led to the development of a wide variety of data formats, dataset sizes, data
 complexity, data use cases, and data sharing practices. Improvements in high
 throughput DNA sequencing, sustained institutional support for large sensor
 networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
-cameras [@Eisenstein2011] created massive quantities of data. At the same time,
-increasingly common collaboration between researchers [@Adams2012] and data
+cameras [@Eisenstein2011] have created massive quantities of data. At the same time,
+the combination of increasingly diverse research teams [@Adams2012] and data
 aggregation in portals (e.g. for biodiversity data, [GBIF](http://gbif.org/) or
 [iDigBio](https://www.idigbio.org/portal/)) necessitates increased coordination
 among data collectors and institutions [@Fraser2013; @Robertson2014]. As a
 consequence, "data" can now mean anything from petabytes of information stored
 in professionally-maintained databases, through spreadsheets on a single
 computer, to hand-written tables in lab notebooks on shelves. All remain
-important, but methods of data curation must continue be updated in order to
-encompass the changes brought about by new forms and practices of data
-collection and storage.
+important, but data curation practices must continue to keep pace with the
+changes brought about by new forms and practices of data collection and storage.
 
 While much has been written about both the virtues of data sharing
 [@Wolkovich2012; @Roche2014] and best practices to do so [@White2013;
-@Goodman2014], how to store data has received comparatively less attention.
+@Goodman2014], data storage has received comparatively less attention.
 Proper storage is a prerequisite to sharing, and indeed inadequate storage
 contributes to the phenomenon of data decay or "data entropy": data, whether
 publicy shared or not, becomes less accessible through time [@Pepe2014;
 @Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
-begin and end with, "use a community standard repository."  This is a great
-practice; however, data storage policies are highly variable between repositories
-[@Marcial2010], and best practices across all stages of the data life cycle will
+begin and end with, "use a community standard repository."  This is a good
+advice; however, data storage policies are highly variable between repositories
+[@Marcial2010]. Best practices across all stages of the data life cycle will
 facilitate transition from local storage to repository. Good storage practices
 are important even (or especially) in cases where data may not fit with an
-existing repository, in the cases where only derived data products (versus raw
-data) are suitable for deposition, or in the case where an existing repository
+existing repository, where only derived data products (versus raw
+data) are suitable for archiving, or in the case where an existing repository
 may have lax standards.
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
@@ -311,7 +310,7 @@ their grant guidelines to prevent sharing personally identifiable information,
 and to anonymize data on human subjects.
 
 In small datasets, a hashing scheme (anonymizing PII by converting it into
-a numeric key of a fixed length with a standard alogrithm) is enough to
+a numeric key of a fixed length with a standard algorithm) is enough to
 anonymize minimal personal information. Make sure to not store the hashing scheme
 with the data to prevent inadvertent sharing and don't use a commonplace hashing
 technique. Famously, New York City officials shared what they thought was
@@ -414,14 +413,14 @@ mistakes being introduced during conversion between formats.
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
-these common files, data become easier to re-use. Computer source code, the
-human readable software code that uses data, provides metadata as well. This
-makes the analysis more transparent, such that all assumptions are implicitly
-stated. This also enables extraction of the analyses performed, their
-reproduction, and their modification.
+these common files, data becomes easier to re-use. Computer source code, the
+human readable software that uses data, provides metadata as well. This
+makes analysis more transparent, since all assumptions about the structure of
+the data are implicitly stated in the source code. This also enables extraction
+of the analyses performed, their reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
-way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The tecnical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
+way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the [Darwin Core
@@ -477,8 +476,8 @@ of interest as outlined in Rule 9.
   data is stored in small chunks across multiple redundant nodes.
 
 * **MapReduce** is a style of programming designed to work with large datasets in
-  parallel computing environments. Such programs are composed of a Map procedure
-  where the dataset is sliced into several pieces, and a Reduce procedure where
+  parallel computing environments. Such programs are composed of a **map** procedure
+  where the dataset is sliced into several pieces, and a **reduce** procedure where
   summary operations are applied to each of the slices.
 
 * **MD5** is a Message Digest algorithm used in cryptographic hash functions often
@@ -519,7 +518,7 @@ of interest as outlined in Rule 9.
   location of an electronic object on the internet. DOI and ARK are examples of
   implementations of PURL.
 
-* **URL** (Uniform Resource Locator) gives the location of an object on the World Wide Web; 
+* **URL** (Uniform Resource Locator) gives the location of an object on the World Wide Web;
 the most familiar type of URL is a website address.
 
 
