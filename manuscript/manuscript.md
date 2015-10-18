@@ -50,8 +50,8 @@ organization:
    name: Washington State University
    address: Center for Environmental Research, Education, and Outreach
  - id: 6
-   name: University of Wolverhampton
-   address: School of Mathematics and Computer Science
+   name: King's College London
+   address: Department of Informatics
  - id: 7
    name: Université de Montréal
    address: Département de Sciences Biologiques
@@ -426,7 +426,7 @@ way that makes use, interpretation, and analysis easy. One such structure for da
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the [Darwin Core
 Standard](http://www.tdwg.org/standards/450/) provides a set of terms that
-describe observations, specimens, samples, and related information for a taxa. For earth science and ecosystem models and data, the [Climate Forecasting Conventions](https://cfconventions.org) are widely adopted, such that a large ecosystem of software and data products exist to reduce the technical burden of reformatting and reusing large and complex data. 
+describe observations, specimens, samples, and related information for a taxa. For earth science and ecosystem models and data, the [Climate Forecasting Conventions](https://cfconventions.org) are widely adopted, such that a large ecosystem of software and data products exist to reduce the technical burden of reformatting and reusing large and complex data.
 Because each term in such standards are clearly defined and documented, each dataset can use the terms consistently, this facilitates data sharing across institutions, applications, and disciplines.
 
 With machine-readable, standards-compliant data, it easier to build an Application Programming Interface (API) to query the dataset and retrieve a subset
