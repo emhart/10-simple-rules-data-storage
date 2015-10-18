@@ -317,6 +317,10 @@ technique. Famously, New York City officials shared what they thought was
 anonymized data on cab drivers and over 173 million cab rides. However, it was
 quickly recognized that the city anonymized the data with a simple MD5 hashing
 scheme and all 20 GB of data were de-anonymized in a matter of hours [@Goodin].
+This type of error can be prevented by asking a trusted colleague to try to
+"crack" anonymised data before releasing it publicly. Often the person who has
+produced the data is least well placed to check the fine details of their
+security procedures.
 
 In more problematic cases, the data itself allows identifiability: this is the
 case with human genomic data that map directly onto a subject's identity [@Homer2008].
