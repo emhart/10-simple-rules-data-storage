@@ -532,7 +532,9 @@ the most familiar type of URL is a website address.
 
 We would like to thank G. Wilson and the Software Carpentry instructor community
 for providing the initial inspiration for this paper and the discussion held at
-https://github.com/swcarpentry/site/issues/797. FM was funded by iDigBio (Integrated
+https://github.com/swcarpentry/site/issues/797.
+SM would like to thank Dr Laurence Tratt for reviewing an early draft of this paper.
+FM was funded by iDigBio (Integrated
 Digitized Biocollections), and therefore this material is based upon work supported
 by the National Science Foundation’s  Advancing Digitization of Biodiversity
 Collections Program (Cooperative Agreement EF-1115210). Contributions from JWH,
