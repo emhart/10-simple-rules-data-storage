@@ -556,24 +556,33 @@ Betty Moore Foundation through Grant GBMF 2550.03 to the Life Sciences Research
 Foundation. TP was funded by an NSERC Discovery Grant, and a Start-Up grant from
 the Université de Montréal. PB was funded by an NSERC Discovery Grant and the Academic
 Development Fund of the University of Western Ontario.
+
 \newpage
 
-# Figure Legends {-}
 
+# Figure Legends {-}
 
 \textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent
 (B). Dataset A is untidy because it mixes observational units (species, location
 of observations, measurements about individuals), the units are mixed and listed
 with the observations, more than one variable is listed (both latitude and
 longitude for the coordinates, and genus and species for the species names), and
-several formats are used in the same column. Dataset B is an example of a tidy
-version of dataset A that reduces the amount of information that is duplicated
-in each row. Here, by having species in a separate table, they can be identified
-uniquely using the Taxonomic Serial Number (TSN) from the Integrated Taxonomic
-Information System (ITIS), and it easy to add information about the
-classification of these species. It also allows researchers to edit the
-taxonomic information independently from the table that holds the measurements
-about the individuals.
+several formats are used in the same column for dates and geographic
+coordinates. Dataset B is an example of a tidy version of dataset A that reduces
+the amount of information that is duplicated in each row, limiting chances of
+introducing mistakes in the data. By having species in a separate table, they
+can be identified uniquely using the Taxonomic Serial Number (TSN) from the
+Integrated Taxonomic Information System (ITIS), and it makes it easy to add
+information about the classification of these species. It also allows
+researchers to edit the taxonomic information independently from the table that
+holds the measurements about the individuals. Unique values for each
+observational units facilitates the programmatic combination of information
+using "join" operations. With this example, if the focus of the study for which
+these data were collected are the size measurements of the individuals (weight
+and length), information about "where", "when", and "what" animals were
+collected can be considered as meta-data. Using the tidy format makes this
+distinction clearer.
+
 
 # Figures {-}
 
