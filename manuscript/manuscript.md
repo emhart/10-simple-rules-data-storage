@@ -79,36 +79,35 @@ heterogeneity, seemed redundant. -->
 
 Data is the central currency of science, but the nature of scientific data has
 changed dramatically with the rapid pace of technology. This change
-led to an increasing heterogeneity of data formats, dataset sizes, data
+has led to the development of a wide variety of data formats, dataset sizes, data
 complexity, data use cases, and data sharing practices. Improvements in high
 throughput DNA sequencing, sustained institutional support for large sensor
 networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
-cameras [@Eisenstein2011] created massive quantities of data. At the same time,
-increasingly common collaboration between researchers [@Adams2012] and data
+cameras [@Eisenstein2011] have created massive quantities of data. At the same time,
+the combination of increasingly diverse research teams [@Adams2012] and data
 aggregation in portals (e.g. for biodiversity data, [GBIF](http://gbif.org/) or
 [iDigBio](https://www.idigbio.org/portal/)) necessitates increased coordination
 among data collectors and institutions [@Fraser2013; @Robertson2014]. As a
 consequence, "data" can now mean anything from petabytes of information stored
 in professionally-maintained databases, through spreadsheets on a single
 computer, to hand-written tables in lab notebooks on shelves. All remain
-important, but methods of data curation must continue be updated in order to
-encompass the changes brought about by new forms and practices of data
-collection and storage.
+important, but data curation practices must continue to keep pace with the
+changes brought about by new forms and practices of data collection and storage.
 
 While much has been written about both the virtues of data sharing
 [@Wolkovich2012; @Roche2014] and best practices to do so [@White2013;
-@Goodman2014], how to store data has received comparatively less attention.
+@Goodman2014], data storage has received comparatively less attention.
 Proper storage is a prerequisite to sharing, and indeed inadequate storage
 contributes to the phenomenon of data decay or "data entropy": data, whether
 publicy shared or not, becomes less accessible through time [@Pepe2014;
 @Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
-begin and end with, "use a community standard repository."  This is a great
-practice; however, data storage policies are highly variable between repositories
-[@Marcial2010], and best practices across all stages of the data life cycle will
+begin and end with, "use a community standard repository."  This is a good
+advice; however, data storage policies are highly variable between repositories
+[@Marcial2010]. Best practices across all stages of the data life cycle will
 facilitate transition from local storage to repository. Good storage practices
 are important even (or especially) in cases where data may not fit with an
-existing repository, in the cases where only derived data products (versus raw
-data) are suitable for deposition, or in the case where an existing repository
+existing repository, where only derived data products (versus raw
+data) are suitable for archiving, or in the case where an existing repository
 may have lax standards.
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
@@ -279,7 +278,7 @@ version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 6: Link relevant metadata {-}
 
-Metadata is the contextual information required to interpret data (Figure 1) 
+Metadata is the contextual information required to interpret data (Figure 1)
 and should be clearly defined and tightly integrated with data.
 The importance of metadata for context, reusability, and discovery has been
 written about at length in guides for data management best practices [@Michener2012;
@@ -287,10 +286,10 @@ written about at length in guides for data management best practices [@Michener2
 
 Metadata should be as comprehensive as possible, using standards and conventions of
 a discipline, and should be machine-readable.
-Metadata should always accompany a dataset, wherever it is stored, but the best way to do this depends on the format of the data. 
-Text files can contain meta-data in in well defined text files such as XML or JSON). 
+Metadata should always accompany a dataset, wherever it is stored, but the best way to do this depends on the format of the data.
+Text files can contain meta-data in in well defined text files such as XML or JSON).
 Some file formats are self-documenting, for example NetCDF, HDF5, and many image files
-allow for embedded metadata [@rew1990netcdf; @koziol1998hdf5]. 
+allow for embedded metadata [@rew1990netcdf; @koziol1998hdf5].
 In a relational database, metadata tables should be clearly labeled and
 linked to the data. Ideally a schema will be provided that also shows the linkages
 between data tables and metadata tables. Another scenario is a set of flat text
@@ -313,13 +312,17 @@ their grant guidelines to prevent sharing personally identifiable information,
 and to anonymize data on human subjects.
 
 In small datasets, a hashing scheme (anonymizing PII by converting it into
-a numeric key of a fixed length with a standard alogrithm) is enough to
+a numeric key of a fixed length with a standard algorithm) is enough to
 anonymize minimal personal information. Make sure to not store the hashing scheme
-with the data to prevent inadvertent sharing and don't use a commonplace hashing
+with the data to prevent inadvertent sharing and to not use a commonplace hashing
 technique. Famously, New York City officials shared what they thought was
 anonymized data on cab drivers and over 173 million cab rides. However, it was
 quickly recognized that the city anonymized the data with a simple MD5 hashing
 scheme and all 20 GB of data were de-anonymized in a matter of hours [@Goodin].
+This type of error can be prevented by asking a trusted colleague to try to
+"crack" anonymised data before releasing it publicly. Often the person who has
+produced the data is least well placed to check the fine details of their
+security procedures.
 
 In more problematic cases, the data itself allows identifiability: this is the
 case with human genomic data that map directly onto a subject's identity [@Homer2008].
@@ -416,21 +419,14 @@ mistakes being introduced during conversion between formats.
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
-these common files, data become easier to re-use. Computer source code, the
-human readable software code that uses data, provides metadata as well. This
-makes the analysis more transparent, such that all assumptions are implicitly
-stated. This also enables extraction of the analyses performed, their
-reproduction, and their modification.
+these common files, data becomes easier to re-use. Computer source code, the
+human readable software that uses data, provides metadata as well. This
+makes analysis more transparent, since all assumptions about the structure of
+the data are implicitly stated in the source code. This also enables extraction
+of the analyses performed, their reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
-way that makes use, interpretation, and analysis easy. One such structure for
-data stores each variable is a column, each observation as a row, and each type
-of observational unit is a table (Fig. \ref{fig:tidy-data}). The tecnical term
-for this structure is 'Codd's 3rd normal form', but has been made more
-accessible as the concept of *tidy* data [@Wickham2014tidy].  When data is
-organized in this way, the duplication of information is reduced and it is
-easier to subset or summarize the dataset to include the variables or
-observations of interest.
+way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the
@@ -493,16 +489,18 @@ subset of interest as outlined in Rule 9.
   data is stored in small chunks across multiple redundant nodes.
 
 * **MapReduce** is a style of programming designed to work with large datasets in
-  parallel computing environments. Such programs are composed of a Map procedure
-  where the dataset is sliced into several pieces, and a Reduce procedure where
+  parallel computing environments. Such programs are composed of a **map** procedure
+  where the dataset is sliced into several pieces, and a **reduce** procedure where
   summary operations are applied to each of the slices.
 
-* **MD5** is a Message Digest algorithm used in cryptographic hash functions often
-  used to verify data integrity. A cryptographic hash function converts a
-  "message" (e.g., passwords, file content) into an encrypted
+* **SHA-2** is a family of Secure Hashing Algorithms used in cryptographic
+  analysis, often to verify the integrity of a file. A cryptographic hash
+  function converts a "message" (e.g., passwords, file content) into an encrypted
   value. Cryptographic hash functions are easy to compute from the message, but
   it should be impossible to recover the message from the output, and any
-  modifications to the message should also modify the output.
+  modifications to the message should also modify the output. The SHA algorithms
+  are often used in preference to similar tools such as MD5 (mentioned in Rule 7),
+  which are no longer secure.
 
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
@@ -543,7 +541,9 @@ the most familiar type of URL is a website address.
 
 We would like to thank G. Wilson and the Software Carpentry instructor community
 for providing the initial inspiration for this paper and the discussion held at
-https://github.com/swcarpentry/site/issues/797. FM was funded by iDigBio (Integrated
+https://github.com/swcarpentry/site/issues/797.
+SM would like to thank Dr Laurence Tratt for reviewing an early draft of this paper.
+FM was funded by iDigBio (Integrated
 Digitized Biocollections), and therefore this material is based upon work supported
 by the National Science Foundation’s  Advancing Digitization of Biodiversity
 Collections Program (Cooperative Agreement EF-1115210). Contributions from JWH,
