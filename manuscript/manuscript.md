@@ -279,17 +279,19 @@ version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
 # Rule 6: Link relevant metadata {-}
 
-It should be almost impossible to separate data from its associated metadata.
+Metadata is the contextual information required to interpret data (Figure 1) 
+and should be clearly defined and tightly integrated with data.
 The importance of metadata for context, reusability, and discovery has been
-written about at length in many guides for data best practices [@Michener2012;
+written about at length in guides for data management best practices [@Michener2012;
 @Strasser2012; @White2013].
 
-Metadata should be as comprehensive as possible, use the relevant standards of
-your discipline, and be machine-readable (e.g., XML, JSON). Metadata should
-always accompany a dataset, wherever it is stored. How best to do this depends
-on the format of the data. Formats such as NetCDF or HDF5 allow for embedded
-metadata [@rew1990netcdf; @koziol1998hdf5], so the data and metadata are bundled
-together. In a relational database, metadata tables should be clearly labeled and
+Metadata should be as comprehensive as possible, using standards and conventions of
+a discipline, and should be machine-readable.
+Metadata should always accompany a dataset, wherever it is stored, but the best way to do this depends on the format of the data. 
+Text files can contain meta-data in in well defined text files such as XML or JSON). 
+Some file formats are self-documenting, for example NetCDF, HDF5, and many image files
+allow for embedded metadata [@rew1990netcdf; @koziol1998hdf5]. 
+In a relational database, metadata tables should be clearly labeled and
 linked to the data. Ideally a schema will be provided that also shows the linkages
 between data tables and metadata tables. Another scenario is a set of flat text
 files--in this case a semantically versioned, compressed archive should be
