@@ -165,7 +165,7 @@ both during and after the analysis. The required strategy will differ for
 datasets of varying size. Smaller datasets (e.g. a few megabytes in size) can be
 managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
-and preparation (Rule 9).
+and preparation (Rule 10).
 
 # Rule 2: Know your use case {-}
 
@@ -240,7 +240,46 @@ data being stored for archival purposes should be stored in open formats. This
 is generally not prohibitive; most closed-source software enables users to
 export data to an open format.
 
-# Rule 5: Data should be uniquely identifiable {-}
+# Rule 5: Data should be stored in a machine-readable format {-}
+
+Not only data should be stored in an open format (Rule 4), but it should also be
+stored in a format that computers can easily use.  This is especially crucial as
+datasets become larger.  Machine readable data is best achieved by using
+standard data formats that have clear specifications (e.g., CSV, XML, JSON,
+HDF5), or by using databases. Such data formats can be handled by a variety of
+programming languages, as efficient and well-tested libraries for parsing them
+are typically available. These standard data formats also ensure
+interoperability, facilitate re-use, and reduce the chances of data loss or
+mistakes being introduced during conversion between formats.
+
+When data can be easily imported into familiar software, whether it be a
+scripting language, a spreadsheet, or any other computer program that can import
+these common files, data becomes easier to re-use. Computer source code, the
+human readable software that uses data, provides metadata as well. This
+makes analysis more transparent, since all assumptions about the structure of
+the data are implicitly stated in the source code. This also enables extraction
+of the analyses performed, their reproduction, and their modification.
+
+To take full advantage of data, it can be useful for it to be structured in a
+way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
+
+Interoperability is facilitated when variable names are mapped to existing data
+standards. For instance, for biodiversity data, the
+[Darwin Core Standard](http://www.tdwg.org/standards/450/) provides a set of
+terms that describe observations, specimens, samples, and related information
+for a taxa. For earth science and ecosystem models and data, the
+[Climate Forecasting Conventions](https://cfconventions.org) are widely adopted,
+such that a large ecosystem of software and data products exist to reduce the
+technical burden of reformatting and reusing large and complex data.  Because
+each term in such standards are clearly defined and documented, each dataset can
+use the terms consistently, this facilitates data sharing across institutions,
+applications, and disciplines.
+
+With machine-readable, standards-compliant data, it easier to build an
+Application Programming Interface (API) to query the dataset and retrieve a
+subset of interest as outlined in Rule 10
+
+# Rule 6: Data should be uniquely identifiable {-}
 
 The data used in a scientific publication should be
 uniquely identifiable to aid reproducibility.  Ideally, datasets should have a
@@ -275,7 +314,7 @@ year in a temporal survey will result in a bump in the minor version. The *patch
 version* number is bumped when typos or bugs have been fixed. For example
 version `1.0.1` of a dataset may fix a typo in version `1.0.0`.
 
-# Rule 6: Link relevant metadata {-}
+# Rule 7: Link relevant metadata {-}
 
 Metadata is the contextual information required to interpret data (Figure 1)
 and should be clearly defined and tightly integrated with data.
@@ -300,7 +339,7 @@ between metadata and data as clear as possible. The best approach is dependent
 on the archiving plan used, but even if the dataset is archived solely for
 personal use, metadata will provide crucial context for future reuse.
 
-# Rule 7: Adopt the proper privacy protocols {-}
+# Rule 8: Adopt the proper privacy protocols {-}
 
 In datasets where privacy is important, be sure to have a plan in place to
 protect data confidentiality. You should consider the different data
@@ -332,7 +371,7 @@ bringing computation to data storage facilities instead of vice versa [@Gaye2014
 Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
-# Rule 8: Have a systematic backup scheme {-}
+# Rule 9: Have a systematic backup scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of data.
 Researchers should therefore back data up at all stages of the research process.
@@ -364,7 +403,7 @@ possible, find out about the long-term storage plans of the repository. Are
 there plans in place to keep data available if the organization that manages the
 repository dissolves?
 
-# Rule 9: The location and method of data storage depends on how much you have {-}
+# Rule 10: The location and method of data storage depends on how much you have {-}
 
 The storage method you should choose depends on the size and nature of your
 data, the cost of storage, the time it takes to transfer the data, how the data
@@ -403,45 +442,6 @@ analysis via reproducible scripts, however they can lead to excessive and
 careless abuse of resources. The time required to re-download and recompute
 results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
-
-# Rule 10: Data should be stored in a machine-readable format {-}
-
-Not only data should be stored in an open format (Rule 4), but it should also be
-stored in a format that computers can easily use.  This is especially crucial as
-datasets become larger.  Machine readable data is best achieved by using
-standard data formats that have clear specifications (e.g., CSV, XML, JSON,
-HDF5), or by using databases. Such data formats can be handled by a variety of
-programming languages, as efficient and well-tested libraries for parsing them
-are typically available. These standard data formats also ensure
-interoperability, facilitate re-use, and reduce the chances of data loss or
-mistakes being introduced during conversion between formats.
-
-When data can be easily imported into familiar software, whether it be a
-scripting language, a spreadsheet, or any other computer program that can import
-these common files, data becomes easier to re-use. Computer source code, the
-human readable software that uses data, provides metadata as well. This
-makes analysis more transparent, since all assumptions about the structure of
-the data are implicitly stated in the source code. This also enables extraction
-of the analyses performed, their reproduction, and their modification.
-
-To take full advantage of data, it can be useful for it to be structured in a
-way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
-
-Interoperability is facilitated when variable names are mapped to existing data
-standards. For instance, for biodiversity data, the
-[Darwin Core Standard](http://www.tdwg.org/standards/450/) provides a set of
-terms that describe observations, specimens, samples, and related information
-for a taxa. For earth science and ecosystem models and data, the
-[Climate Forecasting Conventions](https://cfconventions.org) are widely adopted,
-such that a large ecosystem of software and data products exist to reduce the
-technical burden of reformatting and reusing large and complex data.  Because
-each term in such standards are clearly defined and documented, each dataset can
-use the terms consistently, this facilitates data sharing across institutions,
-applications, and disciplines.
-
-With machine-readable, standards-compliant data, it easier to build an
-Application Programming Interface (API) to query the dataset and retrieve a
-subset of interest as outlined in Rule 9.
 
 # Glossary and abbreviations used in the manuscript {-}
 
@@ -503,7 +503,7 @@ subset of interest as outlined in Rule 9.
   value. Cryptographic hash functions are easy to compute from the message, but
   it should be impossible to recover the message from the output, and any
   modifications to the message should also modify the output. The SHA algorithms
-  are often used in preference to similar tools such as MD5 (mentioned in Rule 7),
+  are often used in preference to similar tools such as MD5 (mentioned in Rule 8),
   which are no longer secure.
 
 * Apache **Spark** is an open source computing platform for querying large data
