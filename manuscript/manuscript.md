@@ -15,21 +15,21 @@ author:
  - family: LeBauer
    given: David
    affiliation: 3
- - family: Zimmerman
-   given: Naupaka
-   affiliation: 4
- - family: Woo
-   given: Kara H.
-   affiliation: 5
+ - family: Michonneau
+   given: François
+   affiliation: 4,5
  - family: Mount
    given: Sarah
    affiliation: 6
  - family: Poisot
    given: Timothée
    affiliation: 7
- - family: Michonneau
-   given: François
-   affiliation: 8,9
+ - family: Woo
+   given: Kara H.
+   affiliation: 8
+ - family: Zimmerman
+   given: Naupaka
+   affiliation: 9
  - family: Hollister
    given: Jeffrey
    affiliation: 10
@@ -44,11 +44,11 @@ organization:
    name: University of Illinois at Urbana-Champaign
    address: National Center for Supercomputing Applications and Institute for Genomic Biology
  - id: 4
-   name: University of Arizona
-   address: School of Plant Sciences
+   name: University of Florida
+   address: iDigBio, Florida Museum of Natural History
  - id: 5
-   name: Washington State University
-   address: Center for Environmental Research, Education, and Outreach
+   name: University of Florida
+   address: Whitney Laboratory for Marine Bioscience
  - id: 6
    name: King's College London
    address: Department of Informatics
@@ -56,15 +56,14 @@ organization:
    name: Université de Montréal
    address: Département de Sciences Biologiques
  - id: 8
-   name: University of Florida
-   address: iDigBio, Florida Museum of Natural History
+   name: Washington State University
+   address: Center for Environmental Research, Education, and Outreach
  - id: 9
-   name: University of Florida
-   address: Whitney Laboratory for Marine Biosciences
+   name: University of Arizona
+   address: School of Plant Sciences
  - id: 10
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
-
 ---
 
 \linenumbers
