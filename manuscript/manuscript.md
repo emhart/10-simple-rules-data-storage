@@ -457,6 +457,11 @@ subset of interest as outlined in Rule 9.
   digitization of natural history collections, and provides data and images for
   biological specimens.
 
+* **ITIS** (Integrated Taxonomic Information System, <http://www.itis.gov>) is
+  an international partnership of governmental organizations that aims at
+  providing authoritative taxonomic information for plants, animals, fungi and
+  microbes.
+
 ## File formats {-}
 
 * **CSV** (Comma-Separated Values) and **TSV** (Tab-Separated Values) are plain text
