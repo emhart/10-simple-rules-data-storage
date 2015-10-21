@@ -28,7 +28,7 @@ author:
    given: Kara H.
    affiliation: 8
  - family: Zimmerman
-   given: Naupaka
+   given: Naupaka B.
    affiliation: 9
  - family: Hollister
    given: Jeffrey
@@ -584,7 +584,7 @@ Integrated Taxonomic Information System (ITIS), and it makes it easy to add
 information about the classification of these species. It also allows
 researchers to edit the taxonomic information independently from the table that
 holds the measurements about the individuals. Unique values for each
-observational units facilitates the programmatic combination of information
+observational unit facilitate the programmatic combination of information
 using "join" operations. With this example, if the focus of the study for which
 these data were collected are the size measurements of the individuals (weight
 and length), information about "where", "when", and "what" animals were
