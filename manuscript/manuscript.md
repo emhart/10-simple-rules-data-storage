@@ -586,9 +586,9 @@ researchers to edit the taxonomic information independently from the table that
 holds the measurements about the individuals. Unique values for each
 observational unit facilitate the programmatic combination of information
 using "join" operations. With this example, if the focus of the study for which
-these data were collected are the size measurements of the individuals (weight
+these data were collected is based upon the size measurements of the individuals (weight
 and length), information about "where", "when", and "what" animals were
-collected can be considered as meta-data. Using the tidy format makes this
+measured can be considered meta-data. Using the tidy format makes this
 distinction clearer.
 
 
