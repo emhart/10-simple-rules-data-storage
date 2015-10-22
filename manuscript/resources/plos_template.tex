@@ -170,7 +170,7 @@
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
 \\
 $for(author)$
-$author.given$ $author.family$ $$^{$author.affiliation$ $if(author.email)$,\ast$endif$}$$,
+$author.given$ $author.family$ $$^{$author.affiliation$ $if(author.email)$,\ast$endif$}$$$sep$,
 $endfor$
 \\
 \bigskip
