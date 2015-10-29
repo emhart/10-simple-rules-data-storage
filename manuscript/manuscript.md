@@ -84,7 +84,7 @@ throughput DNA sequencing, sustained institutional support for large sensor
 networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
 cameras [@Eisenstein2011] have created massive quantities of data. At the same time,
 the combination of increasingly diverse research teams [@Adams2012] and data
-aggregation in portals (e.g. for biodiversity data, [GBIF](http://gbif.org/) or
+aggregation in portals (e.g. for biodiversity data, [GBIF.org](http://gbif.org/) or
 [iDigBio](https://www.idigbio.org/portal/)) necessitates increased coordination
 among data collectors and institutions [@Fraser2013; @Robertson2014]. As a
 consequence, "data" can now mean anything from petabytes of information stored
@@ -445,7 +445,7 @@ generated files that are recognized when the same script is run multiple times.
 
 # Glossary and abbreviations used in the manuscript {-}
 
-## Projects  {-}
+## Projects and Initiatives {-}
 
 * **GBIF** (Global Biodiversity Information Facility, <http://www.gbif.org>)
   provides an international open data infrastructure to publish and disseminate
