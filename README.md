@@ -3,26 +3,18 @@
 A repository for the 10 simple rules data sharing paper to be submitted to PLoS
 Comp Biology.
 
-This paper is a distributed collaborative effort spawned from a message from
-[Sofware Carpentry Discussion list][swcl].
+This paper is a distributed collaborative effort spawned from a
+[message](http://lists.software-carpentry.org/pipermail/discuss_lists.software-carpentry.org/2015-February/002601.html)
+on the [Sofware Carpentry Discussion list][swcl] and was continued as a
+[GitHub issue](https://github.com/swcarpentry/site/issues/797).
 
-All co-authors are those whom expressed interest on the discussion thread.
-Currently the list (in no particular order) with affiliation, twitter handle and
-website
+The manuscript is avaialable as a pre-print at PeerJ Preprints:
+<https://peerj.com/preprints/1448/>
 
-* Pauline Barmby - `@PBarmby` [http://www.physics.uwo.ca/~pbarmby](http://www.physics.uwo.ca/~pbarmby)
-* Timothee Poisot - `@tpoi`/`@PoisotLab`, Université de Montréal - [Lab web](http://poisotlab.io)
-* Jeff Hollister - Atlantic Ecology Division, US Environmental Protection Agency - `@jhollist` - [jwhollister.com](http://jwhollister.com)
-* Edmund Hart - Dept of Biology, University of Vermont - `@emhrt_` - [emhart.info](http://emhart.info)
-* Kaitlin Thaney -
-* Naupaka Zimmerman - School of Plant Sciences, University of Arizona - `@naupakaz` - [naupaka.net](http://naupaka.net)
-* Will Cornwell - School of Biological, Earth, and Environmental Sciences, University of New South Wales - [@will_cornwell](https://twitter.com/will_cornwell) - [willcornwell.org](http://willcornwell.org)
-* Sarah Mount - Department of Informatics, King's College London - `@snim2` - [snim2.org](http://snim2.org)
-* Sarah Simpkin -
-* François Michonneau - iDigBio, University of Florida - Twitter: `@fmic_` - [francoismichonneau.net](http://francoismichonneau.net)
-* Kara Woo - Washington State University - `@kara_woo` - [karawoo.com](http://karawoo.com)
-* David LeBauer - National Center for Supercomputing Applications, University of Illinois - `@dlebauer` - [sites.google.com/site/dlebauer/](https://sites.google.com/site/dlebauer/)
-* Stephen Turner - University of Virginia. Twitter: [@genetics_blog](https://twitter.com/genetics_blog). Web: [stephenturner.us](http://stephenturner.us/).
-* Daniel Falster - Department of Biological Sciences, Macquarie University NSW 2109, Australia - `@adaptive_plant` - [danielfalster.com](http://danielfalster.com/)
+> Hart E, Barmby P, LeBauer D, Michonneau F, Mount S, Poisot T, Woo KH,
+> Zimmerman N, Hollister JW. (2015) Ten simple rules for digital data
+> storage. PeerJ PrePrints 3:e1804
+> https://dx.doi.org/10.7287/peerj.preprints.1448v1
+
 
 [swcl]: http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org
