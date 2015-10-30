@@ -84,7 +84,7 @@ throughput DNA sequencing, sustained institutional support for large sensor
 networks [@Reid2014; @Hampton2013], and sky surveys with large-format digital
 cameras [@Eisenstein2011] have created massive quantities of data. At the same time,
 the combination of increasingly diverse research teams [@Adams2012] and data
-aggregation in portals (e.g. for biodiversity data, [GBIF](http://gbif.org/) or
+aggregation in portals (e.g. for biodiversity data, [GBIF.org](http://gbif.org/) or
 [iDigBio](https://www.idigbio.org/portal/)) necessitates increased coordination
 among data collectors and institutions [@Fraser2013; @Robertson2014]. As a
 consequence, "data" can now mean anything from petabytes of information stored
@@ -445,7 +445,7 @@ generated files that are recognized when the same script is run multiple times.
 
 # Glossary and abbreviations used in the manuscript {-}
 
-## Projects  {-}
+## Projects and Initiatives {-}
 
 * **GBIF** (Global Biodiversity Information Facility, <http://www.gbif.org>)
   provides an international open data infrastructure to publish and disseminate
@@ -477,11 +477,20 @@ generated files that are recognized when the same script is run multiple times.
   with directories and files. It is maintained by the non-profit HDF Group, a
   spin off of the National Center for Supercomputing Applications (NCSA).
 
+* **JSON** is a plain text file format typically used to store arbitrarily
+  structured data in the form of keys and values. It can be used to store
+  non-relational databases as it does not rely on a tabular data format. In many
+  respects, it has been replacing XML.
+
 * **NetCDF** (Network Common Data Form) is an open-source binary file format
   designed to store large datasets in array-oriented scientific data as
   typically used in geosciences. It is maintained by Unidata, a non-profit
   member of the University Corporation for Atmospheric Research (UCAR) which is
   funded by the National Science Foundation.
+
+* **XML** (Extensible Markup Language) is a markup language and the file format
+  used to store documents written with it. It is used to represent arbitrary
+  data structures and is both human and machine readable.
 
 ## Programming and algorithms {-}
 
@@ -537,8 +546,8 @@ generated files that are recognized when the same script is run multiple times.
   location of an electronic object on the internet. DOI and ARK are examples of
   implementations of PURL.
 
-* **URL** (Uniform Resource Locator) gives the location of an object on the World Wide Web;
-the most familiar type of URL is a website address.
+* **URL** (Uniform Resource Locator) gives the location of an object on the
+  World Wide Web; the most familiar type of URL is a website address.
 
 
 # Acknowledgements {-}
