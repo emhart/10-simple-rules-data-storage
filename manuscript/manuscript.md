@@ -109,6 +109,8 @@ existing repository, where only derived data products (versus raw
 data) are suitable for archiving, or in the case where an existing repository
 may have lax standards.
 
+<!-- PJM Comments: There is also consideration to be made about the longevity of the repository, and it's limitations (performance and network bandwidth). Long term funding of repositories has been inconsistent, and when these repositories go offline having a migration plan already in place is critical.-->
+
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
 initiative [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
@@ -167,6 +169,8 @@ managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
 and preparation (Rule 10).
 
+<!-- PJM Comments: It might be worth mentioning metadata management at this point. For some projects the metadata alone rivals many other data sets, and having a metadata management as part of the roadmap before data collection begins is important. It is at least something that should be discussed and considered prior to start of data collection if possible. -->
+
 # Rule 2: Know your use case {-}
 
 Well-identified use cases make data storage easier. Ideally prior to beginning
@@ -178,6 +182,7 @@ data collection, one can answer the following questions:
    make for storage, computing requirements, and reproducibility)?
  - Can manual corrections be avoided in favor of programmatic
    approaches?
+   <!-- PJM Comments: /self-documenting approaches, IE digital notebooks -->
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
@@ -217,6 +222,7 @@ spirit of this rule is that data should be as "pure" as possible when they are
 stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
+<!-- PJM Comments: Raw data validation should also be considered. Data checksums ensure that the data set has not suffered any silent corruption/manipulation while being stored or transfered. For large enough datasets the odds of silent data corruption are high, and requires checksum verification. Tools like sha and md5 make it easy to verify that the hash of the data has not changed. This technique has been widely used by many linux distributions to distribute images and has been very effective. -->
 
 # Rule 4: Store data in open formats {-}
 
@@ -239,6 +245,8 @@ if day-to-day processing uses closed formats (e.g., due to software requirements
 data being stored for archival purposes should be stored in open formats. This
 is generally not prohibitive; most closed-source software enables users to
 export data to an open format.
+
+<!-- PJM Comments: Not that it needs this comment, but open and simple data formats make it easier to create a converter if that format falls out of favor in the future -->
 
 # Rule 5: Data should be stored in a machine-readable format {-}
 
@@ -371,6 +379,8 @@ bringing computation to data storage facilities instead of vice versa [@Gaye2014
 Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
+<!-- PJM Comments: Why hash? All hashes are crackable. Instead if possible replace the data with randomly generated id and use a lookup table stored separate from the data when the information is required. If the data set is still useful with the data hashed then it is probably still useful without the data, and it should be removed when distributed publicly. -->
+
 # Rule 9: Have a systematic backup scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of data.
@@ -417,6 +427,8 @@ study. While the cost of storage continues to decrease, the volume of data to be
 stored impacts the choice of storage methods and locations: for large datasets
 it is necessary to balance the cost of storage with the time of access and costs
 of re-generating the data.
+
+<!-- PJM Comments: With many researchers using storage (IE S3) that charge when you access the data, cost of data access should also be considered. Large datasets can be extremely costly to recover from these services, sometimes more costly than the analysis or even re-generating the data -->
 
 When data takes too long to transfer or is costly to store, it can become more
 efficient to use a computer that can directly access and use the data in place.
@@ -514,6 +526,8 @@ generated files that are recognized when the same script is run multiple times.
   modifications to the message should also modify the output. The SHA algorithms
   are often used in preference to similar tools such as MD5 (mentioned in Rule 8),
   which are no longer secure.
+
+<!-- PJM Comments: I think this gives a false sense of safety of the SHA-2 set of hashes. SHA-2 will more than likely suffer the same issues as MD5/SHA-1 in time. Some vulnerabilities have already been found in SHA-2, but are not yet practical to exploit. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2 are considered significantly more secure, but by design is costly. -->
 
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
