@@ -240,17 +240,21 @@ data being stored for archival purposes should be stored in open formats. This
 is generally not prohibitive; most closed-source software enables users to
 export data to an open format.
 
-# Rule 5: Data should be stored in a machine-readable format {-}
+# Rule 5: Data should be stored in an easily-usable format {-}
 
 Not only data should be stored in an open format (Rule 4), but it should also be
-stored in a format that computers can easily use.  This is especially crucial as
-datasets become larger.  Machine readable data is best achieved by using
+stored in a format that computers can easily use for processing.  This is especially crucial as
+datasets become larger.  Easily-usable data is best achieved by using
 standard data formats that have clear specifications (e.g., CSV, XML, JSON,
 HDF5), or by using databases. Such data formats can be handled by a variety of
 programming languages, as efficient and well-tested libraries for parsing them
 are typically available. These standard data formats also ensure
 interoperability, facilitate re-use, and reduce the chances of data loss or
-mistakes being introduced during conversion between formats.
+mistakes being introduced during conversion between formats. Examples of
+machine-readable open formats that would *not* be easy to
+process include data included in the text of a Word or PDF file, or 
+scanned images of tabular data from a paper source.
+
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
