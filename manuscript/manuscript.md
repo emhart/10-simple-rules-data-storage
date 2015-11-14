@@ -447,6 +447,18 @@ careless abuse of resources. The time required to re-download and recompute
 results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
 
+<!-- K Hinsen suggests "data archiving", "data models and formats", and "databases"-->
+# Further Reading and Resources
+Digital data storage is a vast topic; the references given here and elsewhere in
+this paper proivde some starting points for interested readers.
+For beginning users of scientific data, [Data Carpentry](http://datacarpentry.org)
+offers workshops and resources on data management and analysis, as do
+the DataONE education modules [@Dataone2012]. 
+For librarians and others who
+are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
+
+
+
 # Glossary and abbreviations used in the manuscript {-}
 
 ## Projects and Initiatives {-}
