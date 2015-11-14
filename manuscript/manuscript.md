@@ -554,7 +554,8 @@ generated files that are recognized when the same script is run multiple times.
 
 We would like to thank G. Wilson and the Software Carpentry instructor community
 for providing the initial inspiration for this paper and the discussion held at
-<https://github.com/swcarpentry/site/issues/797>. DL was funded by the Energy
+<https://github.com/swcarpentry/site/issues/797>. We thank K. Hinsen, G. Pugh,
+and W. Turner for comments on the draft manuscript. DL was funded by the Energy
 Biosciences institute and the National Center for Supercomputing Applications.
 FM was funded by iDigBio (Integrated Digitized Biocollections), and therefore
 this material is based upon work supported by the National Science Foundation’s
