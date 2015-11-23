@@ -102,12 +102,14 @@ publicy shared or not, becomes less accessible through time [@Pepe2014;
 @Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
 begin and end with, "use a community standard repository."  This is a good
 advice; however, data storage policies are highly variable between repositories
-[@Marcial2010]. Best practices across all stages of the data life cycle will
-facilitate transition from local storage to repository. Good storage practices
-are important even (or especially) in cases where data may not fit with an
-existing repository, where only derived data products (versus raw
-data) are suitable for archiving, or in the case where an existing repository
-may have lax standards.
+[@Marcial2010]. A data management plan utilizing best practices across all
+stages of the data life cycle will facilitate transition from local storage to
+repository and repository to repository. Good storage practices are important
+even (or especially) in cases where data may not fit with an existing repository,
+where only derived data products (versus raw data) are suitable for archiving,
+or in the case where an existing repository may have lax standards.
+
+<!-- PJM Comments: There is also consideration to be made about the longevity of the repository, and it's limitations (performance and network bandwidth). Long term funding of repositories has been inconsistent, and when these repositories go offline having a migration plan already in place is critical.-->
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
@@ -167,6 +169,12 @@ managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
 and preparation (Rule 10).
 
+Early consideration and planning should be given to the metadata of the project.
+A plan should be developed early as to what metadata will be collected, and how it
+will be maintained (Rule 7).
+
+<!-- PJM Comments: It might be worth mentioning metadata management at this point. For some projects the metadata alone rivals many other data sets, and having a metadata management as part of the roadmap before data collection begins is important. It is at least something that should be discussed and considered prior to start of data collection if possible. -->
+
 # Rule 2: Know your use case {-}
 
 Well-identified use cases make data storage easier. Ideally prior to beginning
@@ -176,8 +184,8 @@ data collection, one can answer the following questions:
  - Should the data used for analysis be prepared once, or re-generated
    from the raw data each time (and what difference would this choice
    make for storage, computing requirements, and reproducibility)?
- - Can manual corrections be avoided in favor of programmatic
-   approaches?
+ - Can manual corrections be avoided in favor of programmatic or self-documenting
+  (e.g., ipython notebooks) approaches?
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
@@ -217,6 +225,15 @@ spirit of this rule is that data should be as "pure" as possible when they are
 stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
+A cryptographic hash (e.g., SHA or MD5) of the raw data should be generated and
+distributed with the data. These hashes ensure that the data set has not suffered
+any silent corruption/manipulation while being stored or transfered (Internet2
+Silent Data Corruption: https://www.xsede.org/news/-/news/item/6390). For large
+enough datasets the likelihood of silent data corruption is high. This technique
+has been widely used by many Linux distributions to distribute images and has
+been very effective with minimal effort.
+
+<!-- PJM Comments: Raw data validation should also be considered. Data checksums ensure that the data set has not suffered any silent corruption/manipulation while being stored or transfered. For large enough datasets the odds of silent data corruption are high, and requires checksum verification. Tools like sha and md5 make it easy to verify that the hash of the data has not changed. This technique has been widely used by many linux distributions to distribute images and has been very effective. -->
 
 # Rule 4: Store data in open formats {-}
 
@@ -353,18 +370,19 @@ collaborators, and yourself. Both the NSF and NIH have data sharing policies in
 their grant guidelines to prevent sharing personally identifiable information,
 and to anonymize data on human subjects.
 
-In small datasets, a hashing scheme (anonymizing PII by converting it into
-a numeric key of a fixed length with a standard algorithm) is enough to
-anonymize minimal personal information. Make sure to not store the hashing scheme
-with the data to prevent inadvertent sharing and to not use a commonplace hashing
-technique. Famously, New York City officials shared what they thought was
-anonymized data on cab drivers and over 173 million cab rides. However, it was
-quickly recognized that the city anonymized the data with a simple MD5 hashing
-scheme and all 20 GB of data were de-anonymized in a matter of hours [@Goodin].
-This type of error can be prevented by asking a trusted colleague to try to
-"crack" anonymised data before releasing it publicly. Often the person who has
-produced the data is least well placed to check the fine details of their
-security procedures.
+In small datasets, a lookup table (protecting PII by removing it and replacing it
+with a unique id that maps to the sensitive data in an external dataset) is enough
+to anonymize minimal personal information. Hashing techniques are susceptible to
+a number of attacks, and all hashed data can eventually be determined. Famously,
+New York City officials shared what they thought was anonymized data on cab drivers
+and over 173 million cab rides. However, it was quickly recognized that the city
+anonymized the data with a simple MD5 hashing scheme and all 20 GB of data were
+de-anonymized in a matter of hours [@Goodin]. This type of error can be prevented
+by asking a trusted colleague or security personal to try to "crack" anonymised
+data before releasing it publicly. Often the person who has produced the data is
+least well placed to check the fine details of their security procedures. If possible
+the best solution is to remove any sensitive data that is not required from the
+dataset prior to distribution.
 
 In more problematic cases, the data itself allows identifiability: this is the
 case with human genomic data that map directly onto a subject's identity [@Homer2008].
@@ -374,6 +392,8 @@ genome to help with privacy and data volume [@Kahn2011; @wandelt2014trends], or
 bringing computation to data storage facilities instead of vice versa [@Gaye2014].
 Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
+
+<!-- PJM Comments: Why hash? All hashes are crackable. Instead if possible replace the data with randomly generated id and use a lookup table stored separate from the data when the information is required. If the data set is still useful with the data hashed then it is probably still useful without the data, and it should be removed when distributed publicly. -->
 
 # Rule 9: Have a systematic backup scheme {-}
 
@@ -420,7 +440,11 @@ accumulating to petabyte (PB) scale over the course of any particular
 study. While the cost of storage continues to decrease, the volume of data to be
 stored impacts the choice of storage methods and locations: for large datasets
 it is necessary to balance the cost of storage with the time of access and costs
-of re-generating the data.
+of re-generating the data. With new commercial cloud offerings (e.g., Amazon S3)
+the cost of retrieving the data might exceed the cost analysis or re-generating
+the data.
+
+<!-- PJM Comments: With many researchers using storage (IE S3) that charge when you access the data, cost of data access should also be considered. Large datasets can be extremely costly to recover from these services, sometimes more costly than the analysis or even re-generating the data -->
 
 When data takes too long to transfer or is costly to store, it can become more
 efficient to use a computer that can directly access and use the data in place.
@@ -529,7 +553,11 @@ are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of
   it should be impossible to recover the message from the output, and any
   modifications to the message should also modify the output. The SHA algorithms
   are often used in preference to similar tools such as MD5 (mentioned in Rule 8),
-  which are no longer secure.
+  which are no longer secure. All hashing algorithms are vulnerable to brute force
+  attacks. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2
+  are considered significantly more secure, but by design more costly to compute.
+
+<!-- PJM Comments: I think this gives a false sense of safety of the SHA-2 set of hashes. SHA-2 will more than likely suffer the same issues as MD5/SHA-1 in time. Some vulnerabilities have already been found in SHA-2, but are not yet practical to exploit. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2 are considered significantly more secure, but by design is costly. -->
 
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
