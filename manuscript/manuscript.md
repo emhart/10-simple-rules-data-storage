@@ -15,6 +15,9 @@ author:
  - family: LeBauer
    given: David
    affiliation: 3
+ - family: Mulrooney
+   given: Patrick
+   affiliation: 11
  - family: Michonneau
    given: François
    affiliation: 4,5
@@ -64,6 +67,8 @@ organization:
  - id: 10
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
+ - id: University of California at San Diego
+   address: San Diego Supercomputing Center
 ---
 
 \linenumbers
