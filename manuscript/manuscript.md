@@ -68,7 +68,7 @@ organization:
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
  - id: University of California at San Diego
-   address: San Diego Supercomputing Center
+   address: San Diego Supercomputer Center
 ---
 
 \linenumbers
