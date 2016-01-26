@@ -15,15 +15,15 @@ author:
  - family: LeBauer
    given: David
    affiliation: 3
- - family: Mulrooney
-   given: Patrick
-   affiliation: 11
  - family: Michonneau
    given: François
    affiliation: 4,5
  - family: Mount
    given: Sarah
    affiliation: 6
+ - family: Mulrooney
+   given: Patrick
+   affiliation: 11
  - family: Poisot
    given: Timothée
    affiliation: 7
