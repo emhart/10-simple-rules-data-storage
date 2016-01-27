@@ -21,6 +21,9 @@ author:
  - family: Mount
    given: Sarah
    affiliation: 6
+ - family: Mulrooney
+   given: Patrick
+   affiliation: 11
  - family: Poisot
    given: Timothée
    affiliation: 7
@@ -64,6 +67,8 @@ organization:
  - id: 10
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
+ - id: University of California at San Diego
+   address: San Diego Supercomputer Center
 ---
 
 \linenumbers
