@@ -109,7 +109,7 @@ begin and end with, "use a community standard repository."  This is a good
 advice; however, data storage policies are highly variable between repositories
 [@Marcial2010]. A data management plan utilizing best practices across all
 stages of the data life cycle will facilitate transition from local storage to
-repository. Similarly it can facilitate transition from repository to repository if funding runs out or needs change. Good storage practices are important
+repository[@Michener2015]. Similarly it can facilitate transition from repository to repository if funding runs out or needs change. Good storage practices are important
 even (or especially) in cases where data may not fit with an existing repository,
 where only derived data products (versus raw data) are suitable for archiving,
 or in the case where an existing repository may have lax standards.
@@ -166,7 +166,7 @@ own output format and conventions. Knowing the state in which the data needs to
 be at each step of the analysis can help (i) identify software tools to use in
 converting across data formats, (ii) orient technological choices about how and
 where the data should be stored, and (iii) rationalize the analysis pipeline,
-making it more amenable to re-use.
+making it more amenable to re-use [@Roche2015].
 
 Also key is the ability to estimate the storage volume needed to store the data,
 both during and after the analysis. The required strategy will differ for
@@ -535,7 +535,7 @@ are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of
 
 * **XML** (Extensible Markup Language) is a markup language and the file format
   used to store documents written with it. It is used to represent arbitrary
-  data structures and is both human and machine readable.
+  data structures and is both human and machine-readable.
 
 ## Programming and algorithms {-}
 
