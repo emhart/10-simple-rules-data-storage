@@ -103,13 +103,13 @@ While much has been written about both the virtues of data sharing
 @Goodman2014], data storage has received comparatively less attention.
 Proper storage is a prerequisite to sharing, and indeed inadequate storage
 contributes to the phenomenon of data decay or "data entropy": data, whether
-publicy shared or not, becomes less accessible through time [@Pepe2014;
+publicly shared or not, becomes less accessible through time [@Pepe2014;
 @Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
 begin and end with, "use a community standard repository."  This is a good
 advice; however, data storage policies are highly variable between repositories
 [@Marcial2010]. A data management plan utilizing best practices across all
 stages of the data life cycle will facilitate transition from local storage to
-repository and repository to repository. Good storage practices are important
+repository[@Michener2015]. Similarly it can facilitate transition from repository to repository if funding runs out or needs change. Good storage practices are important
 even (or especially) in cases where data may not fit with an existing repository,
 where only derived data products (versus raw data) are suitable for archiving,
 or in the case where an existing repository may have lax standards.
@@ -148,7 +148,7 @@ Much advice has been written on both the nature of sharing data
   and serve as a record of the work that lives beyond a single
   publication.  -->
 
-# Rule 1: Know what to expect {-}
+# Rule 1: Anticipate how your data will be used {-}
 
 One can avoid most of the troubles encountered during the analysis, management,
 and release of data by having a clear roadmap of what to expect *before* data
@@ -157,6 +157,7 @@ acquisition starts. For instance:
  - How will the raw data be received? Are they delivered by a machine or software, or typed-in?
  - What is the format expected by the software used for analysis?
  - Is there a community standard format?
+ - How much data will be collected?
 
 The answers to these questions can range from simple cases (e.g., sequencing
 data stored in the FASTA format, which can be used "as is" throughout the
@@ -165,7 +166,7 @@ own output format and conventions. Knowing the state in which the data needs to
 be at each step of the analysis can help (i) identify software tools to use in
 converting across data formats, (ii) orient technological choices about how and
 where the data should be stored, and (iii) rationalize the analysis pipeline,
-making it more amenable to re-use.
+making it more amenable to re-use [@Roche2015].
 
 Also key is the ability to estimate the storage volume needed to store the data,
 both during and after the analysis. The required strategy will differ for
@@ -175,8 +176,7 @@ managed locally with a simple data management plan, whereas larger datasets
 and preparation (Rule 10).
 
 Early consideration and planning should be given to the metadata of the project.
-A plan should be developed early as to what metadata will be collected, and how it
-will be maintained (Rule 7).
+A plan should be developed early as to what metadata will be collected, and how it will be maintained and stored (Rule 7).
 
 <!-- PJM Comments: It might be worth mentioning metadata management at this point. For some projects the metadata alone rivals many other data sets, and having a metadata management as part of the roadmap before data collection begins is important. It is at least something that should be discussed and considered prior to start of data collection if possible. -->
 
@@ -274,7 +274,7 @@ are typically available. These standard data formats also ensure
 interoperability, facilitate re-use, and reduce the chances of data loss or
 mistakes being introduced during conversion between formats. Examples of
 machine-readable open formats that would *not* be easy to
-process include data included in the text of a Word or PDF file, or 
+process include data included in the text of a Word or PDF file, or
 scanned images of tabular data from a paper source.
 
 
@@ -482,7 +482,7 @@ Digital data storage is a vast topic; the references given here and elsewhere in
 this paper proivde some starting points for interested readers.
 For beginning users of scientific data, [Data Carpentry](http://datacarpentry.org)
 offers workshops and resources on data management and analysis, as do
-the DataONE education modules [@Dataone2012]. 
+the DataONE education modules [@Dataone2012].
 For librarians and others who
 are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 
@@ -535,7 +535,7 @@ are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of
 
 * **XML** (Extensible Markup Language) is a markup language and the file format
   used to store documents written with it. It is used to represent arbitrary
-  data structures and is both human and machine readable.
+  data structures and is both human and machine-readable.
 
 ## Programming and algorithms {-}
 
