@@ -659,6 +659,7 @@ distinction clearer.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{resources/tidy_data.eps}
+\caption{}
 \label{fig:tidy-data}
 \end{figure}
 
