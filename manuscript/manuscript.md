@@ -67,7 +67,8 @@ organization:
  - id: 10
    name: US Environmental Protection Agency
    address: Atlantic Ecology Division
- - id: University of California at San Diego
+ - id: 11
+   name: University of California at San Diego
    address: San Diego Supercomputer Center
 ---
 
@@ -99,20 +100,22 @@ important, but data curation practices must continue to keep pace with the
 changes brought about by new forms and practices of data collection and storage.
 
 While much has been written about both the virtues of data sharing
-[@Wolkovich2012; @Roche2014] and best practices to do so [@White2013;
-@Goodman2014], data storage has received comparatively less attention.
-Proper storage is a prerequisite to sharing, and indeed inadequate storage
-contributes to the phenomenon of data decay or "data entropy": data, whether
-publicly shared or not, becomes less accessible through time [@Pepe2014;
-@Vines2014; @Michener2012; @Michener1997]. Best practices for data storage often
-begin and end with, "use a community standard repository."  This is a good
-advice; however, data storage policies are highly variable between repositories
-[@Marcial2010]. A data management plan utilizing best practices across all
-stages of the data life cycle will facilitate transition from local storage to
-repository[@Michener2015]. Similarly it can facilitate transition from repository to repository if funding runs out or needs change. Good storage practices are important
-even (or especially) in cases where data may not fit with an existing repository,
-where only derived data products (versus raw data) are suitable for archiving,
-or in the case where an existing repository may have lax standards.
+[@Wolkovich2012; @Roche2014] and best practices to do so
+[@White2013; @Goodman2014], data storage has received comparatively less
+attention.  Proper storage is a prerequisite to sharing, and indeed inadequate
+storage contributes to the phenomenon of data decay or "data entropy": data,
+whether publicly shared or not, becomes less accessible through time
+[@Pepe2014; @Vines2014; @Michener2012; @Michener1997]. Best practices for data
+storage often begin and end with, "use a community standard repository."  This
+is a good advice; however, data storage policies are highly variable between
+repositories [@Marcial2010]. A data management plan utilizing best practices
+across all stages of the data life cycle will facilitate transition from local
+storage to repository[@Michener2015]. Similarly it can facilitate transition
+from repository to repository if funding runs out or needs change. Good storage
+practices are important even (or especially) in cases where data may not fit
+with an existing repository, where only derived data products (versus raw data)
+are suitable for archiving, or in the case where an existing repository may have
+lax standards.
 
 <!-- PJM Comments: There is also consideration to be made about the longevity of the repository, and it's limitations (performance and network bandwidth). Long term funding of repositories has been inconsistent, and when these repositories go offline having a migration plan already in place is critical.-->
 
@@ -231,12 +234,12 @@ stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
 A cryptographic hash (e.g., SHA or MD5) of the raw data should be generated and
-distributed with the data. These hashes ensure that the data set has not suffered
-any silent corruption/manipulation while being stored or transfered (Internet2
-Silent Data Corruption: https://www.xsede.org/news/-/news/item/6390). For large
-enough datasets the likelihood of silent data corruption is high. This technique
-has been widely used by many Linux distributions to distribute images and has
-been very effective with minimal effort.
+distributed with the data. These hashes ensure that the data set has not
+suffered any silent corruption/manipulation while being stored or transfered
+(see [Internet2 Silent Data Corruption](https://www.xsede.org/news/-/news/item/6390)).
+For large enough datasets the likelihood of silent data corruption is high. This
+technique has been widely used by many Linux distributions to distribute images
+and has been very effective with minimal effort.
 
 <!-- PJM Comments: Raw data validation should also be considered. Data checksums ensure that the data set has not suffered any silent corruption/manipulation while being stored or transfered. For large enough datasets the odds of silent data corruption are high, and requires checksum verification. Tools like sha and md5 make it easy to verify that the hash of the data has not changed. This technique has been widely used by many linux distributions to distribute images and has been very effective. -->
 
@@ -252,30 +255,30 @@ fees make access to data in proprietary formats unaffordable to
 end-users. Examples of open data formats include comma-separated values (CSV)
 for tabular data, hierarchical data format (HDF) [@koziol1998hdf5] and NetCDF
 [@rew1990netcdf] for hierarchically structured scientific data, portable network
-graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC) format)
-for spatial data, and extensible markup language (XML) for documents.  Examples
-of closed formats include DWG (for AutoCAD drawings), Photoshop document (PSD,
-for bitmap images), Windows Media Audio (WMA, for audio recording
-files), shapefiles for spatial data, and Microsoft Excel (for tabular data). Even
-if day-to-day processing uses closed formats (e.g., due to software requirements),
-data being stored for archival purposes should be stored in open formats. This
-is generally not prohibitive; most closed-source software enables users to
-export data to an open format.
+graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC)
+format) for spatial data, and extensible markup language (XML) for documents.
+Examples of closed formats include DWG for AutoCAD drawings, Photoshop document
+(PSD) for bitmap images, Windows Media Audio (WMA) for audio recording files,
+and Microsoft Excel (XLSX) for tabular data. Even if day-to-day processing uses
+closed formats (e.g., due to software requirements), data being stored for
+archival purposes should be stored in open formats. This is generally not
+prohibitive; most closed-source software enables users to export data to an open
+format.
 
 # Rule 5: Data should be stored in an easily-usable format {-}
 
 Not only data should be stored in an open format (Rule 4), but it should also be
-stored in a format that computers can easily use for processing.  This is especially crucial as
-datasets become larger.  Easily-usable data is best achieved by using
-standard data formats that have clear specifications (e.g., CSV, XML, JSON,
-HDF5), or by using databases. Such data formats can be handled by a variety of
-programming languages, as efficient and well-tested libraries for parsing them
-are typically available. These standard data formats also ensure
-interoperability, facilitate re-use, and reduce the chances of data loss or
-mistakes being introduced during conversion between formats. Examples of
-machine-readable open formats that would *not* be easy to
-process include data included in the text of a Word or PDF file, or
-scanned images of tabular data from a paper source.
+stored in a format that computers can easily use for processing.  This is
+especially crucial as datasets become larger.  Easily-usable data is best
+achieved by using standard data formats that have open specifications (e.g.,
+CSV, XML, JSON, HDF5), or by using databases. Such data formats can be handled
+by a variety of programming languages, as efficient and well-tested libraries
+for parsing them are typically available. These standard data formats also
+ensure interoperability, facilitate re-use, and reduce the chances of data loss
+or mistakes being introduced during conversion between formats. Examples of
+machine-readable open formats that would *not* be easy to process include data
+included in the text of a Word or PDF file, or scanned images of tabular data
+from a paper source.
 
 
 When data can be easily imported into familiar software, whether it be a
@@ -287,7 +290,14 @@ the data are implicitly stated in the source code. This also enables extraction
 of the analyses performed, their reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
-way that makes use, interpretation, and analysis easy. One such structure for data stores each variable is a column, each observation as a row, and each type of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term for this structure is 'Codd's 3rd normal form', but has been made more accessible as the concept of *tidy* data [@Wickham2014tidy].   When data is organized in this way, the duplication of information is reduced and it is easier to subset or summarize the dataset to include the variables or observations of interest.
+way that makes use, interpretation, and analysis easy. One such structure for
+data stores each variable is a column, each observation as a row, and each type
+of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term
+for this structure is 'Codd's 3rd normal form', but has been made more
+accessible as the concept of *tidy* data [@Wickham2014tidy].  When data is
+organized in this way, the duplication of information is reduced and it is
+easier to subset or summarize the dataset to include the variables or
+observations of interest.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the
@@ -348,17 +358,18 @@ The importance of metadata for context, reusability, and discovery has been
 written about at length in guides for data management best practices [@Michener2012;
 @Strasser2012; @White2013].
 
-Metadata should be as comprehensive as possible, using standards and conventions of
-a discipline, and should be machine-readable.
-Metadata should always accompany a dataset, wherever it is stored, but the best way to do this depends on the format of the data.
-Text files can contain meta-data in in well defined text files such as XML or JSON).
-Some file formats are self-documenting, for example NetCDF, HDF5, and many image files
-allow for embedded metadata [@rew1990netcdf; @koziol1998hdf5].
-In a relational database, metadata tables should be clearly labeled and
-linked to the data. Ideally a schema will be provided that also shows the linkages
-between data tables and metadata tables. Another scenario is a set of flat text
-files--in this case a semantically versioned, compressed archive should be
-created that includes metadata.
+Metadata should be as comprehensive as possible, using standards and conventions
+of a discipline, and should be machine-readable.  Metadata should always
+accompany a dataset, wherever it is stored, but the best way to do this depends
+on the format of the data.  Text files can contain meta-data in in well defined
+text files such as XML or JSON).  Some file formats are self-documenting, for
+example NetCDF, HDF5, and many image files allow for embedded metadata
+[@rew1990netcdf; @koziol1998hdf5].  In a relational database, metadata tables
+should be clearly labeled and linked to the data. Ideally a schema will be
+provided that also shows the linkages between data tables and metadata
+tables. Another scenario is a set of flat text files--in this case a
+semantically versioned, compressed archive should be created that includes
+metadata.
 
 Whatever format is used for archiving, the goal should be to make the link
 between metadata and data as clear as possible. The best approach is dependent
@@ -477,14 +488,14 @@ results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
 
 <!-- K Hinsen suggests "data archiving", "data models and formats", and "databases"-->
-# Further Reading and Resources
+# Further Reading and Resources {-}
+
 Digital data storage is a vast topic; the references given here and elsewhere in
-this paper proivde some starting points for interested readers.
-For beginning users of scientific data, [Data Carpentry](http://datacarpentry.org)
-offers workshops and resources on data management and analysis, as do
-the DataONE education modules [@Dataone2012].
-For librarians and others who
-are responsible for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
+this paper proivde some starting points for interested readers.  For beginning
+users of scientific data, [Data Carpentry](http://datacarpentry.org) offers
+workshops and resources on data management and analysis, as do the DataONE
+education modules [@Dataone2012].  For librarians and others who are responsible
+for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 
 
 
@@ -658,6 +669,7 @@ distinction clearer.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{resources/tidy_data.eps}
+\caption{}
 \label{fig:tidy-data}
 \end{figure}
 
