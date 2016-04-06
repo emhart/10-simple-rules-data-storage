@@ -619,8 +619,6 @@ distinction clearer.
 
 # Figures {-}
 
-\textbf{Figure 1}
-
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{resources/tidy_data.eps}
