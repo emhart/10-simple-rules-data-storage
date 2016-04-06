@@ -76,12 +76,6 @@ organization:
 
 # Introduction {-}
 
-<!-- JWH Comments: May want to add a few more examples on top of DNA
-sequencing and sensor networks.  I am thinking LHC and astronomy, but
-outside my field so don't know good one.  Some references for those
-too could also be added. I removed the second mention of
-heterogeneity, seemed redundant. -->
-
 Data is the central currency of science, but the nature of scientific data has
 changed dramatically with the rapid pace of technology. This change
 has led to the development of a wide variety of data formats, dataset sizes, data
@@ -117,8 +111,6 @@ with an existing repository, where only derived data products (versus raw data)
 are suitable for archiving, or in the case where an existing repository may have
 lax standards.
 
-<!-- PJM Comments: There is also consideration to be made about the longevity of the repository, and it's limitations (performance and network bandwidth). Long term funding of repositories has been inconsistent, and when these repositories go offline having a migration plan already in place is critical.-->
-
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
 initiative [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
@@ -127,29 +119,6 @@ and are active in teaching other scientists best practices for scientific
 computing and data management. Thus, this paper represents a distillation of
 collective experience, and hopefully will be useful to scientists facing a
 variety of data storage challenges.
-
-
-<!--   Original intro thoughts
-Much advice has been written on both the nature of sharing data
-
-- Data is the lifeblood of science.
-- Yet the how, when and where of storing the data is not often given much thought.
-- This can have some unforeseen and sometimes unfortunate consequences
-    - examples of where poor data management/storage caused big problems?
-- Best practices for storing data are different than best practices
-  for sharing/publishing data.
-    - Often publishing data best practices are more standard, (e.g. [@White2013])
-    - Best practices can sometimes be discipline specific
-
-- Avoiding these potential problems is possible if scientist and their
-  research collaborators practice some simple rules.
-
-- A discussion about this topic took place on the SWC mailing list
-- In this mansucript we have distilled the essence of that discussion
-  into 10 simple rules, if followed, will help facilitate quick,
-  robust analysis, allow others to re-use your data for new insights,
-  and serve as a record of the work that lives beyond a single
-  publication.  -->
 
 # Rule 1: Anticipate how your data will be used {-}
 
@@ -180,8 +149,6 @@ and preparation (Rule 10).
 
 Early consideration and planning should be given to the metadata of the project.
 A plan should be developed early as to what metadata will be collected, and how it will be maintained and stored (Rule 7).
-
-<!-- PJM Comments: It might be worth mentioning metadata management at this point. For some projects the metadata alone rivals many other data sets, and having a metadata management as part of the roadmap before data collection begins is important. It is at least something that should be discussed and considered prior to start of data collection if possible. -->
 
 # Rule 2: Know your use case {-}
 
@@ -241,8 +208,6 @@ For large enough datasets the likelihood of silent data corruption is high. This
 technique has been widely used by many Linux distributions to distribute images
 and has been very effective with minimal effort.
 
-<!-- PJM Comments: Raw data validation should also be considered. Data checksums ensure that the data set has not suffered any silent corruption/manipulation while being stored or transfered. For large enough datasets the odds of silent data corruption are high, and requires checksum verification. Tools like sha and md5 make it easy to verify that the hash of the data has not changed. This technique has been widely used by many linux distributions to distribute images and has been very effective. -->
-
 # Rule 4: Store data in open formats {-}
 
 To maximize accessibility and long-term value, it is preferable to store data in
@@ -279,7 +244,6 @@ or mistakes being introduced during conversion between formats. Examples of
 machine-readable open formats that would *not* be easy to process include data
 included in the text of a Word or PDF file, or scanned images of tabular data
 from a paper source.
-
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
@@ -409,8 +373,6 @@ bringing computation to data storage facilities instead of vice versa [@Gaye2014
 Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
-<!-- PJM Comments: Why hash? All hashes are crackable. Instead if possible replace the data with randomly generated id and use a lookup table stored separate from the data when the information is required. If the data set is still useful with the data hashed then it is probably still useful without the data, and it should be removed when distributed publicly. -->
-
 # Rule 9: Have a systematic backup scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of data.
@@ -446,8 +408,8 @@ repository dissolves?
 # Rule 10: The location and method of data storage depends on how much you have {-}
 
 The storage method you should choose depends on the size and nature of your
-data, the cost of storage, the time it takes to transfer the data, how the data
-will be used and any privacy concerns. Data is increasingly generated in the
+data, the cost of storage and later access, the time it takes to transfer the data, how the data
+will be used, and any privacy concerns. Data is increasingly generated in the
 range of many terabytes by environmental sensors, satellites, automated
 analytical tools, simulation models, and genomic sequencers. Even larger data
 generating machines like the Large Hadron Collider (LHC) and the Large Scale
@@ -457,10 +419,8 @@ study. While the cost of storage continues to decrease, the volume of data to be
 stored impacts the choice of storage methods and locations: for large datasets
 it is necessary to balance the cost of storage with the time of access and costs
 of re-generating the data. With new commercial cloud offerings (e.g., Amazon S3)
-the cost of retrieving the data might exceed the cost analysis or re-generating
-the data.
-
-<!-- PJM Comments: With many researchers using storage (IE S3) that charge when you access the data, cost of data access should also be considered. Large datasets can be extremely costly to recover from these services, sometimes more costly than the analysis or even re-generating the data -->
+the cost of retrieving the data might exceed the cost of analysis or re-generating
+the data from scratch.
 
 When data takes too long to transfer or is costly to store, it can become more
 efficient to use a computer that can directly access and use the data in place.
@@ -487,17 +447,14 @@ careless abuse of resources. The time required to re-download and recompute
 results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
 
-<!-- K Hinsen suggests "data archiving", "data models and formats", and "databases"-->
 # Further Reading and Resources {-}
 
 Digital data storage is a vast topic; the references given here and elsewhere in
-this paper proivde some starting points for interested readers.  For beginning
+this paper provide some starting points for interested readers.  For beginning
 users of scientific data, [Data Carpentry](http://datacarpentry.org) offers
 workshops and resources on data management and analysis, as do the DataONE
 education modules [@Dataone2012].  For librarians and others who are responsible
 for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
-
-
 
 # Glossary and abbreviations used in the manuscript {-}
 
@@ -573,8 +530,6 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
   attacks. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2
   are considered significantly more secure, but by design more costly to compute.
 
-<!-- PJM Comments: I think this gives a false sense of safety of the SHA-2 set of hashes. SHA-2 will more than likely suffer the same issues as MD5/SHA-1 in time. Some vulnerabilities have already been found in SHA-2, but are not yet practical to exploit. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2 are considered significantly more secure, but by design is costly. -->
-
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
 
@@ -609,7 +564,6 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 * **URL** (Uniform Resource Locator) gives the location of an object on the
   World Wide Web; the most familiar type of URL is a website address.
 
-
 # Acknowledgements {-}
 
 We would like to thank G. Wilson and the Software Carpentry instructor community
@@ -637,7 +591,6 @@ Ontario.
 
 \newpage
 
-
 # Figure Legends {-}
 
 \textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent
@@ -661,7 +614,6 @@ and length), information about "where", "when", and "what" animals were
 measured can be considered meta-data. Using the tidy format makes this
 distinction clearer.
 
-
 # Figures {-}
 
 \textbf{Figure 1}
@@ -672,11 +624,6 @@ distinction clearer.
 \caption{}
 \label{fig:tidy-data}
 \end{figure}
-
-
-<!-- # Tables {-}
-
-Tables here:  Will need to figure out numbering... -->
 
 \nolinenumbers
 \newpage
