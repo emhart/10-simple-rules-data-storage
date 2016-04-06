@@ -104,7 +104,7 @@ storage often begin and end with, "use a community standard repository."  This
 is a good advice; however, data storage policies are highly variable between
 repositories [@Marcial2010]. A data management plan utilizing best practices
 across all stages of the data life cycle will facilitate transition from local
-storage to repository[@Michener2015]. Similarly it can facilitate transition
+storage to repository [@Michener2015]. Similarly it can facilitate transition
 from repository to repository if funding runs out or needs change. Good storage
 practices are important even (or especially) in cases where data may not fit
 with an existing repository, where only derived data products (versus raw data)
@@ -113,7 +113,7 @@ lax standards.
 
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
-initiative [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
+initiatives [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
 diverse backgrounds who have encountered a variety of data storage challenges
 and are active in teaching other scientists best practices for scientific
 computing and data management. Thus, this paper represents a distillation of
@@ -147,20 +147,21 @@ managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
 and preparation (Rule 10).
 
-Early consideration and planning should be given to the metadata of the project.
-A plan should be developed early as to what metadata will be collected, and how it will be maintained and stored (Rule 7).
+Early consideration and planning should be given to the metadata of
+the project. A plan should be developed early as to what metadata will
+be collected, and how it will be maintained and stored (Rule 7).
 
 # Rule 2: Know your use case {-}
 
-Well-identified use cases make data storage easier. Ideally prior to beginning
-data collection, one can answer the following questions:
+Well-identified use cases make data storage easier. Ideally, prior to beginning
+data collection, researchers should be able to answer the following questions:
 
  - Should the raw data be archived (Rule 3)?
  - Should the data used for analysis be prepared once, or re-generated
    from the raw data each time (and what difference would this choice
    make for storage, computing requirements, and reproducibility)?
- - Can manual corrections be avoided in favor of programmatic or self-documenting
-  (e.g., ipython notebooks) approaches?
+ - Can manual corrections be avoided in favor of programmatic or
+  self-documenting (e.g., Jupyter notebook) approaches?
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
@@ -169,14 +170,15 @@ data collection, one can answer the following questions:
    threatened species, or confidential business information)?
  - Will institutional validation be required prior to releasing the
    data?
- - Does the funding agency mandate data deposition in a publicly available archive, and
-   if so, where and under what license?
+ - Does the funding agency mandate data deposition in a publicly
+   available archive, and if so, when, where, and under what license?
  - Does the target journal mandate data deposition?
 
-None of these questions have universal answers, nor are they the only questions
-one should ask before starting data acquisition. But knowing the
-what, when, and how of *your* use of the data will bring you close to a reliable
-roadmap on how to handle data from acquisition through publication to archive.
+None of these questions have universal answers, nor are they the only
+questions to ask before starting data acquisition. But knowing the
+what, when, and how of *your* use of the data will bring you close to
+a reliable roadmap on how to handle data from acquisition through
+publication to archive.
 
 # Rule 3: Keep raw data raw {-}
 
@@ -214,7 +216,7 @@ To maximize accessibility and long-term value, it is preferable to store data in
 formats whose specifications are freely available. The appropriate file type
 will depend on the data being stored (e.g. numeric measurements, text, images,
 video), but the key idea is that accessing data should not require proprietary
-software, hardware, or purchasing a commercial license. Proprietary formats
+software, hardware, or purchase of a commercial license. Proprietary formats
 change, maintaining organizations go out of business, and changes in license
 fees make access to data in proprietary formats unaffordable to
 end-users. Examples of open data formats include comma-separated values (CSV)
@@ -224,7 +226,7 @@ graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC)
 format) for spatial data, and extensible markup language (XML) for documents.
 Examples of closed formats include DWG for AutoCAD drawings, Photoshop document
 (PSD) for bitmap images, Windows Media Audio (WMA) for audio recording files,
-and Microsoft Excel (XLSX) for tabular data. Even if day-to-day processing uses
+and Microsoft Excel (XLS) for tabular data. Even if day-to-day processing uses
 closed formats (e.g., due to software requirements), data being stored for
 archival purposes should be stored in open formats. This is generally not
 prohibitive; most closed-source software enables users to export data to an open
@@ -232,18 +234,19 @@ format.
 
 # Rule 5: Data should be stored in an easily-usable format {-}
 
-Not only data should be stored in an open format (Rule 4), but it should also be
-stored in a format that computers can easily use for processing.  This is
-especially crucial as datasets become larger.  Easily-usable data is best
-achieved by using standard data formats that have open specifications (e.g.,
-CSV, XML, JSON, HDF5), or by using databases. Such data formats can be handled
-by a variety of programming languages, as efficient and well-tested libraries
-for parsing them are typically available. These standard data formats also
-ensure interoperability, facilitate re-use, and reduce the chances of data loss
-or mistakes being introduced during conversion between formats. Examples of
-machine-readable open formats that would *not* be easy to process include data
-included in the text of a Word or PDF file, or scanned images of tabular data
-from a paper source.
+Not only should data be stored in an open format (Rule 4), but it
+should also be stored in a format that computers can easily use for
+processing. This is especially crucial as datasets become larger.
+Easily-usable data is best achieved by using standard data formats
+that have open specifications (e.g., CSV, XML, JSON, HDF5), or by
+using databases. Such data formats can be handled by a variety of
+programming languages, as efficient and well-tested libraries for
+parsing them are typically available. These standard data formats also
+ensure interoperability, facilitate re-use, and reduce the chances of
+data loss or mistakes being introduced during conversion between
+formats. Examples of machine-readable open formats that would *not* be
+easy to process include data included in the text of a Microsoft Word
+or PDF file, or scanned images of tabular data from a paper source.
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
@@ -277,7 +280,7 @@ applications, and disciplines.
 
 With machine-readable, standards-compliant data, it easier to build an
 Application Programming Interface (API) to query the dataset and retrieve a
-subset of interest as outlined in Rule 10
+subset of interest as outlined in Rule 10.
 
 # Rule 6: Data should be uniquely identifiable {-}
 
@@ -305,7 +308,7 @@ Semantic versioning is a richer approach to solving the same problem
 incremented (or bumped) when a dataset scheme has been updated, or some other
 change is made that is not compatible with previous versions of the data with
 the same major version number. This means that an experiment using version
-`1.0.0` of the dataset may not run on version `2.0.0` without  changes to the
+`1.0.0` of the dataset may not run on version `2.0.0` without changes to the
 data analysis. The *minor version* should be bumped when a change has been made
 which is compatible with older versions of the data with the same major version.
 This means that any analysis that can be performed on version `1.0.0` of the
@@ -323,12 +326,12 @@ written about at length in guides for data management best practices [@Michener2
 @Strasser2012; @White2013].
 
 Metadata should be as comprehensive as possible, using standards and conventions
-of a discipline, and should be machine-readable.  Metadata should always
+of a discipline, and should be machine-readable. Metadata should always
 accompany a dataset, wherever it is stored, but the best way to do this depends
-on the format of the data.  Text files can contain meta-data in in well defined
-text files such as XML or JSON).  Some file formats are self-documenting, for
+on the format of the data. Text files can contain meta-data in in well defined
+text files such as XML or JSON). Some file formats are self-documenting, for
 example NetCDF, HDF5, and many image files allow for embedded metadata
-[@rew1990netcdf; @koziol1998hdf5].  In a relational database, metadata tables
+[@rew1990netcdf; @koziol1998hdf5]. In a relational database, metadata tables
 should be clearly labeled and linked to the data. Ideally a schema will be
 provided that also shows the linkages between data tables and metadata
 tables. Another scenario is a set of flat text files--in this case a
