@@ -76,12 +76,6 @@ organization:
 
 # Introduction {-}
 
-<!-- JWH Comments: May want to add a few more examples on top of DNA
-sequencing and sensor networks.  I am thinking LHC and astronomy, but
-outside my field so don't know good one.  Some references for those
-too could also be added. I removed the second mention of
-heterogeneity, seemed redundant. -->
-
 Data is the central currency of science, but the nature of scientific data has
 changed dramatically with the rapid pace of technology. This change
 has led to the development of a wide variety of data formats, dataset sizes, data
@@ -110,46 +104,21 @@ storage often begin and end with, "use a community standard repository."  This
 is a good advice; however, data storage policies are highly variable between
 repositories [@Marcial2010]. A data management plan utilizing best practices
 across all stages of the data life cycle will facilitate transition from local
-storage to repository[@Michener2015]. Similarly it can facilitate transition
+storage to repository [@Michener2015]. Similarly it can facilitate transition
 from repository to repository if funding runs out or needs change. Good storage
 practices are important even (or especially) in cases where data may not fit
 with an existing repository, where only derived data products (versus raw data)
 are suitable for archiving, or in the case where an existing repository may have
 lax standards.
 
-<!-- PJM Comments: There is also consideration to be made about the longevity of the repository, and it's limitations (performance and network bandwidth). Long term funding of repositories has been inconsistent, and when these repositories go offline having a migration plan already in place is critical.-->
-
 Therefore, this manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
-initiative [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
+initiatives [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
 diverse backgrounds who have encountered a variety of data storage challenges
 and are active in teaching other scientists best practices for scientific
 computing and data management. Thus, this paper represents a distillation of
 collective experience, and hopefully will be useful to scientists facing a
 variety of data storage challenges.
-
-
-<!--   Original intro thoughts
-Much advice has been written on both the nature of sharing data
-
-- Data is the lifeblood of science.
-- Yet the how, when and where of storing the data is not often given much thought.
-- This can have some unforeseen and sometimes unfortunate consequences
-    - examples of where poor data management/storage caused big problems?
-- Best practices for storing data are different than best practices
-  for sharing/publishing data.
-    - Often publishing data best practices are more standard, (e.g. [@White2013])
-    - Best practices can sometimes be discipline specific
-
-- Avoiding these potential problems is possible if scientist and their
-  research collaborators practice some simple rules.
-
-- A discussion about this topic took place on the SWC mailing list
-- In this mansucript we have distilled the essence of that discussion
-  into 10 simple rules, if followed, will help facilitate quick,
-  robust analysis, allow others to re-use your data for new insights,
-  and serve as a record of the work that lives beyond a single
-  publication.  -->
 
 # Rule 1: Anticipate how your data will be used {-}
 
@@ -178,22 +147,21 @@ managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
 and preparation (Rule 10).
 
-Early consideration and planning should be given to the metadata of the project.
-A plan should be developed early as to what metadata will be collected, and how it will be maintained and stored (Rule 7).
-
-<!-- PJM Comments: It might be worth mentioning metadata management at this point. For some projects the metadata alone rivals many other data sets, and having a metadata management as part of the roadmap before data collection begins is important. It is at least something that should be discussed and considered prior to start of data collection if possible. -->
+Early consideration and planning should be given to the metadata of
+the project. A plan should be developed early as to what metadata will
+be collected, and how it will be maintained and stored (Rule 7).
 
 # Rule 2: Know your use case {-}
 
-Well-identified use cases make data storage easier. Ideally prior to beginning
-data collection, one can answer the following questions:
+Well-identified use cases make data storage easier. Ideally, prior to beginning
+data collection, researchers should be able to answer the following questions:
 
  - Should the raw data be archived (Rule 3)?
  - Should the data used for analysis be prepared once, or re-generated
    from the raw data each time (and what difference would this choice
    make for storage, computing requirements, and reproducibility)?
- - Can manual corrections be avoided in favor of programmatic or self-documenting
-  (e.g., ipython notebooks) approaches?
+ - Can manual corrections be avoided in favor of programmatic or
+  self-documenting (e.g., Jupyter notebook) approaches?
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
@@ -202,14 +170,15 @@ data collection, one can answer the following questions:
    threatened species, or confidential business information)?
  - Will institutional validation be required prior to releasing the
    data?
- - Does the funding agency mandate data deposition in a publicly available archive, and
-   if so, where and under what license?
+ - Does the funding agency mandate data deposition in a publicly
+   available archive, and if so, when, where, and under what license?
  - Does the target journal mandate data deposition?
 
-None of these questions have universal answers, nor are they the only questions
-one should ask before starting data acquisition. But knowing the
-what, when, and how of *your* use of the data will bring you close to a reliable
-roadmap on how to handle data from acquisition through publication to archive.
+None of these questions have universal answers, nor are they the only
+questions to ask before starting data acquisition. But knowing the
+what, when, and how of *your* use of the data will bring you close to
+a reliable roadmap on how to handle data from acquisition through
+publication to archive.
 
 # Rule 3: Keep raw data raw {-}
 
@@ -241,15 +210,13 @@ For large enough datasets the likelihood of silent data corruption is high. This
 technique has been widely used by many Linux distributions to distribute images
 and has been very effective with minimal effort.
 
-<!-- PJM Comments: Raw data validation should also be considered. Data checksums ensure that the data set has not suffered any silent corruption/manipulation while being stored or transfered. For large enough datasets the odds of silent data corruption are high, and requires checksum verification. Tools like sha and md5 make it easy to verify that the hash of the data has not changed. This technique has been widely used by many linux distributions to distribute images and has been very effective. -->
-
 # Rule 4: Store data in open formats {-}
 
 To maximize accessibility and long-term value, it is preferable to store data in
 formats whose specifications are freely available. The appropriate file type
 will depend on the data being stored (e.g. numeric measurements, text, images,
 video), but the key idea is that accessing data should not require proprietary
-software, hardware, or purchasing a commercial license. Proprietary formats
+software, hardware, or purchase of a commercial license. Proprietary formats
 change, maintaining organizations go out of business, and changes in license
 fees make access to data in proprietary formats unaffordable to
 end-users. Examples of open data formats include comma-separated values (CSV)
@@ -259,7 +226,7 @@ graphics (PNG) for images, KML (or other Open Geospatial Consortium (OGC)
 format) for spatial data, and extensible markup language (XML) for documents.
 Examples of closed formats include DWG for AutoCAD drawings, Photoshop document
 (PSD) for bitmap images, Windows Media Audio (WMA) for audio recording files,
-and Microsoft Excel (XLSX) for tabular data. Even if day-to-day processing uses
+and Microsoft Excel (XLS) for tabular data. Even if day-to-day processing uses
 closed formats (e.g., due to software requirements), data being stored for
 archival purposes should be stored in open formats. This is generally not
 prohibitive; most closed-source software enables users to export data to an open
@@ -267,19 +234,19 @@ format.
 
 # Rule 5: Data should be stored in an easily-usable format {-}
 
-Not only data should be stored in an open format (Rule 4), but it should also be
-stored in a format that computers can easily use for processing.  This is
-especially crucial as datasets become larger.  Easily-usable data is best
-achieved by using standard data formats that have open specifications (e.g.,
-CSV, XML, JSON, HDF5), or by using databases. Such data formats can be handled
-by a variety of programming languages, as efficient and well-tested libraries
-for parsing them are typically available. These standard data formats also
-ensure interoperability, facilitate re-use, and reduce the chances of data loss
-or mistakes being introduced during conversion between formats. Examples of
-machine-readable open formats that would *not* be easy to process include data
-included in the text of a Word or PDF file, or scanned images of tabular data
-from a paper source.
-
+Not only should data be stored in an open format (Rule 4), but it
+should also be stored in a format that computers can easily use for
+processing. This is especially crucial as datasets become larger.
+Easily-usable data is best achieved by using standard data formats
+that have open specifications (e.g., CSV, XML, JSON, HDF5), or by
+using databases. Such data formats can be handled by a variety of
+programming languages, as efficient and well-tested libraries for
+parsing them are typically available. These standard data formats also
+ensure interoperability, facilitate re-use, and reduce the chances of
+data loss or mistakes being introduced during conversion between
+formats. Examples of machine-readable open formats that would *not* be
+easy to process include data included in the text of a Microsoft Word
+or PDF file, or scanned images of tabular data from a paper source.
 
 When data can be easily imported into familiar software, whether it be a
 scripting language, a spreadsheet, or any other computer program that can import
@@ -313,7 +280,7 @@ applications, and disciplines.
 
 With machine-readable, standards-compliant data, it easier to build an
 Application Programming Interface (API) to query the dataset and retrieve a
-subset of interest as outlined in Rule 10
+subset of interest as outlined in Rule 10.
 
 # Rule 6: Data should be uniquely identifiable {-}
 
@@ -341,7 +308,7 @@ Semantic versioning is a richer approach to solving the same problem
 incremented (or bumped) when a dataset scheme has been updated, or some other
 change is made that is not compatible with previous versions of the data with
 the same major version number. This means that an experiment using version
-`1.0.0` of the dataset may not run on version `2.0.0` without  changes to the
+`1.0.0` of the dataset may not run on version `2.0.0` without changes to the
 data analysis. The *minor version* should be bumped when a change has been made
 which is compatible with older versions of the data with the same major version.
 This means that any analysis that can be performed on version `1.0.0` of the
@@ -359,12 +326,12 @@ written about at length in guides for data management best practices [@Michener2
 @Strasser2012; @White2013].
 
 Metadata should be as comprehensive as possible, using standards and conventions
-of a discipline, and should be machine-readable.  Metadata should always
+of a discipline, and should be machine-readable. Metadata should always
 accompany a dataset, wherever it is stored, but the best way to do this depends
-on the format of the data.  Text files can contain meta-data in in well defined
-text files such as XML or JSON).  Some file formats are self-documenting, for
+on the format of the data. Text files can contain meta-data in in well defined
+text files such as XML or JSON). Some file formats are self-documenting, for
 example NetCDF, HDF5, and many image files allow for embedded metadata
-[@rew1990netcdf; @koziol1998hdf5].  In a relational database, metadata tables
+[@rew1990netcdf; @koziol1998hdf5]. In a relational database, metadata tables
 should be clearly labeled and linked to the data. Ideally a schema will be
 provided that also shows the linkages between data tables and metadata
 tables. Another scenario is a set of flat text files--in this case a
@@ -409,8 +376,6 @@ bringing computation to data storage facilities instead of vice versa [@Gaye2014
 Having a plan for privacy before data acquisition is important, because it can
 determine or limit how data will be stored.
 
-<!-- PJM Comments: Why hash? All hashes are crackable. Instead if possible replace the data with randomly generated id and use a lookup table stored separate from the data when the information is required. If the data set is still useful with the data hashed then it is probably still useful without the data, and it should be removed when distributed publicly. -->
-
 # Rule 9: Have a systematic backup scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of data.
@@ -446,8 +411,8 @@ repository dissolves?
 # Rule 10: The location and method of data storage depends on how much you have {-}
 
 The storage method you should choose depends on the size and nature of your
-data, the cost of storage, the time it takes to transfer the data, how the data
-will be used and any privacy concerns. Data is increasingly generated in the
+data, the cost of storage and later access, the time it takes to transfer the data, how the data
+will be used, and any privacy concerns. Data is increasingly generated in the
 range of many terabytes by environmental sensors, satellites, automated
 analytical tools, simulation models, and genomic sequencers. Even larger data
 generating machines like the Large Hadron Collider (LHC) and the Large Scale
@@ -457,10 +422,8 @@ study. While the cost of storage continues to decrease, the volume of data to be
 stored impacts the choice of storage methods and locations: for large datasets
 it is necessary to balance the cost of storage with the time of access and costs
 of re-generating the data. With new commercial cloud offerings (e.g., Amazon S3)
-the cost of retrieving the data might exceed the cost analysis or re-generating
-the data.
-
-<!-- PJM Comments: With many researchers using storage (IE S3) that charge when you access the data, cost of data access should also be considered. Large datasets can be extremely costly to recover from these services, sometimes more costly than the analysis or even re-generating the data -->
+the cost of retrieving the data might exceed the cost of analysis or re-generating
+the data from scratch.
 
 When data takes too long to transfer or is costly to store, it can become more
 efficient to use a computer that can directly access and use the data in place.
@@ -487,17 +450,14 @@ careless abuse of resources. The time required to re-download and recompute
 results can be reduced by 'caching'. Caching stores copies of downloads and
 generated files that are recognized when the same script is run multiple times.
 
-<!-- K Hinsen suggests "data archiving", "data models and formats", and "databases"-->
 # Further Reading and Resources {-}
 
 Digital data storage is a vast topic; the references given here and elsewhere in
-this paper proivde some starting points for interested readers.  For beginning
+this paper provide some starting points for interested readers.  For beginning
 users of scientific data, [Data Carpentry](http://datacarpentry.org) offers
 workshops and resources on data management and analysis, as do the DataONE
 education modules [@Dataone2012].  For librarians and others who are responsible
 for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
-
-
 
 # Glossary and abbreviations used in the manuscript {-}
 
@@ -573,8 +533,6 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
   attacks. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2
   are considered significantly more secure, but by design more costly to compute.
 
-<!-- PJM Comments: I think this gives a false sense of safety of the SHA-2 set of hashes. SHA-2 will more than likely suffer the same issues as MD5/SHA-1 in time. Some vulnerabilities have already been found in SHA-2, but are not yet practical to exploit. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2 are considered significantly more secure, but by design is costly. -->
-
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on disk based methods like MapReduce.
 
@@ -609,7 +567,6 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 * **URL** (Uniform Resource Locator) gives the location of an object on the
   World Wide Web; the most familiar type of URL is a website address.
 
-
 # Acknowledgements {-}
 
 We would like to thank G. Wilson and the Software Carpentry instructor community
@@ -637,7 +594,6 @@ Ontario.
 
 \newpage
 
-
 # Figure Legends {-}
 
 \textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent
@@ -661,10 +617,7 @@ and length), information about "where", "when", and "what" animals were
 measured can be considered meta-data. Using the tidy format makes this
 distinction clearer.
 
-
 # Figures {-}
-
-\textbf{Figure 1}
 
 \begin{figure}[h!]
 \centering
@@ -672,11 +625,6 @@ distinction clearer.
 \caption{}
 \label{fig:tidy-data}
 \end{figure}
-
-
-<!-- # Tables {-}
-
-Tables here:  Will need to figure out numbering... -->
 
 \nolinenumbers
 \newpage
