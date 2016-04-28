@@ -101,7 +101,7 @@ storage contributes to the phenomenon of data decay or "data entropy": data,
 whether publicly shared or not, becomes less accessible through time
 [@Pepe2014; @Vines2014; @Michener2012; @Michener1997]. Best practices for data
 storage often begin and end with, "use a community standard repository."  This
-is a good advice; however, data storage policies are highly variable between
+is good advice; however, data storage policies are highly variable between
 repositories [@Marcial2010]. A data management plan utilizing best practices
 across all stages of the data life cycle will facilitate transition from local
 storage to repository [@Michener2015]. Similarly it can facilitate transition
@@ -258,8 +258,8 @@ of the analyses performed, their reproduction, and their modification.
 
 To take full advantage of data, it can be useful for it to be structured in a
 way that makes use, interpretation, and analysis easy. One such structure for
-data stores each variable is a column, each observation as a row, and each type
-of observational unit is a table (Fig. \ref{fig:tidy-data}). The technical term
+data stores each variable as a column, each observation as a row, and each type
+of observational unit as a table (Fig. \ref{fig:tidy-data}). The technical term
 for this structure is 'Codd's 3rd normal form', but has been made more
 accessible as the concept of *tidy* data [@Wickham2014tidy].  When data is
 organized in this way, the duplication of information is reduced and it is
@@ -278,7 +278,7 @@ each term in such standards are clearly defined and documented, each dataset can
 use the terms consistently, this facilitates data sharing across institutions,
 applications, and disciplines.
 
-With machine-readable, standards-compliant data, it easier to build an
+With machine-readable, standards-compliant data, it is easier to build an
 Application Programming Interface (API) to query the dataset and retrieve a
 subset of interest as outlined in Rule 10.
 
@@ -328,8 +328,8 @@ written about at length in guides for data management best practices [@Michener2
 Metadata should be as comprehensive as possible, using standards and conventions
 of a discipline, and should be machine-readable. Metadata should always
 accompany a dataset, wherever it is stored, but the best way to do this depends
-on the format of the data. Text files can contain meta-data in in well defined
-text files such as XML or JSON). Some file formats are self-documenting, for
+on the format of the data. Text files can contain meta-data in well defined
+text files such as XML or JSON. Some file formats are self-documenting, for
 example NetCDF, HDF5, and many image files allow for embedded metadata
 [@rew1990netcdf; @koziol1998hdf5]. In a relational database, metadata tables
 should be clearly labeled and linked to the data. Ideally a schema will be
@@ -474,7 +474,7 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 
 * **ITIS** (Integrated Taxonomic Information System, <http://www.itis.gov>) is
   an international partnership of governmental organizations that aims at
-  providing authoritative taxonomic information for plants, animals, fungi and
+  providing authoritative taxonomic information for plants, animals, fungi, and
   microbes.
 
 ## File formats {-}
@@ -510,8 +510,8 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 
 ## Programming and algorithms {-}
 
-* Web **APIs** (Application Programming Interface) provide ways to query
-  programmatically databases through the internet. They notably allow users to
+* Web **APIs** (Application Programming Interface) provide ways to 
+  programmatically query databases through the internet. They notably allow users to
   retrieve and work with a small slice of a large dataset.
 
 * **HDFS** (Hadoop Distributed File System) is a Java based file system where
