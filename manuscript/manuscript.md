@@ -232,7 +232,7 @@ archival purposes should be stored in open formats. This is generally not
 prohibitive; most closed-source software enables users to export data to an open
 format.
 
-# Rule 5: Data should be stored in an easily-usable format {-}
+# Rule 5: Data should be structured for analysis {-}
 
 Not only should data be stored in an open format (Rule 4), but it
 should also be stored in a format that computers can easily use for
