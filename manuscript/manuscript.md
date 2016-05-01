@@ -257,13 +257,15 @@ organized in this way, the duplication of information is reduced and it is
 easier to subset or summarize the dataset to include the variables or
 observations of interest.
 
-When data can be easily imported into familiar software, whether it be a
-scripting language, a spreadsheet, or any other computer program that can import
-these common files, data becomes easier to re-use. Computer source code, the
-human readable software that uses data, provides metadata as well. This
-makes analysis more transparent, since all assumptions about the structure of
-the data are implicitly stated in the source code. This also enables extraction
-of the analyses performed, their reproduction, and their modification.
+One axiom about the structure of data and code holds that one should "write code
+for humans, write data for computers" [@buffalo2015bioinformatics]. When data
+can be easily imported into familiar software, whether it be a scripting
+language, a spreadsheet, or any other computer program that can import these
+common files, data becomes easier to re-use. Computer source code, the human
+readable software that uses data, provides metadata as well. This makes analysis
+more transparent, since all assumptions about the structure of the data are
+implicitly stated in the source code. This also enables extraction of the
+analyses performed, their reproduction, and their modification.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the
