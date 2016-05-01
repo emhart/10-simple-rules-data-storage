@@ -232,39 +232,40 @@ archival purposes should be stored in open formats. This is generally not
 prohibitive; most closed-source software enables users to export data to an open
 format.
 
-# Rule 5: Data should be stored in an easily-usable format {-}
+Not only should data be stored in an open format, but it should also be stored
+in a format that computers can easily use for processing. This is especially
+crucial as datasets become larger. Easily-usable data is best achieved by using
+standard data formats that have open specifications (e.g., CSV, XML, JSON,
+HDF5), or by using databases. Such data formats can be handled by a variety of
+programming languages, as efficient and well-tested libraries for parsing them
+are typically available. These standard data formats also ensure
+interoperability, facilitate re-use, and reduce the chances of data loss or
+mistakes being introduced during conversion between formats. Examples of
+machine-readable open formats that would *not* be easy to process include data
+included in the text of a PDF file, or scanned images of tabular data from a
+paper source.
 
-Not only should data be stored in an open format (Rule 4), but it
-should also be stored in a format that computers can easily use for
-processing. This is especially crucial as datasets become larger.
-Easily-usable data is best achieved by using standard data formats
-that have open specifications (e.g., CSV, XML, JSON, HDF5), or by
-using databases. Such data formats can be handled by a variety of
-programming languages, as efficient and well-tested libraries for
-parsing them are typically available. These standard data formats also
-ensure interoperability, facilitate re-use, and reduce the chances of
-data loss or mistakes being introduced during conversion between
-formats. Examples of machine-readable open formats that would *not* be
-easy to process include data included in the text of a Microsoft Word
-or PDF file, or scanned images of tabular data from a paper source.
-
-When data can be easily imported into familiar software, whether it be a
-scripting language, a spreadsheet, or any other computer program that can import
-these common files, data becomes easier to re-use. Computer source code, the
-human readable software that uses data, provides metadata as well. This
-makes analysis more transparent, since all assumptions about the structure of
-the data are implicitly stated in the source code. This also enables extraction
-of the analyses performed, their reproduction, and their modification.
+# Rule 5: Data should be structured for analysis {-}
 
 To take full advantage of data, it can be useful for it to be structured in a
 way that makes use, interpretation, and analysis easy. One such structure for
 data stores each variable as a column, each observation as a row, and each type
 of observational unit as a table (Fig. \ref{fig:tidy-data}). The technical term
-for this structure is 'Codd's 3rd normal form', but has been made more
-accessible as the concept of *tidy* data [@Wickham2014tidy].  When data is
+for this structure is 'Codd's 3rd normal form', but it has been made more
+accessible as the concept of *tidy* data [@Wickham2014tidy]. When data is
 organized in this way, the duplication of information is reduced and it is
 easier to subset or summarize the dataset to include the variables or
 observations of interest.
+
+One axiom about the structure of data and code holds that one should "write code
+for humans, write data for computers" [@buffalo2015bioinformatics]. When data
+can be easily imported into familiar software, whether it be a scripting
+language, a spreadsheet, or any other computer program that can import these
+common files, data becomes easier to re-use. Computer source code, the human
+readable software that uses data, provides metadata as well. This makes analysis
+more transparent, since all assumptions about the structure of the data are
+implicitly stated in the source code. This also enables extraction of the
+analyses performed, their reproduction, and their modification.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the
