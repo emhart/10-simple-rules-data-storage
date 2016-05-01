@@ -242,8 +242,8 @@ are typically available. These standard data formats also ensure
 interoperability, facilitate re-use, and reduce the chances of data loss or
 mistakes being introduced during conversion between formats. Examples of
 machine-readable open formats that would *not* be easy to process include data
-included in the text of a Microsoft Word or PDF file, or scanned images of
-tabular data from a paper source.
+included in the text of a PDF file, or scanned images of tabular data from a
+paper source.
 
 # Rule 5: Data should be structured for analysis {-}
 
