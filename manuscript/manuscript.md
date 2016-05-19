@@ -38,7 +38,7 @@ author:
    affiliation: 10
 organization:
  - id: 1
-   name: Univeristy of Vermont
+   name: University of Vermont
    address: Department of Biology, Burlington
  - id: 2
    name: University of Western Ontario
@@ -97,21 +97,21 @@ While much has been written about both the virtues of data sharing
 [@Wolkovich2012; @Roche2014] and best practices to do so
 [@White2013; @Goodman2014], data storage has received comparatively less
 attention.  Proper storage is a prerequisite to sharing, and indeed inadequate
-storage contributes to the phenomenon of data decay or "data entropy": data,
+storage contributes to the phenomenon of data decay or "data entropy", where data,
 whether publicly shared or not, becomes less accessible through time
 [@Pepe2014; @Vines2014; @Michener2012; @Michener1997]. Best practices for data
 storage often begin and end with, "use a community standard repository."  This
 is good advice; however, data storage policies are highly variable between
 repositories [@Marcial2010]. A data management plan utilizing best practices
 across all stages of the data life cycle will facilitate transition from local
-storage to repository [@Michener2015]. Similarly it can facilitate transition
+storage to repository [@Michener2015]. Similarly, it can facilitate transition
 from repository to repository if funding runs out or needs change. Good storage
 practices are important even (or especially) in cases where data may not fit
 with an existing repository, where only derived data products (versus raw data)
 are suitable for archiving, or in the case where an existing repository may have
 lax standards.
 
-Therefore, this manuscript describes 10 simple rules for digital data storage
+This manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software and Data Carpentry
 initiatives [@Wilson2014; @Teal2015]. Software and Data Carpentry instructors are scientists from
 diverse backgrounds who have encountered a variety of data storage challenges
@@ -147,7 +147,7 @@ managed locally with a simple data management plan, whereas larger datasets
 (e.g. gigabytes to petabytes) will in almost all cases require careful planning
 and preparation (Rule 10).
 
-Early consideration and planning should be given to the metadata of
+Lastly, early consideration and planning should be given to the metadata of
 the project. A plan should be developed early as to what metadata will
 be collected, and how it will be maintained and stored (Rule 7).
 
@@ -161,7 +161,7 @@ data collection, researchers should be able to answer the following questions:
    from the raw data each time (and what difference would this choice
    make for storage, computing requirements, and reproducibility)?
  - Can manual corrections be avoided in favor of programmatic or
-  self-documenting (e.g., Jupyter notebook) approaches?
+  self-documenting approaches (e.g., Jupyter notebook)?
  - How will changes to the data be tracked, and where will these
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
@@ -203,8 +203,8 @@ stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
 A cryptographic hash (e.g., SHA or MD5) of the raw data should be generated and
-distributed with the data. These hashes ensure that the data set has not
-suffered any silent corruption/manipulation while being stored or transfered
+distributed with the data. These hashes ensure that the dataset has not
+suffered any silent corruption/manipulation while being stored or transferred
 (see [Internet2 Silent Data Corruption](https://www.xsede.org/news/-/news/item/6390)).
 For large enough datasets the likelihood of silent data corruption is high. This
 technique has been widely used by many Linux distributions to distribute images
@@ -288,12 +288,12 @@ subset of interest as outlined in Rule 10.
 The data used in a scientific publication should be
 uniquely identifiable to aid reproducibility.  Ideally, datasets should have a
 unique identifier such as a Digital Object Identifier (DOI), Archival Resource
-Key (ARK), or a Persistant URL (PURL).  An increasing number of online services,
+Key (ARK), or a persistent URL (PURL).  An increasing number of online services,
 such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
 [DataOne](http://www.dataone.org) are able to provide these. Institutional
 initiatives also exist, and are known to your librarians.
 
-Datasets evolve over time. In order to distinguish between different versions of
+Datasets can evolve over time. In order to distinguish between different versions of
 the same data, each dataset should have a distinct name, which includes a
 version identifier. A simple way to do this is to use date stamps as part of the
 dataset name. Using the ISO 8601 standard avoids regional ambiguities: it
