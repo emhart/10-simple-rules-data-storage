@@ -203,7 +203,7 @@ stored. If derivations occur, they should be documented by also archiving
 relevant code and intermediate datasets.
 
 A cryptographic hash (e.g., SHA or MD5) of the raw data should be generated and
-distributed with the data. These hashes ensure that the data set has not
+distributed with the data. These hashes ensure that the dataset has not
 suffered any silent corruption/manipulation while being stored or transferred
 (see [Internet2 Silent Data Corruption](https://www.xsede.org/news/-/news/item/6390)).
 For large enough datasets the likelihood of silent data corruption is high. This
