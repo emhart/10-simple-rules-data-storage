@@ -293,7 +293,7 @@ such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
 [DataOne](http://www.dataone.org) are able to provide these. Institutional
 initiatives also exist, and are known to your librarians.
 
-Datasets evolve over time. In order to distinguish between different versions of
+Datasets can evolve over time. In order to distinguish between different versions of
 the same data, each dataset should have a distinct name, which includes a
 version identifier. A simple way to do this is to use date stamps as part of the
 dataset name. Using the ISO 8601 standard avoids regional ambiguities: it
