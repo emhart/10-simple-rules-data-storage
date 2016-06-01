@@ -8,13 +8,20 @@ A few minor issues:_
 
 **Rules 4 and 5 seem like variations on the same rule -- keeping the data accessible. It would be helpful to differentiate these rules a bit more.**
 
+ We believe data can be tidy (rule 5) but in a closed format (rule 4) or vice versa.  While we agree with the reviewers comment that it is a similar theme, it is easy to imagine a scenario where a scientist might put very tidy data in a closed format such as Excel. We have renamed Rule 5 to "Data should be structured for analysis" and also substantially restructured the paragraphs of rule 5 to enhance this distinction.
+
+
 **Line 21: is a good advice => is good advice**
 
 We have fixed this typo.
 
-Line 136: States that an example of machine readable open format that would not be easy to process include Microsoft word, but in the preceding rule (Rule 4) it states that Microsoft excel is not an open format. Perhaps just keep PDF as the example.
+**Line 136: States that an example of machine readable open format that would not be easy to process include Microsoft word, but in the preceding rule (Rule 4) it states that Microsoft excel is not an open format. Perhaps just keep PDF as the example.**
 
-Lines 140-144: discussing source code doesn't really fit in this section. Perhaps move these lines to the section about metadata (Rule 7).
+We removed this line from rule 5.
+
+**Lines 140-144: discussing source code doesn't really fit in this section. Perhaps move these lines to the section about metadata (Rule 7).**
+
+We removed the reference to metadata as the reviewer notes it is probably not truly metadata but is more like provenance of an analysis. However we feel it is important to highlight that structured data facilitates the transparency of an analysis and have kept those lines in.
 
 **Line 147: variable is a column => variable as a column**
 
@@ -49,7 +56,7 @@ An oxford comma has been added.
 This sentence has been restructured
 
 
-**_Reviewer #1:_** _Dr. Hart and co-authors presented a comprehensive review on the essential aspects of digital data storage. While situation in reality can become very complicated, these ten simple rules can still provide good and useful guidance for researchers to develop data storage and management systems. Actually, we have pretty much followed these rules in our own practices. The manuscript was concise and well written.
+**_Reviewer #2:_** Dr. Hart and co-authors presented a comprehensive review on the essential aspects of digital data storage. While situation in reality can become very complicated, these ten simple rules can still provide good and useful guidance for researchers to develop data storage and management systems. Actually, we have pretty much followed these rules in our own practices. The manuscript was concise and well written.
 
 Minor suggestions:_
 

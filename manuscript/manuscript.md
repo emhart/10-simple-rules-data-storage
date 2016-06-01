@@ -262,10 +262,11 @@ for humans, write data for computers" [@buffalo2015bioinformatics]. When data
 can be easily imported into familiar software, whether it be a scripting
 language, a spreadsheet, or any other computer program that can import these
 common files, data becomes easier to re-use. Computer source code, the human
-readable software that uses data, provides metadata as well. This makes analysis
-more transparent, since all assumptions about the structure of the data are
-implicitly stated in the source code. This also enables extraction of the
-analyses performed, their reproduction, and their modification.
+readable software that uses data, provides a provenance for how the data
+structure is used. This makes analysis more transparent, since all assumptions
+about the structure of the data are implicitly stated in the source code. This
+also enables extraction of the analyses performed, their reproduction, and their
+modification.
 
 Interoperability is facilitated when variable names are mapped to existing data
 standards. For instance, for biodiversity data, the
@@ -277,11 +278,9 @@ such that a large ecosystem of software and data products exist to reduce the
 technical burden of reformatting and reusing large and complex data.  Because
 each term in such standards are clearly defined and documented, each dataset can
 use the terms consistently, this facilitates data sharing across institutions,
-applications, and disciplines.
-
-With machine-readable, standards-compliant data, it is easier to build an
-Application Programming Interface (API) to query the dataset and retrieve a
-subset of interest as outlined in Rule 10.
+applications, and disciplines. With machine-readable, standards-compliant data,
+it is easier to build an Application Programming Interface (API) to query the
+dataset and retrieve a subset of interest as outlined in Rule 10.
 
 # Rule 6: Data should be uniquely identifiable {-}
 
@@ -511,7 +510,7 @@ for data archiving, Data Curation Profiles [@Witt2009] may be of interest.
 
 ## Programming and algorithms {-}
 
-* Web **APIs** (Application Programming Interface) provide ways to 
+* Web **APIs** (Application Programming Interface) provide ways to
   programmatically query databases through the internet. They notably allow users to
   retrieve and work with a small slice of a large dataset.
 
