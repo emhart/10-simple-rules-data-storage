@@ -8,6 +8,8 @@ A few minor issues:_
 
 **Rules 4 and 5 seem like variations on the same rule -- keeping the data accessible. It would be helpful to differentiate these rules a bit more.**
 
+We have differentiated the rules by focusing on data file formats in Rule 4 and data structure in Rule 5.
+
 **Line 21: is a good advice => is good advice**
 
 We have fixed this typo.
