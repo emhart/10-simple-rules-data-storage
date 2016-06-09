@@ -75,3 +75,5 @@ We have deleted the word "impossible"
 **_Reviewer #3:_** _This manuscript discusses ten simple rules for digital data storage. The ten rules provide simple guidelines for how researchers across a variety of disciplines can store their data for long-term access and ensure that the data are usable by others in the future. Compared with other "ten Simple Rules" papers on scientific data management and curation, this manuscript further addresses another facet of data, longer term storage best practices. The manuscript represents the collaboration among co-authors from a wide variety of academic backgrounds, who are all part of the Software Carpentry project._
 
 **The manuscript could benefit from addressing specific needs for the storage of biological and biomedical data to be more in scope with the main themes of the journal.**
+
+While we appreciate the reviewers suggestion, we believe that keeping the paper more generic broadens its appeal and helps future proof the paper against the rapid pace of change in the field.  We feel any specific advice may be obsolete in a short time and therefore we prefer to keep the paper as it is.
