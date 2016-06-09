@@ -384,11 +384,11 @@ Data stored on local computers or institutional servers during the collection
 and analysis phases should be backed up to other locations and formats to
 protect against data loss. No backup system is failsafe (see the stories of the
 [Dedoose crash][dedoose] and the [near deletion of Toy Story 2][ts2]), so more
-than one backup system should be used. Kristin Briney advocates the "[Rule of
-3](http://dataabinitio.com/?p=320)" for backing up data: two onsite copies (such
-as on a computer, an external hard drive, or a tape) and one offsite copy (e.g.
-in cloud storage). For example, keeping backups in multiple locations protects
-against data loss due to theft or natural disasters.
+than one backup system should be used. Ideally you should have two onsite copies
+(such as on a computer, an external hard drive, or a tape) and one offsite copy
+(e.g. in cloud storage)[@briney2013], ensuring the offsite copy is as secure as
+the onsite copies. Keeping backups in multiple locations protects against data
+loss due to theft or natural disasters.
 
 [dedoose]: https://www.insidehighered.com/news/2014/05/16/dedoose-crash-shows-dangers-handing-data-cloud-services
 [ts2]: http://thenextweb.com/media/2012/05/21/how-pixars-toy-story-2-was-deleted-twice-once-by-technology-and-again-for-its-own-good/

@@ -45,7 +45,11 @@ We have deleted this dangling parentheses.
 
 **Line 244: Seems like an appeal to authority. Replace explicit reference to Kristen Briney**
 
+We have removed this appeal and replaced it with a citation to the blog post.
+
 **Line 245: Include a caution with respect to Rule 8 (ensure that the offsite "cloud" storage is as secure as the primary storage)**
+
+We added an additional clause that advises users to be sure that offsite storage is secure
 
 **Line 311: include oxford comma "animals, fungi, and microbes"**
 
@@ -56,7 +60,7 @@ An oxford comma has been added.
 This sentence has been restructured
 
 
-**_Reviewer #2:_** Dr. Hart and co-authors presented a comprehensive review on the essential aspects of digital data storage. While situation in reality can become very complicated, these ten simple rules can still provide good and useful guidance for researchers to develop data storage and management systems. Actually, we have pretty much followed these rules in our own practices. The manuscript was concise and well written.
+**_Reviewer #2:_** _Dr. Hart and co-authors presented a comprehensive review on the essential aspects of digital data storage. While situation in reality can become very complicated, these ten simple rules can still provide good and useful guidance for researchers to develop data storage and management systems. Actually, we have pretty much followed these rules in our own practices. The manuscript was concise and well written.
 
 Minor suggestions:_
 
@@ -68,6 +72,6 @@ We have have added the word to
 
 We have deleted the word "impossible"
 
-**_Reviewer #3:_** This manuscript discusses ten simple rules for digital data storage. The ten rules provide simple guidelines for how researchers across a variety of disciplines can store their data for long-term access and ensure that the data are usable by others in the future. Compared with other "ten Simple Rules" papers on scientific data management and curation, this manuscript further addresses another facet of data, longer term storage best practices. The manuscript represents the collaboration among co-authors from a wide variety of academic backgrounds, who are all part of the Software Carpentry project.
+**_Reviewer #3:_** _This manuscript discusses ten simple rules for digital data storage. The ten rules provide simple guidelines for how researchers across a variety of disciplines can store their data for long-term access and ensure that the data are usable by others in the future. Compared with other "ten Simple Rules" papers on scientific data management and curation, this manuscript further addresses another facet of data, longer term storage best practices. The manuscript represents the collaboration among co-authors from a wide variety of academic backgrounds, who are all part of the Software Carpentry project._
 
 **The manuscript could benefit from addressing specific needs for the storage of biological and biomedical data to be more in scope with the main themes of the journal.**
