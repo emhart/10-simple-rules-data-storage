@@ -588,9 +588,7 @@ the Life Sciences Research Foundation. PB was funded by the Natural Sciences &
 Engineering Research Council of Canada and the Academic Development Fund of the
 University of Western Ontario. SM would like to thank Dr. Laurence Tratt for
 reviewing an early draft of this paper. TP was funded by an NSERC Discovery Grant,
-and a Start-Up grant from the Université de Montréal. PB was funded by an NSERC
-Discovery Grant and the Academic Development Fund of the University of Western
-Ontario.
+and a Start-Up grant from the Université de Montréal. 
 
 \newpage
 
