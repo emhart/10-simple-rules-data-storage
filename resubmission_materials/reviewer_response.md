@@ -8,8 +8,8 @@ A few minor issues:_
 
 **Rules 4 and 5 seem like variations on the same rule -- keeping the data accessible. It would be helpful to differentiate these rules a bit more.**
 
- We believe data can be tidy (rule 5) but in a closed format (rule 4) or vice versa.  While we agree with the reviewers comment that it is a similar theme, it is easy to imagine a scenario where a scientist might put very tidy data in a closed format such as Excel. We have renamed Rule 5 to "Data should be structured for analysis" and also substantially restructured the paragraphs of rule 5 to enhance this distinction.
 
+ We have differentiated the rules by focusing on data file formats in Rule 4 and data structure in Rule 5. We believe data can be tidy (rule 5) but in a closed format (rule 4) or vice versa.  While we agree with the reviewers comment that it is a similar theme, it is easy to imagine a scenario where a scientist might put very tidy data in a closed format such as Excel. We have renamed Rule 5 to "Data should be structured for analysis" and also substantially restructured the paragraphs of rule 5 to enhance this distinction.
 
 **Line 21: is a good advice => is good advice**
 
