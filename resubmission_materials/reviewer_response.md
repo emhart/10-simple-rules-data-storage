@@ -45,11 +45,11 @@ We have deleted this dangling parentheses.
 
 **Line 244: Seems like an appeal to authority. Replace explicit reference to Kristen Briney**
 
-We have removed this appeal and replaced it with a citation to the blog post.
+Line 252-253: We have removed this appeal and replaced it with a citation to the blog post.
 
 **Line 245: Include a caution with respect to Rule 8 (ensure that the offsite "cloud" storage is as secure as the primary storage)**
 
-We added an additional clause that advises users to be sure that offsite storage is secure
+Line 253-254: We added an additional clause that advises users to be sure that offsite storage is secure
 
 **Line 311: include oxford comma "animals, fungi, and microbes"**
 
@@ -76,4 +76,10 @@ We have deleted the word "impossible"
 
 **The manuscript could benefit from addressing specific needs for the storage of biological and biomedical data to be more in scope with the main themes of the journal.**
 
-While we appreciate the reviewers suggestion, we believe that keeping the paper more generic broadens its appeal and helps future proof the paper against the rapid pace of change in the field.  We feel any specific advice may be obsolete in a short time and therefore we prefer to keep the paper as it is.
+We have added several examples in our rules that are specific to biomedical data to address this concern.
+
+Line 24-26: We suggest GenBank as an example place to archive sequence data
+Line 64-66: We suggest using community tools for formatting sequence metadata
+Line 177-178: We give an example of version numbers that are specific to NCBI repositories
+
+We believe these help bring the manuscript more in line with the main themes of the journal as the author suggests.
