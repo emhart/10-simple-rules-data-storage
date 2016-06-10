@@ -101,7 +101,7 @@ storage contributes to the phenomenon of data decay or "data entropy", where dat
 whether publicly shared or not, becomes less accessible through time
 [@Pepe2014; @Vines2014; @Michener2012; @Michener1997]. Best practices for data
 storage often begin and end with, "use a community standard repository."  This
-is good advice; however, data storage policies are highly variable between
+is good advice, especially considering your data is most likely to be reused if it is available on a community site. Community repositories can also provide guidance for best practices. As an example, if you are archiving sequencing data, it's best to consider a National Center for Biotechnology Information (NCBI) repository such as GenBank, or at least adopting their specific practices. However, data storage policies are highly variable between
 repositories [@Marcial2010]. A data management plan utilizing best practices
 across all stages of the data life cycle will facilitate transition from local
 storage to repository [@Michener2015]. Similarly, it can facilitate transition
@@ -149,7 +149,7 @@ and preparation (Rule 10).
 
 Lastly, early consideration and planning should be given to the metadata of
 the project. A plan should be developed early as to what metadata will
-be collected, and how it will be maintained and stored (Rule 7).
+be collected, and how it will be maintained and stored (Rule 7).  Also be sure to consider community software tools that can facilitate metadata curation and repository submission such as *mothur* [@schloss2009] for submitting to NCBI.
 
 # Rule 2: Know your use case {-}
 
@@ -290,7 +290,10 @@ unique identifier such as a Digital Object Identifier (DOI), Archival Resource
 Key (ARK), or a persistent URL (PURL).  An increasing number of online services,
 such as [Figshare](http://figshare.com/), [Zenodo](http://zenodo.org), or
 [DataOne](http://www.dataone.org) are able to provide these. Institutional
-initiatives also exist, and are known to your librarians.
+initiatives also exist, and are known to your librarians.  Also some
+repositories may require specific identifiers and these could change with time.
+For instance NCBI sequence data now requires a new identifier and the old "GI"
+identifiers are no longer accepted [@ncbi].
 
 Datasets can evolve over time. In order to distinguish between different versions of
 the same data, each dataset should have a distinct name, which includes a
@@ -588,9 +591,7 @@ the Life Sciences Research Foundation. PB was funded by the Natural Sciences &
 Engineering Research Council of Canada and the Academic Development Fund of the
 University of Western Ontario. SM would like to thank Dr. Laurence Tratt for
 reviewing an early draft of this paper. TP was funded by an NSERC Discovery Grant,
-and a Start-Up grant from the Université de Montréal. PB was funded by an NSERC
-Discovery Grant and the Academic Development Fund of the University of Western
-Ontario.
+and a Start-Up grant from the Université de Montréal. 
 
 \newpage
 

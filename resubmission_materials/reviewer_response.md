@@ -45,11 +45,11 @@ We have deleted this dangling parentheses.
 
 **Line 244: Seems like an appeal to authority. Replace explicit reference to Kristen Briney**
 
-We have removed this appeal and replaced it with a citation to the blog post.
+Line 252-253: We have removed this appeal and replaced it with a citation to the blog post.
 
 **Line 245: Include a caution with respect to Rule 8 (ensure that the offsite "cloud" storage is as secure as the primary storage)**
 
-We added an additional clause that advises users to be sure that offsite storage is secure
+Line 253-254: We added an additional clause that advises users to be sure that offsite storage is secure
 
 **Line 311: include oxford comma "animals, fungi, and microbes"**
 
@@ -75,3 +75,11 @@ We have deleted the word "impossible"
 **_Reviewer #3:_** _This manuscript discusses ten simple rules for digital data storage. The ten rules provide simple guidelines for how researchers across a variety of disciplines can store their data for long-term access and ensure that the data are usable by others in the future. Compared with other "ten Simple Rules" papers on scientific data management and curation, this manuscript further addresses another facet of data, longer term storage best practices. The manuscript represents the collaboration among co-authors from a wide variety of academic backgrounds, who are all part of the Software Carpentry project._
 
 **The manuscript could benefit from addressing specific needs for the storage of biological and biomedical data to be more in scope with the main themes of the journal.**
+
+We have added several examples in our rules that are specific to biomedical data to address this concern.
+
+Line 24-26: We suggest GenBank as an example place to archive sequence data
+Line 64-66: We suggest using community tools for formatting sequence metadata
+Line 177-178: We give an example of version numbers that are specific to NCBI repositories
+
+We believe these help bring the manuscript more in line with the main themes of the journal as the author suggests.
