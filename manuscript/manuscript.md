@@ -331,8 +331,8 @@ able to provide these. Institutional initiatives also exist, and are
 known to your local librarians. Some repositories may require specific
 identifiers and these could change with time. For instance, NCBI
 sequence data will in the future only be identified by
-"accession.version" IDs. The the old "GI" identifiers (in use since
-1994) will be retired from use [@ncbi].
+"accession.version" IDs. The "GI" identifiers (in use since 1994) will
+be retired in late 2016 [@ncbi].
 
 Even as identifier standards may change over time, datasets can evolve
 over time as well. In order to distinguish between different versions
