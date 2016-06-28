@@ -171,7 +171,7 @@ metadata will be collected, and how it will be maintained and stored
 (Rule 7). Also be sure to consider community software tools that can
 facilitate metadata curation and repository submission. Examples in
 the biological sciences include *Morpho* for ecological metadata
-[@higgens2002] and *mothur* [@schloss2009] for submitting to NCBI's
+[@higgins2002] and *mothur* [@schloss2009] for submitting to NCBI's
 Sequence Read Archive.
 
 # Rule 2: Know your use case {-}
@@ -464,7 +464,7 @@ storage plans of the repository. Many repositories mirror the data
 they host on multiple machines. Are there plans in place to keep data
 available if the organization that manages the repository dissolves?
 
-# Rule 10: The location and method of data storage depend on how much data you have {-} #
+# Rule 10: The location and method of data storage depend on how much data you have {-}
 
 The storage method you should choose depends on the size and nature of
 your data, the cost of storage and access over time, the time it takes
