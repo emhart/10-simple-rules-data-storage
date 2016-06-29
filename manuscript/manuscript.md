@@ -119,11 +119,11 @@ repositories [@Marcial2010]. A data management plan utilizing best
 practices across all stages of the data life cycle will facilitate
 transition from local storage to repository [@Michener2015].
 Similarly, having such a plan can facilitate transition from
-repository to repository if funding runs out or needs change. Good
-storage practices are important even (or especially) in cases where
-data may not fit with an existing repository, where only derived data
-products (versus raw data) are suitable for archiving, or in the case
-where an existing repository may have lax standards.
+repository to repository if funding runs out or requirements change.
+Good storage practices are important even (or especially) in cases
+where data may not fit with an existing repository, where only derived
+data products (versus raw data) are suitable for archiving, or in the
+case where an existing repository may have lax standards.
 
 This manuscript describes 10 simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software
@@ -133,7 +133,9 @@ have encountered a variety of data storage challenges and are active
 in teaching other scientists best practices for scientific computing
 and data management. Thus, this paper represents a distillation of
 collective experience, and hopefully will be useful to scientists
-facing a variety of data storage challenges.
+facing a variety of data storage challenges. We additionally provide a
+glossary of common vocabulary for readers who may not be familiar with
+particular terms.
 
 # Rule 1: Anticipate how your data will be used {-}
 
@@ -221,8 +223,8 @@ Therefore, data should always be kept in raw format whenever possible
 being the most appropriate way to ensure transparency in analysis,
 having the data stored and archived in their original state gives a
 common point of reference for derivative analyses. What constitutes
-sufficiently "raw" data is not always clear (e.g., ohms off a
-temperature sensor or images off an Illumina sequencing flowcell are
+sufficiently "raw" data is not always clear (e.g., ohms from a
+temperature sensor or images of an Illumina sequencing flowcell are
 generally not archived after the initial processing). Yet the spirit
 of this rule is that data should be as "pure" as possible when they
 are stored. If derivations occur, they should be documented by also
@@ -440,9 +442,9 @@ be backed up to other locations to protect against data loss. No
 backup system is failsafe (see the stories of the
 [Dedoose crash][dedoose] and the [near deletion of Toy Story 2][ts2]),
 so more than one backup system should be used. Ideally you should have
-two onsite copies (such as on a computer, an external hard drive, or a
-tape) and one offsite copy (e.g. cloud storage)[@briney2013], with
-care taken to ensure that the off-site copy is as secure as the onsite
+two on-site copies (such as on a computer, an external hard drive, or a
+tape) and one off-site copy (e.g. cloud storage)[@briney2013], with
+care taken to ensure that the off-site copy is as secure as the on-site
 copies. Keeping backups in multiple locations additionally protects
 against data loss due to theft or natural disasters.
 
