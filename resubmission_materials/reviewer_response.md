@@ -1,10 +1,6 @@
 Dear Dr. Markel,
 
-Thank you for reviewing our manuscript "Ten Simple Rules for Digital
-Data Storage" and considering our resubmission. We appreciate the
-thoughtful feedback reviewers have provided and incorporated their
-comments into our revised manuscript. Below is a detailed accounting
-of our changes, with reviewer submissions highlighted in bold.
+Below is a detailed accounting of our changes, with reviewer submissions highlighted in bold.
 
 
 **_Reviewer #1:_** _The manuscript enumerates a set of "rules" that
@@ -97,9 +93,9 @@ situation in reality can become very complicated, these ten simple
 rules can still provide good and useful guidance for researchers to
 develop data storage and management systems. Actually, we have pretty
 much followed these rules in our own practices. The manuscript was
-concise and well written.
+concise and well written._
 
-Minor suggestions:_
+_Minor suggestions:_
 
 **Page 2, Line 50: "can help" -> "can help to"**
 
@@ -129,10 +125,10 @@ We have added several examples in our rules that are specific to
 biomedical data to address this concern. In particular:
 
 Line 24-26: We suggest GenBank as an example place to archive sequence
-data 
+data
 
 Line 64-66: We suggest using community tools for formatting
-sequence data and ecological metadata 
+sequence data and ecological metadata
 
 Line 177-178: We give an example of version numbers
 that are specific to NCBI repositories
