@@ -660,7 +660,7 @@ the Life Sciences Research Foundation. PB was funded by the Natural Sciences &
 Engineering Research Council of Canada and the Academic Development Fund of the
 University of Western Ontario. SM would like to thank Dr. Laurence Tratt for
 reviewing an early draft of this paper. TP was funded by an NSERC Discovery Grant,
-and a Start-Up grant from the Université de Montréal. 
+and a Start-Up grant from the Université de Montréal.
 
 \newpage
 
@@ -687,17 +687,8 @@ and length), information about "where", "when", and "what" animals were
 measured can be considered meta-data. Using the tidy format makes this
 distinction clearer.
 
-# Figures {-}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\columnwidth]{resources/tidy_data.eps}
-\caption{}
-\label{fig:tidy-data}
-\end{figure}
-
-\nolinenumbers
 \newpage
+
 
 # References {-}
 \bibdata{resources/manuscript.bib}

@@ -12,18 +12,18 @@
 %
 % -- IMPORTANT NOTE
 %
-% This template contains comments intended 
-% to minimize problems and delays during our production 
+% This template contains comments intended
+% to minimize problems and delays during our production
 % process. Please follow the template instructions
 % whenever possible.
 %
-% % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % %
 %
-% Once your paper is accepted for publication, 
+% Once your paper is accepted for publication,
 % PLEASE REMOVE ALL TRACKED CHANGES in this file and leave only
 % the final text of your manuscript.
 %
-% There are no restrictions on package use within the LaTeX files except that 
+% There are no restrictions on package use within the LaTeX files except that
 % no packages listed in the template may be deleted.
 %
 % Please do not include colors or graphics in the text.
@@ -37,8 +37,8 @@
 % Please include tables/figure captions directly after the paragraph where they are first cited in the text.
 %
 % DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
-% - Figures should be uploaded separately from your manuscript file. 
-% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures should be uploaded separately from your manuscript file.
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission.
 % - Figures containing multiple panels/subfigures must be combined into one image file before submission.
 % For figure citations, please use "Fig." instead of "Figure".
 % See http://www.plosone.org/static/figureGuidelines for PLOS figure guidelines.
@@ -62,11 +62,11 @@
 %
 % Do not include text that is not math in the math environment. For example, CO2 will be CO\textsubscript{2}.
 %
-% Please add line breaks to long display equations when possible in order to fit size of the column. 
+% Please add line breaks to long display equations when possible in order to fit size of the column.
 %
 % For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
 %
-% % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % %
 %
 % Please contact latex@plos.org with any questions.
 %
@@ -94,7 +94,7 @@
 \usepackage{cite}
 
 % Use nameref to cite supporting information files (see Supporting Information section for more info)
-\usepackage{nameref,hyperref}
+\usepackage{nameref}
 
 % line numbers
 \usepackage[right]{lineno}
@@ -107,13 +107,18 @@
 \usepackage{rotating}
 
 % Remove comment for double spacing
-%\usepackage{setspace} 
+%\usepackage{setspace}
 %\doublespacing
+
+%to handle url breaks in references
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{breakurl}
 
 % Text layout
 \raggedright
 \setlength{\parindent}{0.5cm}
-\textwidth 5.25in 
+\textwidth 5.25in
 \textheight 8.75in
 
 % Bold the 'Figure #' in the caption and separate it from the title/caption with a period
@@ -190,8 +195,8 @@ $body$
 % Please keep the abstract below 300 words
 
 % Please keep the Author Summary between 150 and 200 words
-% Use first person. PLOS ONE authors please skip this step. 
-% Author Summary not valid for PLOS ONE submissions.   
+% Use first person. PLOS ONE authors please skip this step.
+% Author Summary not valid for PLOS ONE submissions.
 
 % For figure citations, please use "Fig." instead of "Figure".
 
@@ -209,7 +214,6 @@ $body$
 % Compile your BiBTeX database using our plos2015.bst
 % style file and paste the contents of your .bbl file
 % here.
-% 
+%
 
 \end{document}
-
