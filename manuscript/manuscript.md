@@ -644,23 +644,13 @@ interest.
 We would like to thank G. Wilson and the Software Carpentry instructor community
 for providing the initial inspiration for this paper and the discussion held at
 <https://github.com/swcarpentry/site/issues/797>. We thank K. Hinsen, G. Pugh,
-and W. Turner for comments on the draft manuscript. DL was funded by the Energy
-Biosciences institute and the National Center for Supercomputing Applications.
-FM was funded by iDigBio (Integrated Digitized Biocollections), and therefore
-this material is based upon work supported by the National Science Foundation’s
-Advancing Digitization of Biodiversity Collections Program (Cooperative Agreement
-EF-1115210). Contributions from JWH, an employee of the U.S. Environmental
-Protection Agency (EPA) have not been subjected to the Agency's peer and
-administrative review. Therefore, the conclusions and opinions drawn are solely
-those of the author(s) and are not necessarily the views of the Agency. Mention
-of trade names or commercial products does not constitute endorsement or
-recommendation for use. KW was funded by Washington State University. NBZ was
-funded by the Gordon and Betty Moore Foundation through Grant GBMF 2550.03 to
-the Life Sciences Research Foundation. PB was funded by the Natural Sciences &
-Engineering Research Council of Canada and the Academic Development Fund of the
-University of Western Ontario. SM would like to thank Dr. Laurence Tratt for
-reviewing an early draft of this paper. TP was funded by an NSERC Discovery Grant,
-and a Start-Up grant from the Université de Montréal.
+and W. Turner for comments on the draft manuscript.  Contributions from JWH, an
+employee of the U.S. Environmental Protection Agency (EPA) have not been subjected
+to the Agency's peer and administrative review. Therefore, the conclusions and
+opinions drawn are solely those of the author(s) and are not necessarily the views
+of the Agency. Mention of trade names or commercial products does not constitute
+endorsement or recommendation for use. SM would like to thank Dr. Laurence Tratt for
+reviewing an early draft of this paper.
 
 \newpage
 
