@@ -284,12 +284,11 @@ To take full advantage of data, it can be useful for it to be
 structured in a way that makes use, interpretation, and analysis easy.
 One such structure for data stores each variable as a column, each
 observation as a row, and each type of observational unit as a table
-(Fig. \ref{fig:tidy-data}). The technical term for this structure is
-'Codd's 3rd normal form', but it has been made more accessible as the
-concept of *tidy* data [@Wickham2014tidy]. When data is organized in
-this way, the duplication of information is reduced and it is easier
-to subset or summarize the dataset to include the variables or
-observations of interest.
+(Fig. 1). The technical term for this structure is 'Codd's 3rd normal
+form', but it has been made more accessible as theconcept of *tidy* data
+[@Wickham2014tidy]. When data is organized in this way, the duplication
+of information is reduced and it is easier to subset or summarize the
+dataset to include the variables or observations of interest.
 
 One axiom about the structure of data and code holds that one should
 "write code for humans, write data for computers"
@@ -367,7 +366,7 @@ dataset may fix a typo in version `1.0.0`.
 # Rule 7: Link relevant metadata {-}
 
 Metadata is the contextual information required to interpret data
-(Figure 1) and should be clearly defined and tightly integrated with
+(Fig. 1) and should be clearly defined and tightly integrated with
 data. The importance of metadata for context, reusability, and
 discovery has been written about at length in guides for data
 management best practices [@Michener2012; @Strasser2012; @White2013].
