@@ -290,6 +290,27 @@ form', but it has been made more accessible as theconcept of *tidy* data
 of information is reduced and it is easier to subset or summarize the
 dataset to include the variables or observations of interest.
 
+\textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent
+(B). Dataset A is untidy because it mixes observational units (species, location
+of observations, measurements about individuals), the units are mixed and listed
+with the observations, more than one variable is listed (both latitude and
+longitude for the coordinates, and genus and species for the species names), and
+several formats are used in the same column for dates and geographic
+coordinates. Dataset B is an example of a tidy version of dataset A that reduces
+the amount of information that is duplicated in each row, limiting chances of
+introducing mistakes in the data. By having species in a separate table, they
+can be identified uniquely using the Taxonomic Serial Number (TSN) from the
+Integrated Taxonomic Information System (ITIS), and it makes it easy to add
+information about the classification of these species. It also allows
+researchers to edit the taxonomic information independently from the table that
+holds the measurements about the individuals. Unique values for each
+observational unit facilitate the programmatic combination of information
+using "join" operations. With this example, if the focus of the study for which
+these data were collected is based upon the size measurements of the individuals (weight
+and length), information about "where", "when", and "what" animals were
+measured can be considered meta-data. Using the tidy format makes this
+distinction clearer.
+
 One axiom about the structure of data and code holds that one should
 "write code for humans, write data for computers"
 [@buffalo2015bioinformatics]. When data can be easily imported and
@@ -526,28 +547,28 @@ modules [@Dataone2012]. For librarians and others who are responsible
 for data archiving, Data Curation Profiles [@Witt2009] may be of
 interest.
 
-# Glossary and abbreviations used in the manuscript {-}
+# Glossary used in the manuscript {-}
 
 ## Projects and Initiatives {-}
 
-* **GBIF** (Global Biodiversity Information Facility,
+* **Global Biodiversity Information Facility** (GBIF,
   <http://www.gbif.org>) provides an international open data
   infrastructure to publish and disseminate biodiversity information.
 
-* **iDigBio** (Integrated Digitized Biocollections,
+* **Integrated Digitized Biocollections** (iDigBio,
   <https://www.idigbio.org>) is a project funded by the National
   Science Foundation that facilitates the digitization of natural
   history collections, and provides data and images for biological
   specimens.
 
-* **ITIS** (Integrated Taxonomic Information System,
+* **Integrated Taxonomic Information System** (ITIS,
   <http://www.itis.gov>) is an international partnership of
   governmental organizations that aims at providing authoritative
   taxonomic information for plants, animals, fungi, and microbes.
 
 ## File formats {-}
 
-* **CSV** (Comma-Separated Values) and **TSV** (Tab-Separated Values)
+* **Comma-Separated Values** (CSV) and **Tab-Separated Values** (TSV)
   are plain text file formats used to store tabular data where each
   row is represented by a line in the file, and each field (column) is
   separated by a comma (for CSV) or by the Tab character (for TSV).
@@ -556,57 +577,59 @@ interest.
   sequences of nucleotides or amino-acids in plain text making it easy
   to manipulate programmatically.
 
-* **HDF5** (Hierarchical Data Format) is an open-source binary file
+* **Hierarchical Data Format** (HDF5) is an open-source binary file
   format designed to store large amounts of data (and their associated
   metadata) by providing a hierarchical structure that could be
   compared to how a hard drive is organized with directories and
   files. It is maintained by the non-profit HDF Group, a spin off of
   the National Center for Supercomputing Applications (NCSA).
 
-* **JSON** is a plain text file format typically used to store arbitrarily
-  structured data in the form of keys and values. It can be used to store
-  non-relational databases as it does not rely on a tabular data format. In many
-  respects, it has been replacing XML.
+* **JavaScript Object Notation** (JSON) is a plain text file format
+  typically used to store arbitrarily structured data in the form of
+  keys and values. It can be used to store non-relational databases
+  as it does not rely on a tabular data format. In many respects, it
+  has been replacing XML.
 
-* **NetCDF** (Network Common Data Form) is an open-source binary file
+* **Network Common Data Form** (NetCDF) is an open-source binary file
   format designed to store large datasets in array-oriented scientific
   data as typically used in the geosciences. It is maintained by Unidata,
   a non-profit member of the University Corporation for Atmospheric
   Research (UCAR) which is funded by the National Science Foundation.
 
-* **XML** (Extensible Markup Language) is a markup language and the file format
+* **Extensible Markup Language** (XML) is a markup language and the file format
   used to store documents written with it. It is used to represent arbitrary
   data structures and is both human and machine-readable.
 
 ## Programming and algorithms {-}
 
-* Web **APIs** (Application Programming Interface) provide ways to
-  programmatically query databases through the internet. They notably allow users to
-  retrieve and work with a small slice of a large dataset.
+* **Web Application Programming Interface** (API) provide ways to
+  programmatically query databases through the internet. They notably allow
+  users to retrieve and work with a small slice of a large dataset.
 
-* **HDFS** (Hadoop Distributed File System) is a Java-based file system where
+* **Hadoop Distributed File System** (HDFS) is a Java-based file system where
   data is stored in small chunks across multiple redundant nodes.
 
-* **MapReduce** is a style of programming designed to work with large datasets in
-  parallel computing environments. Such programs are composed of a **map** procedure
-  where the dataset is sliced into several pieces, and a **reduce** procedure where
-  summary operations are then applied to each of the slices.
+* **MapReduce** is a style of programming designed to work with large datasets
+  in parallel computing environments. Such programs are composed of a **map**
+  procedure where the dataset is sliced into several pieces, and a **reduce**
+  procedure where summary operations are then applied to each of the slices.
 
-* **SHA-2** is a family of Secure Hashing Algorithms used in cryptographic
-  analysis, often to verify the integrity of a file. A cryptographic hash
-  function converts a "message" (e.g., passwords, file content) into an encrypted
-  value. Cryptographic hash functions are easy to compute from the message, but
-  it should be impossible to recover the message from the output, and any
-  modifications to the message should also modify the output. The SHA algorithms
-  are often used in preference to similar tools such as MD5 (mentioned in Rule 8),
-  which are no longer secure. All hashing algorithms are vulnerable to brute force
-  attacks. Key Derivation Function (KDF) implementations like BCrypt and PBKDF2
-  are considered significantly more secure, but by design more costly to compute.
+* **Secure Hash Algorithm 2** (SHA-2) is a family of Secure Hashing Algorithms
+  used in cryptographic analysis, often to verify the integrity of a file. A
+  cryptographic hash function converts a "message" (e.g., passwords, file
+  content) into an encrypted value. Cryptographic hash functions are easy to
+  compute from the message, but it should be impossible to recover the message
+  from the output, and any modifications to the message should also modify the
+  output. The SHA algorithms are often used in preference to similar tools such
+  as MD5 (mentioned in Rule 8), which are no longer secure. All hashing
+  algorithms are vulnerable to brute force attacks. Key Derivation Function
+  (KDF) implementations like BCrypt and PBKDF2 are considered significantly
+  more secure, but by design more costly to compute.
 
 * Apache **Spark** is an open source computing platform for querying large data
   sets in memory, in contrast to on-disk based methods like MapReduce.
 
-* **SQL** (Structured Query Language) is a programming language used to interact with
+* **Structured Query Language** (SQL) is a programming language used to interact with
   relational database management systems.
 
 ## Hardware {-}
@@ -621,21 +644,21 @@ interest.
 
 ## Persistent identifiers {-}
 
-* **ARK** (Archival Resource Key) identifiers are URLs designed to support long-term
+* **Archival Resource Key** (ARK) identifiers are URLs designed to support long-term
   access to information online.
 
-* **DOI** (Digital Object Identifier) provides unique and persistent identifiers for
+* **Digital Object Identifier** (DOI) provides unique and persistent identifiers for
   electronic documents (in particular journal articles and datasets) on the
   internet. The uniqueness of the identifiers is guaranteed by a central
   registry. By dissociating the identifier and the location of the document
   (i.e., the URL), the DOI can remain fixed even if the location of
   the digital object it is pointing to changes.
 
-* **PURL** (Persistent Uniform Resource Locator) is an URL used to redirect to the
+* **Persistent Uniform Resource Locator** (PURL) is an URL used to redirect to the
   location of an electronic object on the internet. DOI and ARK are examples of
   implementations of PURL.
 
-* **URL** (Uniform Resource Locator) gives the location of an object on the
+* **Uniform Resource Locator** (URL) gives the location of an object on the
   World Wide Web; the most familiar type of URL is a website address.
 
 # Acknowledgements {-}
@@ -650,31 +673,6 @@ opinions drawn are solely those of the author(s) and are not necessarily the vie
 of the Agency. Mention of trade names or commercial products does not constitute
 endorsement or recommendation for use. SM would like to thank Dr. Laurence Tratt for
 reviewing an early draft of this paper.
-
-\newpage
-
-# Figure Legends {-}
-
-\textbf{Figure 1}: Example of an untidy dataset (A) and its tidy equivalent
-(B). Dataset A is untidy because it mixes observational units (species, location
-of observations, measurements about individuals), the units are mixed and listed
-with the observations, more than one variable is listed (both latitude and
-longitude for the coordinates, and genus and species for the species names), and
-several formats are used in the same column for dates and geographic
-coordinates. Dataset B is an example of a tidy version of dataset A that reduces
-the amount of information that is duplicated in each row, limiting chances of
-introducing mistakes in the data. By having species in a separate table, they
-can be identified uniquely using the Taxonomic Serial Number (TSN) from the
-Integrated Taxonomic Information System (ITIS), and it makes it easy to add
-information about the classification of these species. It also allows
-researchers to edit the taxonomic information independently from the table that
-holds the measurements about the individuals. Unique values for each
-observational unit facilitate the programmatic combination of information
-using "join" operations. With this example, if the focus of the study for which
-these data were collected is based upon the size measurements of the individuals (weight
-and length), information about "where", "when", and "what" animals were
-measured can be considered meta-data. Using the tidy format makes this
-distinction clearer.
 
 \newpage
 
