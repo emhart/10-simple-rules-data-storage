@@ -6,7 +6,7 @@ bibliography: resources/manuscript.bib
 csl: resources/plos.csl
 author:
  - family: Hart
-   given: Edmund
+   given: Edmund M.
    affiliation: 1
    email: edmund.m.hart@gmail.com
  - family: Barmby
@@ -34,7 +34,7 @@ author:
    given: Naupaka B.
    affiliation: 9
  - family: Hollister
-   given: Jeffrey
+   given: Jeffrey W.
    affiliation: 10
 organization:
  - id: 1
@@ -80,38 +80,38 @@ Data is the central currency of science, but the nature of scientific
 data has changed dramatically with the rapid pace of technology. This
 change has led to the development of a wide variety of data formats,
 dataset sizes, data complexity, data use cases, and data sharing
-practices. Improvements in high throughput DNA sequencing, sustained
+practices. Improvements in high-throughput DNA sequencing, sustained
 institutional support for large sensor networks
-[@Reid2014; @Hampton2013], and sky surveys with large-format digital
+[@Reid2014;@Hampton2013], and sky surveys with large-format digital
 cameras [@Eisenstein2011] have created massive quantities of data. At
 the same time, the combination of increasingly diverse research teams
-[@Adams2012] and data aggregation in portals (e.g. for biodiversity
+[@Adams2012] and data aggregation in portals (e.g., for biodiversity
 data, [GBIF.org](http://gbif.org/) or
 [iDigBio](https://www.idigbio.org/portal/)) necessitates increased
 coordination among data collectors and institutions
-[@Fraser2013; @Robertson2014]. As a consequence, "data" can now mean
+[@Fraser2013;@Robertson2014]. As a consequence, "data" can now mean
 anything from petabytes of information stored in
-professionally-maintained databases, through spreadsheets on a single
-computer, to hand-written tables in lab notebooks on shelves. All
+professionally maintained databases, to spreadsheets on a single
+computer, to handwritten tables in lab notebooks on shelves. All
 remain important, but data curation practices must continue to keep
 pace with the changes brought about by new forms of data and new data
 collection and storage practices.
 
 While much has been written about both the virtues of data sharing
-[@Wolkovich2012; @Roche2014] and the best practices to do so
-[@White2013; @Goodman2014], data storage has received comparatively
+[@Wolkovich2012;@Roche2014] and the best practices to do so
+[@White2013;@Goodman2014], data storage has received comparatively
 less attention. Proper storage is a prerequisite to sharing, and
 indeed inadequate storage contributes to the phenomenon of data decay
-or to "data entropy", where data, whether publicly shared or not,
+or to "data entropy," in which data, whether publicly shared or not,
 becomes less accessible through time
-[@Pepe2014; @Vines2014; @Michener2012; @Michener1997]. Best practices
-for data storage often begin and end with, "deposit your data in a
-community standard repository." This is good advice, especially
+[@Pepe2014;@Vines2014;@Michener2012;@Michener1997]. Best practices
+for data storage often begin and end with this statement: "Deposit your
+data in a community standard repository." This is good advice, especially
 considering your data is most likely to be reused if it is available
 on a community site. Community repositories can also provide guidance
 for best practices. As an example, if you are archiving sequencing
 data, a repository such as those run by the National Center for
-Biotechnology Information (NCBI) (e.g. GenBank) provides not only a
+Biotechnology Information (NCBI) (e.g., GenBank) not only provides a
 location for data archival, but also encourages a set of practices
 related to consistent data formatting and the inclusion of appropriate
 metadata. However, data storage policies are highly variable between
@@ -121,11 +121,11 @@ transition from local storage to repository [@Michener2015].
 Similarly, having such a plan can facilitate transition from
 repository to repository if funding runs out or requirements change.
 Good storage practices are important even (or especially) in cases
-where data may not fit with an existing repository, where only derived
-data products (versus raw data) are suitable for archiving, or in the
-case where an existing repository may have lax standards.
+when data may not fit with an existing repository, when only derived
+data products (versus raw data) are suitable for archiving, or when an
+existing repository may have lax standards.
 
-This manuscript describes 10 simple rules for digital data storage
+This article describes ten simple rules for digital data storage
 that grew out of a long discussion among instructors for the Software
 and Data Carpentry initiatives [@Wilson2014; @Teal2015]. Software and
 Data Carpentry instructors are scientists from diverse backgrounds who
@@ -137,14 +137,14 @@ facing a variety of data storage challenges. We additionally provide a
 glossary of common vocabulary for readers who may not be familiar with
 particular terms.
 
-# Rule 1: Anticipate how your data will be used {-}
+# Rule 1: Anticipate How Your Data Will Be Used {-}
 
 One can avoid most of the troubles encountered during the analysis,
 management, and release of data by having a clear roadmap of what to
-expect *before* data acquisition starts. For instance:
+expect before data acquisition starts. For instance:
 
  - How will the raw data be received? Are they delivered by a machine
-   or software, or typed-in?
+   or software, or typed in?
  - What is the format expected by the software used for analysis?
  - Is there a community standard format for this type of data?
  - How much data will be collected, and over what period of time?
@@ -161,9 +161,9 @@ the analysis pipeline, making it more amenable to re-use [@Roche2015].
 
 Also key is the ability to estimate the storage volume needed to store
 the data, both during and after the analysis. The required strategy
-will differ for datasets of varying size. Smaller datasets (e.g. a few
+will differ for datasets of varying size. Smaller datasets (e.g., a few
 megabytes in size) can be managed locally with a simple data
-management plan, whereas larger datasets (e.g. gigabytes to petabytes)
+management plan, whereas larger datasets (e.g., gigabytes to petabytes)
 will in almost all cases require careful planning and preparation
 (Rule 10).
 
@@ -176,7 +176,7 @@ the biological sciences include *Morpho* for ecological metadata
 [@higgins2002] and *mothur* [@schloss2009] for submitting to NCBI's
 Sequence Read Archive.
 
-# Rule 2: Know your use case {-}
+# Rule 2: Know Your Use Case {-}
 
 Well-identified use cases make data storage easier. Ideally, prior to
 beginning data collection, researchers should be able to answer the
@@ -192,8 +192,8 @@ following questions:
    tracked changes be logged?
  - Will the final data be released, and if so, in what format?
  - Are there restrictions or privacy concerns associated with the data
-   (e.g. for survey results with personally identifiable information
-   (PII), threatened species, or confidential business information)?
+   (e.g., survey results with personally identifiable information
+   [PII], threatened species, or confidential business information)?
  - Will institutional validation be required prior to releasing the
    data?
  - Does the funding agency mandate data deposition in a publicly
@@ -202,14 +202,14 @@ following questions:
 
 None of these questions have universal answers, nor are they the only
 questions to ask before starting data acquisition. But knowing the
-what, when, and how of *your* use of the data will bring you close to
+what, when, and how of your use of the data will bring you close to
 a reliable roadmap on how to handle data from acquisition through
 publication and archival.
 
-# Rule 3: Keep raw data raw {-}
+# Rule 3: Keep Raw Data Raw {-}
 
 Since analytical and data processing procedures improve or otherwise
-change over time, having access to the 'raw' (unprocessed) data can
+change over time, having access to the "raw" (unprocessed) data can
 facilitate future re-analysis and analytical reproducibility. As
 processing algorithms improve and computational power increases, new
 analyses will be enabled that were not possible at the time of the
@@ -239,11 +239,11 @@ For large enough datasets the likelihood of silent data corruption is
 high. This technique has been widely used by many Linux distributions
 to distribute images and has been very effective with minimal effort.
 
-# Rule 4: Store data in open formats {-}
+# Rule 4: Store Data in Open Formats {-}
 
 To maximize accessibility and long-term value, it is preferable to
-store data in formats whose specifications are freely available. The
-appropriate file type will depend on the data being stored (e.g.
+store data in formats that have freely available specifications. The
+appropriate file type will depend on the data being stored (e.g.,
 numeric measurements, text, images, video), but the key idea is that
 accessing data should not require proprietary software, hardware, or
 purchase of a commercial license. Proprietary formats change,
@@ -253,7 +253,7 @@ for end-users. Examples of open data formats include comma-separated
 values (CSV) for tabular data, hierarchical data format (HDF)
 [@koziol1998hdf5] and NetCDF [@rew1990netcdf] for hierarchically
 structured scientific data, portable network graphics (PNG) for
-images, KML (or other Open Geospatial Consortium (OGC) format) for
+images, KML (or other Open Geospatial Consortium [OGC] format) for
 spatial data, and extensible markup language (XML) for documents.
 Examples of closed formats include DWG for AutoCAD drawings, Photoshop
 document (PSD) for bitmap images, Windows Media Audio (WMA) for audio
@@ -267,25 +267,25 @@ format.
 Not only should data be stored in an open format, but it should also
 be stored in a format that computers can easily use for processing.
 This is especially crucial as datasets become larger. Making data
-easily-usable is best achieved by using standard data formats
+easily usable is best achieved by using standard data formats
 that have open specifications (e.g., CSV, XML, JSON, HDF5), or by
 using databases. Such data formats can be handled by a variety of
 programming languages, as efficient and well-tested libraries for
 parsing them are typically available. These standard data formats also
 ensure interoperability, facilitate re-use, and reduce the chances of
 data loss or mistakes being introduced during conversion between
-formats. Examples of machine-readable open formats that would *not* be
+formats. Examples of machine-readable open formats that would not be
 easy to process include data included in the text of a PDF file, or
 scanned images of tabular data from a paper source.
 
-# Rule 5: Data should be structured for analysis {-}
+# Rule 5: Data Should Be Structured for Analysis {-}
 
 To take full advantage of data, it can be useful for it to be
 structured in a way that makes use, interpretation, and analysis easy.
 One such structure for data stores each variable as a column, each
 observation as a row, and each type of observational unit as a table
-(Fig. 1). The technical term for this structure is 'Codd's 3rd normal
-form', but it has been made more accessible as theconcept of *tidy* data
+(Fig. 1). The technical term for this structure is "Codd's 3rd normal
+form", but it has been made more accessible as the concept of tidy data
 [@Wickham2014tidy]. When data is organized in this way, the duplication
 of information is reduced and it is easier to subset or summarize the
 dataset to include the variables or observations of interest.
@@ -306,17 +306,17 @@ researchers to edit the taxonomic information independently from the table that
 holds the measurements about the individuals. Unique values for each
 observational unit facilitate the programmatic combination of information
 using "join" operations. With this example, if the focus of the study for which
-these data were collected is based upon the size measurements of the individuals (weight
-and length), information about "where", "when", and "what" animals were
+these data were collected is based upon the size measurements of the individuals
+(weight and length), information about "where", "when", and "what" animals were
 measured can be considered meta-data. Using the tidy format makes this
 distinction clearer.
 
 One axiom about the structure of data and code holds that one should
 "write code for humans, write data for computers"
 [@buffalo2015bioinformatics]. When data can be easily imported and
-manipulated using familiar software, whether via a scripting language,
+manipulated using familiar software (whether via a scripting language,
 a spreadsheet, or any other computer program that can import these
-common files, data becomes easier to re-use. Furthermore, having the
+common files), data becomes easier to re-use. Furthermore, having the
 source code for the software doing the analysis available provides
 provenance for how the data is processed and analyzed. This makes
 analysis more transparent, since all assumptions about the structure
@@ -341,7 +341,7 @@ standards-compliant data, it becomes easier to build an Application
 Programming Interface (API) to query the dataset and retrieve a subset
 of interest, as outlined in Rule 10.
 
-# Rule 6: Data should be uniquely identifiable {-}
+# Rule 6: Data Should Be Uniquely Identifiable {-}
 
 To aid reproducibility, the data used in a scientific publication
 should be uniquely identifiable. Ideally, datasets should have a
@@ -349,9 +349,9 @@ unique identifier such as a Digital Object Identifier (DOI), Archival
 Resource Key (ARK), or a persistent URL (PURL). An increasing number
 of online services, such as [Figshare](http://figshare.com/),
 [Zenodo](http://zenodo.org), or [DataOne](http://www.dataone.org), are
-able to provide these. Institutional initiatives also exist, and are
+able to provide these. Institutional initiatives also exist and are
 known to your local librarians. Some repositories may require specific
-identifiers and these could change with time. For instance, NCBI
+identifiers, and these could change with time. For instance, NCBI
 sequence data will in the future only be identified by
 "accession.version" IDs. The "GI" identifiers (in use since 1994) will
 be retired in late 2016 [@ncbi].
@@ -363,19 +363,19 @@ includes a version identifier. A simple way to do this is to use date
 stamps as part of the dataset name. Using the ISO 8601 standard avoids
 regional ambiguities: it mandates the date format `YYYY-MM-DD` (i.e.
 from largest time unit to smallest). For example, the date "February
-1st, 2015", while written as `01-02-2015` in the UK and `02-01-2015`
+1, 2015," while written as `01-02-2015` in the UK and `02-01-2015`
 in the US, is unambiguous (`2015-02-01`) under this standard.
 
 Semantic versioning is a richer approach to solving the same problem
 [@semver2014]. The CellPack datasets are an example of this
 [@johnson2014cellpack]. A semantic version number takes the form:
-`Major.Minor.Patch`, e.g. `0.2.7`. The *major version* numbers should
+`Major.Minor.Patch` e.g., `0.2.7`. The *major version* numbers should
 be incremented (or bumped) when a dataset scheme has been updated, or
 some other change is made that is not compatible with previous
 versions of the data with the same major version number. This means
 that an experiment using version `1.0.0` of the dataset may not run on
 version `2.0.0` without changes to the data analysis. The *minor
-version* should be bumped when a change has been made which is
+version* should be bumped when a change has been made that is
 compatible with older versions of the data with the same major
 version. This means that any analysis that can be performed on version
 `1.0.0` of the data is repeatable with version `1.1.0` of the data.
@@ -384,26 +384,26 @@ bump in the minor version. The *patch version* number is bumped when
 typos or bugs have been fixed. For example version `1.0.1` of a
 dataset may fix a typo in version `1.0.0`.
 
-# Rule 7: Link relevant metadata {-}
+# Rule 7: Link Relevant Metadata {-}
 
 Metadata is the contextual information required to interpret data
 (Fig. 1) and should be clearly defined and tightly integrated with
 data. The importance of metadata for context, reusability, and
 discovery has been written about at length in guides for data
-management best practices [@Michener2012; @Strasser2012; @White2013].
+management best practices [@Michener2012;@Strasser2012;@White2013].
 
 Metadata should be as comprehensive as possible, using standards and
 conventions of a discipline, and should be machine-readable. Metadata
 should always accompany a dataset, wherever it is stored, but the best
 way to do this depends on the format of the data. Text files can
-contain meta-data in well-defined text files such as XML or JSON. Some
-file formats are self-documenting; for example NetCDF, HDF5, and many
+contain metadata in well-defined text files such as XML or JSON. Some
+file formats are self-documenting; for example, NetCDF, HDF5, and many
 image file formats allow for embedded metadata
-[@rew1990netcdf; @koziol1998hdf5]. In a relational database, metadata
+[@rew1990netcdf;@koziol1998hdf5]. In a relational database, metadata
 tables can be clearly labeled and linked to the data. Ideally, a
 schema will be provided that also shows the linkages between data
-tables and metadata tables. Another--simpler--scenario is a set of
-flat (non-hierarchical) text files--in this case a semantically
+tables and metadata tables. Another---simpler---scenario is a set of
+flat (non-hierarchical) text files---in this case a semantically
 versioned, compressed archive should be created that includes
 metadata.
 
@@ -413,19 +413,19 @@ is dependent on the archiving plan used, but even if the dataset is
 archived solely for personal use, metadata will provide crucial
 context for future reuse.
 
-# Rule 8: Adopt the proper privacy protocols {-}
+# Rule 8: Adopt the Proper Privacy Protocols {-}
 
-In datasets where privacy is important, be sure to have a plan in
+In datasets for which privacy is important, be sure to have a plan in
 place to protect data confidentiality. You should consider the
 different data stakeholders when developing privacy protocols for your
 data storage. These stakeholders include funding agencies, human
-subjects or entities, collaborators, and yourself. Both the NSF and
-NIH have data sharing policies in their grant guidelines to prevent
-sharing personally identifiable information, and to anonymize data on
-human subjects.
+subjects or entities, collaborators, and yourself. Both the National Science
+Foundation (NSF) and National Institutes of Health (NIH) have data sharing
+policies in their grant guidelines to prevent sharing personally identifiable
+information, and to anonymize data on human subjects.
 
 In small datasets, a lookup table (protecting PII by removing it and
-replacing it with a unique id that maps to the sensitive data in an
+replacing it with a unique ID that maps to the sensitive data in an
 external dataset) is enough to anonymize a minimal amount of personal
 information. Hashing techniques are susceptible to a number of
 attacks, and all hashed data can eventually be determined. Famously,
@@ -447,15 +447,15 @@ subject's identity [@Homer2008]. Methods for dealing with these
 complex issues at the intersection of data storage and privacy are
 rapidly evolving, and include storing changes against a reference
 genome to help with privacy and reduce overall data volumes
-[@Kahn2011; @wandelt2014trends], and/or bringing computation to data
+[@Kahn2011;@wandelt2014trends], and/or bringing computation to data
 storage facilities instead of vice versa [@Gaye2014]. Having a plan
 for privacy before data is acquired is important, because it can
 determine or limit how data will be stored.
 
-# Rule 9: Have a systematic backup scheme {-}
+# Rule 9: Have a Systematic Backup Scheme {-}
 
 Every storage medium can fail, and every failure can result in loss of
-data. Researchers should therefore back data up at all stages of the
+data. Researchers should therefore back up data at all stages of the
 research process. Data stored on local computers or institutional
 servers during the collection and analysis phases of a project should
 be backed up to other locations to protect against data loss. No
@@ -463,7 +463,7 @@ backup system is failsafe (see the stories of the
 [Dedoose crash][dedoose] and the [near deletion of Toy Story 2][ts2]),
 so more than one backup system should be used. Ideally you should have
 two on-site copies (such as on a computer, an external hard drive, or a
-tape) and one off-site copy (e.g. cloud storage)[@briney2013], with
+tape) and one off-site copy (e.g., cloud storage)[@briney2013], with
 care taken to ensure that the off-site copy is as secure as the on-site
 copies. Keeping backups in multiple locations additionally protects
 against data loss due to theft or natural disasters.
@@ -486,7 +486,7 @@ storage plans of the repository. Many repositories mirror the data
 they host on multiple machines. Are there plans in place to keep data
 available if the organization that manages the repository dissolves?
 
-# Rule 10: The location and method of data storage depend on how much data you have {-}
+# Rule 10: The Location and Method of Data Storage Depend on How Much Data You Have {-}
 
 The storage method you should choose depends on the size and nature of
 your data, the cost of storage and access over time, the time it takes
@@ -494,14 +494,13 @@ to transfer the data, how the data will be used, and any privacy
 concerns. Data is increasingly generated in the range of many
 terabytes by environmental sensors, satellites, automated analytical
 tools, simulation models, and nucleic acid sequencers. Even larger
-data generating machines, like the Large Hadron Collider (LHC) and the
-Large Scale Synoptic Survey Telescope (LSST), generate many terabytes
-(TB) per day, rapidly accumulating to petabyte (PB) scale over the
-course of any particular study. While the cost of storage continues to
-decrease, the volume of data to be stored impacts the choice of
-storage methods and locations: for large datasets it is necessary to
-balance the cost of storage with the time of access and costs of
-re-generating the data. With new commercial cloud offerings (e.g.,
+data-generating machines, like the Large Hadron Collider (LHC) and the
+Large Scale Synoptic Survey Telescope (LSST), generate many TB per day,
+rapidly accumulating to petabyte (PB) scale over the course of any particular
+study. While the cost of storage continues to decrease, the volume of data
+to be stored impacts the choice of storage methods and locations: for large
+datasets it is necessary to balance the cost of storage with the time of access
+and costs of re-generating the data. With new commercial cloud offerings (e.g.,
 Amazon S3) the cost of retrieving the data might exceed the cost of
 analysis or of re-generating the data from scratch.
 
@@ -510,29 +509,29 @@ become more efficient to use a computer system for analysis that can
 directly access and use the data in place instead of first
 transferring it to a local machine. Inactive data can be put in
 longer-term storage; this is less expensive, but can take longer to
-retrieve. Some storage systems automatically migrate 'stale' files to
-longer term storage. Alternatively, some computing can be done 'in the
-database' or 'on disk' via database query languages (e.g. SQL,
+retrieve. Some storage systems automatically migrate "stale" files to
+longer-term storage. Alternatively, some computing can be done "in the
+database" or "on disk" via database query languages (e.g., SQL,
 MapReduce) that perform basic arithmetic, or via the use of procedural
-languages (e.g. R, Python, C) embedded in the database server. Modern
+languages (e.g., R, Python, C) embedded in the database server. Modern
 database technologies such as HDFS and Spark allow these computations
 to be done on data of almost any size. When data is larger than
 locally available RAM, it can be handled by conducting analyses on a
-'big memory' node, which most high-performance computing centers have
+"big memory" node, which most high-performance computing centers have
 deployed. Relying on tight software/hardware integration, these can
-allow for the analysis of datasets around 1-4 TB in size. This allows
+allow for the analysis of datasets around 1--4 TB in size. This allows
 the user to read in and use a large dataset without special tools.
 
 If you regularly only need access to a small subset of your data or
-need to share it with many collaborators, a web-based API (Application
+need to share it with many collaborators, an online API (Application
 Programming Interface) might be a good solution. Using this method,
-many users can send requests to a web service which can subset the
+many users can send requests to a online service that can subset the
 data, perform in-database computation, and return smaller volumes of
-data as specific slices. Tools based on web services make it easier to
-find and download data, and facilitate analysis via reproducible
+data as specific slices. Tools based on online services make it easier to
+find and download data, and they facilitate analysis via reproducible
 scripts. However, they can also lead to excessive and careless abuse
 of resources without proper safeguards in place. The time required to
-re-download and recompute results can be reduced by 'caching'. Caching
+re-download and re-compute results can be reduced by "caching". Caching
 stores copies of downloads and generated files that are recognized
 when the same script is run multiple times.
 
@@ -547,7 +546,7 @@ modules [@Dataone2012]. For librarians and others who are responsible
 for data archiving, Data Curation Profiles [@Witt2009] may be of
 interest.
 
-# Glossary used in the manuscript {-}
+# Glossary {-}
 
 ## Projects and Initiatives {-}
 
@@ -569,32 +568,32 @@ interest.
 ## File formats {-}
 
 * **Comma-Separated Values** (CSV) and **Tab-Separated Values** (TSV)
-  are plain text file formats used to store tabular data where each
+  are plain text file formats used to store tabular data, in which each
   row is represented by a line in the file, and each field (column) is
-  separated by a comma (for CSV) or by the Tab character (for TSV).
+  separated by a comma (for CSV) or by the tab character (for TSV).
 
 * **FASTA** is a simple and widely used file format used to represent
-  sequences of nucleotides or amino-acids in plain text making it easy
-  to manipulate programmatically.
+  sequences of nucleotides or amino acids in plain text, making it easy
+  to manipulate these programmatically.
 
 * **Hierarchical Data Format** (HDF5) is an open-source binary file
   format designed to store large amounts of data (and their associated
   metadata) by providing a hierarchical structure that could be
   compared to how a hard drive is organized with directories and
-  files. It is maintained by the non-profit HDF Group, a spin off of
+  files. It is maintained by the non-profit HDF Group, a spin-off of
   the National Center for Supercomputing Applications (NCSA).
 
 * **JavaScript Object Notation** (JSON) is a plain text file format
   typically used to store arbitrarily structured data in the form of
-  keys and values. It can be used to store non-relational databases
+  keys and values. It can be used to store non-relational databases,
   as it does not rely on a tabular data format. In many respects, it
   has been replacing XML.
 
 * **Network Common Data Form** (NetCDF) is an open-source binary file
   format designed to store large datasets in array-oriented scientific
-  data as typically used in the geosciences. It is maintained by Unidata,
+  data, typically used in the geosciences. It is maintained by Unidata,
   a non-profit member of the University Corporation for Atmospheric
-  Research (UCAR) which is funded by the National Science Foundation.
+  Research (UCAR), which is funded by the National Science Foundation.
 
 * **Extensible Markup Language** (XML) is a markup language and the file format
   used to store documents written with it. It is used to represent arbitrary
@@ -606,13 +605,13 @@ interest.
   programmatically query databases through the internet. They notably allow
   users to retrieve and work with a small slice of a large dataset.
 
-* **Hadoop Distributed File System** (HDFS) is a Java-based file system where
+* **Hadoop Distributed File System** (HDFS) is a Java-based file system in which
   data is stored in small chunks across multiple redundant nodes.
 
 * **MapReduce** is a style of programming designed to work with large datasets
   in parallel computing environments. Such programs are composed of a **map**
-  procedure where the dataset is sliced into several pieces, and a **reduce**
-  procedure where summary operations are then applied to each of the slices.
+  procedure in which the dataset is sliced into several pieces, and a **reduce**
+  procedure in which summary operations are then applied to each of the slices.
 
 * **Secure Hash Algorithm 2** (SHA-2) is a family of Secure Hashing Algorithms
   used in cryptographic analysis, often to verify the integrity of a file. A
@@ -621,13 +620,13 @@ interest.
   compute from the message, but it should be impossible to recover the message
   from the output, and any modifications to the message should also modify the
   output. The SHA algorithms are often used in preference to similar tools such
-  as MD5 (mentioned in Rule 8), which are no longer secure. All hashing
+  as MD5 (mentioned in Rule 3 and 8), which are no longer secure. All hashing
   algorithms are vulnerable to brute force attacks. Key Derivation Function
   (KDF) implementations like BCrypt and PBKDF2 are considered significantly
   more secure, but by design more costly to compute.
 
-* Apache **Spark** is an open source computing platform for querying large data
-  sets in memory, in contrast to on-disk based methods like MapReduce.
+* Apache **Spark** is an open-source computing platform for querying large
+  datasets in memory, in contrast to on--disk--based methods like MapReduce.
 
 * **Structured Query Language** (SQL) is a programming language used to interact with
   relational database management systems.
@@ -637,9 +636,9 @@ interest.
 * **mega-, giga-, tera-, peta-bytes** are units of digital information and are used
   to measure the size of datasets or the storage media. Originally a byte was
   the minimum amount of memory needed to store a single character of text in a
-  computer. The prefixes mega-, giga-, tera- and peta- refer to the
+  computer. The prefixes mega-, giga-, tera-, and peta- refer to the
   international system of units for the multiple of the unit, and correspond to
-  $10^{6}$, $10^{9}$, $10^{12}$, and $10^{15}$ abbreviated M, G, T and P
+  $10^{6}$, $10^{9}$, $10^{12}$, and $10^{15}$, abbreviated M, G, T, and P,
   respectively.
 
 ## Persistent identifiers {-}
@@ -648,13 +647,13 @@ interest.
   access to information online.
 
 * **Digital Object Identifier** (DOI) provides unique and persistent identifiers for
-  electronic documents (in particular journal articles and datasets) on the
+  electronic documents (in particular, journal articles and datasets) on the
   internet. The uniqueness of the identifiers is guaranteed by a central
   registry. By dissociating the identifier and the location of the document
   (i.e., the URL), the DOI can remain fixed even if the location of
   the digital object it is pointing to changes.
 
-* **Persistent Uniform Resource Locator** (PURL) is an URL used to redirect to the
+* **Persistent Uniform Resource Locator** (PURL) is a URL used to redirect to the
   location of an electronic object on the internet. DOI and ARK are examples of
   implementations of PURL.
 
@@ -666,13 +665,14 @@ interest.
 We would like to thank G. Wilson and the Software Carpentry instructor community
 for providing the initial inspiration for this paper and the discussion held at
 <https://github.com/swcarpentry/site/issues/797>. We thank K. Hinsen, G. Pugh,
-and W. Turner for comments on the draft manuscript.  Contributions from JWH, an
-employee of the U.S. Environmental Protection Agency (EPA) have not been subjected
-to the Agency's peer and administrative review. Therefore, the conclusions and
-opinions drawn are solely those of the author(s) and are not necessarily the views
-of the Agency. Mention of trade names or commercial products does not constitute
-endorsement or recommendation for use. SM would like to thank Dr. Laurence Tratt for
-reviewing an early draft of this paper.
+and W. Turner for comments on the draft manuscript.  Contributions from J. W.
+Hollister, an employee of the US Environmental Protection Agency (EPA) have not
+been  subjected to the Agency's peer and administrative review. Therefore, the
+conclusions and opinions drawn are solely those of the author(s) and are not
+necessarily the views of the Agency. Mention of trade names or commercial
+products does not constitute endorsement or recommendation for use. S. Mount
+would  like to thank Dr. Laurence Tratt for reviewing an early draft of this
+paper.
 
 \newpage
 
